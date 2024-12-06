@@ -6,8 +6,13 @@ PLATFORMS_DIR="./tools"
 SOURCES_AND_SINKS="./SourcesAndSinks.txt"
 APK_DIR="./APKs"
 
+##############################""
+# com.hawai 20min i stopped manually cause it took over 20min
+
+
+
 # Timeout settings in minutes
-TIMEOUTS=(60 300 1200)
+TIMEOUT_MINUTES=(1 5 20)
 
 # Create an array of APK files in the APK_DIR
 APK_FILES=("$APK_DIR"/*.apk)
@@ -20,19 +25,21 @@ for APK_PATH in "${APK_FILES[@]}"; do
     APK_NAME="${APK_FILENAME%.apk}"
 
     # Loop over each timeout setting
-    for TIMEOUT in "${TIMEOUTS[@]}"; do
+    for TIMEOUT_MINUTES in "${TIMEOUT_MINUTES[@]}"; do
         # Output file name
-        OUTPUT_FILE="./outputs/${APK_NAME}-${TIMEOUT}min.xml"
-        LOG_FILE="./outputs/${APK_NAME}-${TIMEOUT}min.log"
+        OUTPUT_FILE="./outputs/${APK_NAME}-${TIMEOUT_MINUTES}min.xml"
+        LOG_FILE="./outputs/${APK_NAME}-${TIMEOUT_MINUTES}min.log"
+        # Convert timeout from minutes to seconds
+        TIMEOUT_SECONDS=$((TIMEOUT_MINUTES * 60))
 
-        echo "Analyzing ${APK_FILENAME} with a timeout of ${TIMEOUT} minute(s)..."
+        echo "Analyzing ${APK_FILENAME} with a timeout of ${TIMEOUT_MINUTES} minutes (${TIMEOUT_SECONDS} seconds)..."
 
         # Run FlowDroid analysis and save the output to the file
         java -jar "$FLOWDROID_JAR" \
             -a "$APK_PATH" \
             -p "$PLATFORMS_DIR" \
             -s "$SOURCES_AND_SINKS" \
-            -dt "$TIMEOUT" -rt "$TIMEOUT" -ct "$TIMEOUT" \
+            -dt "$TIMEOUT_SECONDS" -rt "$TIMEOUT_SECONDS" -ct "$TIMEOUT_SECONDS" \
             -o "$OUTPUT_FILE" &> "${LOG_FILE}"
 
         echo "Output saved to ${OUTPUT_FILE}"
