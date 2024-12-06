@@ -2,17 +2,16 @@
 
 # Paths (Modify these paths according to your environment)
 FLOWDROID_JAR="soot-infoflow-cmd-2.13.0-jar-with-dependencies.jar"
-PLATFORMS_DIR="./tools"
+PLATFORMS_DIR="tools"
 SOURCES_AND_SINKS="./SourcesAndSinks.txt"
 APK_DIR="./APKs"
 
 ##############################""
-# com.hawai 20min i stopped manually cause it took over 20min
 
 
 
 # Timeout settings in minutes
-TIMEOUT_MINUTES=(1 5 20)
+TIMEOUT_MINUTES=(1)
 
 # Create an array of APK files in the APK_DIR
 APK_FILES=("$APK_DIR"/*.apk)
@@ -27,8 +26,8 @@ for APK_PATH in "${APK_FILES[@]}"; do
     # Loop over each timeout setting
     for TIMEOUT_MINUTES in "${TIMEOUT_MINUTES[@]}"; do
         # Output file name
-        OUTPUT_FILE="./outputs/${APK_NAME}-${TIMEOUT_MINUTES}min.xml"
-        LOG_FILE="./outputs/${APK_NAME}-${TIMEOUT_MINUTES}min.log"
+        OUTPUT_FILE="./outputs_additive/${APK_NAME}-${TIMEOUT_MINUTES}min.xml"
+        LOG_FILE="./outputs_additive/${APK_NAME}-${TIMEOUT_MINUTES}min.log"
         # Convert timeout from minutes to seconds
         TIMEOUT_SECONDS=$((TIMEOUT_MINUTES * 60))
 

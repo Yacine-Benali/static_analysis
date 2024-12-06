@@ -1,259 +1,112 @@
 [main] WARN soot.jimple.infoflow.methodSummary.data.provider.LazySummaryProvider - Lazy loading summaries from a jar/zip file might throw a ClosedChannelException. Use the EagerSummaryProvider instead.
-[main] INFO soot.jimple.infoflow.cmd.MainClass - Analyzing app /home/yacine/Art/static_analysis/APKs/com.hawaiianairlines.app.apk (1 of 1)...
+[main] INFO soot.jimple.infoflow.cmd.MainClass - Analyzing app /mnt/aiongpfs/users/mbenali/static_analysis/APKs/com.hawaiianairlines.app.apk (1 of 1)...
 [main] INFO soot.jimple.infoflow.android.SetupApplication - Initializing Soot...
 [main] INFO soot.jimple.infoflow.android.SetupApplication - Loading dex files...
-[main] WARN soot.dexpler.DexFileProvider - Multiple dex files detected, only processing 'classes.dex'. Use '-process-multiple-dex' option to process them all.
-[main] INFO soot.jimple.infoflow.android.SetupApplication - ARSC file parsing took 0.143068988 seconds
-[main] INFO soot.jimple.infoflow.memory.MemoryWarningSystem - Registered a memory warning system for 14,450.4 MiB
+[main] INFO soot.jimple.infoflow.android.SetupApplication - ARSC file parsing took 0.098594668 seconds
+[main] INFO soot.jimple.infoflow.memory.MemoryWarningSystem - Registered a memory warning system for 4,915.35 MiB
 [main] INFO soot.jimple.infoflow.memory.FlowDroidTimeoutWatcher - FlowDroid timeout watcher started
 [main] INFO soot.jimple.infoflow.android.entryPointCreators.AndroidEntryPointCreator - Creating Android entry point for 81 components...
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class androidx.startup.InitializationProvider
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class androidx.multidex.MultiDexApplication
 [main] INFO soot.jimple.infoflow.android.SetupApplication - Constructing the callgraph...
-[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Layout class aero.panasonic.companion.view.widget.RestorePositionRecyclerView is not derived from android.view.View
-[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Layout class aero.panasonic.companion.view.widget.RestorePositionRecyclerView is not derived from android.view.View
-[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Layout class aero.panasonic.companion.view.widget.TruncationTextView is not derived from android.view.View
-[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Layout class aero.panasonic.companion.view.widget.RestorePositionRecyclerView is not derived from android.view.View
-[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Layout class aero.panasonic.companion.view.widget.CustomFab is not derived from android.view.View
-[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Layout class aero.panasonic.companion.view.widget.TruncationTextView is not derived from android.view.View
-[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Layout class aero.panasonic.companion.view.widget.TruncationTextView is not derived from android.view.View
-[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Layout class aero.panasonic.companion.view.widget.TruncationTextView is not derived from android.view.View
-[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Layout class aero.panasonic.companion.view.widget.ScrollingMediaLayout is not derived from android.view.View
-[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Layout class aero.panasonic.companion.view.widget.CustomViewPager is not derived from android.view.View
-[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Layout class aero.panasonic.companion.view.widget.TruncationTextView is not derived from android.view.View
-[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Layout class aero.panasonic.companion.view.featured.template1.FeaturedTemplateRecyclerView1 is not derived from android.view.View
-[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Layout class aero.panasonic.companion.view.featured.template2.FeaturedTemplateRecyclerView2 is not derived from android.view.View
-[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Layout class aero.panasonic.companion.view.widget.RestorePositionRecyclerView is not derived from android.view.View
-[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Layout class aero.panasonic.companion.view.entertainment.detail.BundleChildrenLayout is not derived from android.view.View
-[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Layout class aero.panasonic.companion.view.widget.TruncationTextView is not derived from android.view.View
-[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Layout class aero.panasonic.companion.view.widget.TruncationTextView is not derived from android.view.View
-[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Layout class aero.panasonic.companion.view.widget.GridRecyclerView is not derived from android.view.View
-[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Layout class aero.panasonic.companion.view.widget.RearrangeRecyclerView is not derived from android.view.View
-[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Layout class aero.panasonic.companion.view.widget.CustomFab is not derived from android.view.View
-[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Layout class aero.panasonic.companion.view.widget.ScrollingMediaLayout is not derived from android.view.View
-[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Layout class aero.panasonic.companion.view.widget.TruncationTextView is not derived from android.view.View
-[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Layout class aero.panasonic.companion.view.widget.TruncationTextView is not derived from android.view.View
-[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Layout class aero.panasonic.companion.view.widget.TruncationTextView is not derived from android.view.View
-[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Layout class aero.panasonic.companion.view.widget.TruncationTextView is not derived from android.view.View
-[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Layout class aero.panasonic.companion.view.widget.TruncationTextView is not derived from android.view.View
 [main] INFO soot.jimple.infoflow.android.callbacks.DefaultCallbackAnalyzer - Collecting callbacks in DEFAULT mode...
 [main] INFO soot.jimple.infoflow.android.callbacks.DefaultCallbackAnalyzer - Callback analysis done.
-[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Layout class aero.panasonic.companion.view.widget.RestorePositionRecyclerView is not derived from android.view.View
-[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Layout class aero.panasonic.companion.view.widget.RestorePositionRecyclerView is not derived from android.view.View
-[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Layout class aero.panasonic.companion.view.widget.TruncationTextView is not derived from android.view.View
-[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Layout class aero.panasonic.companion.view.widget.RestorePositionRecyclerView is not derived from android.view.View
-[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Layout class aero.panasonic.companion.view.widget.CustomFab is not derived from android.view.View
-[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Layout class aero.panasonic.companion.view.widget.TruncationTextView is not derived from android.view.View
-[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Layout class aero.panasonic.companion.view.widget.TruncationTextView is not derived from android.view.View
-[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Layout class aero.panasonic.companion.view.widget.TruncationTextView is not derived from android.view.View
-[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Layout class aero.panasonic.companion.view.widget.ScrollingMediaLayout is not derived from android.view.View
-[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Layout class aero.panasonic.companion.view.widget.CustomViewPager is not derived from android.view.View
-[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Layout class aero.panasonic.companion.view.widget.TruncationTextView is not derived from android.view.View
-[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Layout class aero.panasonic.companion.view.featured.template1.FeaturedTemplateRecyclerView1 is not derived from android.view.View
-[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Layout class aero.panasonic.companion.view.featured.template2.FeaturedTemplateRecyclerView2 is not derived from android.view.View
-[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Layout class aero.panasonic.companion.view.widget.RestorePositionRecyclerView is not derived from android.view.View
-[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Layout class aero.panasonic.companion.view.entertainment.detail.BundleChildrenLayout is not derived from android.view.View
-[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Layout class aero.panasonic.companion.view.widget.TruncationTextView is not derived from android.view.View
-[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Layout class aero.panasonic.companion.view.widget.TruncationTextView is not derived from android.view.View
-[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Layout class aero.panasonic.companion.view.widget.GridRecyclerView is not derived from android.view.View
-[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Layout class aero.panasonic.companion.view.widget.RearrangeRecyclerView is not derived from android.view.View
-[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Layout class aero.panasonic.companion.view.widget.CustomFab is not derived from android.view.View
-[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Layout class aero.panasonic.companion.view.widget.ScrollingMediaLayout is not derived from android.view.View
-[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Layout class aero.panasonic.companion.view.widget.TruncationTextView is not derived from android.view.View
-[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Layout class aero.panasonic.companion.view.widget.TruncationTextView is not derived from android.view.View
-[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Layout class aero.panasonic.companion.view.widget.TruncationTextView is not derived from android.view.View
-[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Layout class aero.panasonic.companion.view.widget.TruncationTextView is not derived from android.view.View
-[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Layout class aero.panasonic.companion.view.widget.TruncationTextView is not derived from android.view.View
 [main] INFO soot.jimple.infoflow.android.entryPointCreators.AndroidEntryPointCreator - Creating Android entry point for 81 components...
 [main] WARN soot.jimple.infoflow.android.entryPointCreators.components.FragmentEntryPointCreator - Cannot generate constructor for phantom class androidx.fragment.app.Fragment
-[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Cannot create valid constructor for aero.panasonic.companion.view.player.livetv.LiveTVMediaPlayerSkin$SystemUICallback, because it is an interface and cannot substitute with subclass
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.FragmentEntryPointCreator - Cannot generate constructor for phantom class androidx.fragment.app.Fragment
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Cannot create valid constructor for io.reactivex.ObservableEmitter, because it is an interface and cannot substitute with subclass
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ContentProviderEntryPointCreator - Cannot create valid constructor for com.mapbox.android.telemetry.location.LocationEngineController, because it is an interface and cannot substitute with subclass
 [main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Cannot create valid constructor for aero.panasonic.companion.view.player.MediaPlayerSkin1$CloseHandler, because it is an interface and cannot substitute with subclass
 [main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Cannot create valid constructor for aero.panasonic.companion.userdata.UserDataStore, because it is an interface and cannot substitute with subclass
 [main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Cannot create valid constructor for aero.panasonic.companion.model.media.dao.MediaDao, because it is an interface and cannot substitute with subclass
-[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Cannot generate constructor for phantom class com.fasterxml.jackson.databind.ObjectMapper
 [main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Cannot create valid constructor for aero.panasonic.companion.model.network.NetworkDao, because it is an interface and cannot substitute with subclass
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Cannot create valid constructor for io.reactivex.ObservableEmitter, because it is an interface and cannot substitute with subclass
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Cannot create valid constructor for io.reactivex.ObservableEmitter, because it is an interface and cannot substitute with subclass
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Cannot create valid constructor for aero.panasonic.companion.view.player.livetv.LiveTVMediaPlayerSkin$SystemUICallback, because it is an interface and cannot substitute with subclass
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Cannot create valid constructor for com.jumio.sdk.util.LocationUtil$LocationCallback, because it is an interface and cannot substitute with subclass
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Cannot create valid constructor for io.reactivex.ObservableEmitter, because it is an interface and cannot substitute with subclass
 [main] INFO soot.jimple.infoflow.android.SetupApplication - Constructing the callgraph...
-[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Layout class aero.panasonic.companion.view.widget.RestorePositionRecyclerView is not derived from android.view.View
-[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Layout class aero.panasonic.companion.view.widget.RestorePositionRecyclerView is not derived from android.view.View
-[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Layout class aero.panasonic.companion.view.widget.TruncationTextView is not derived from android.view.View
-[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Layout class aero.panasonic.companion.view.widget.RestorePositionRecyclerView is not derived from android.view.View
-[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Layout class aero.panasonic.companion.view.widget.CustomFab is not derived from android.view.View
-[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Layout class aero.panasonic.companion.view.widget.TruncationTextView is not derived from android.view.View
-[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Layout class aero.panasonic.companion.view.widget.TruncationTextView is not derived from android.view.View
-[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Layout class aero.panasonic.companion.view.widget.TruncationTextView is not derived from android.view.View
-[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Layout class aero.panasonic.companion.view.widget.ScrollingMediaLayout is not derived from android.view.View
-[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Layout class aero.panasonic.companion.view.widget.CustomViewPager is not derived from android.view.View
-[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Layout class aero.panasonic.companion.view.widget.TruncationTextView is not derived from android.view.View
-[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Layout class aero.panasonic.companion.view.featured.template1.FeaturedTemplateRecyclerView1 is not derived from android.view.View
-[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Layout class aero.panasonic.companion.view.featured.template2.FeaturedTemplateRecyclerView2 is not derived from android.view.View
-[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Layout class aero.panasonic.companion.view.widget.RestorePositionRecyclerView is not derived from android.view.View
-[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Layout class aero.panasonic.companion.view.entertainment.detail.BundleChildrenLayout is not derived from android.view.View
-[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Layout class aero.panasonic.companion.view.widget.TruncationTextView is not derived from android.view.View
-[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Layout class aero.panasonic.companion.view.widget.TruncationTextView is not derived from android.view.View
-[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Layout class aero.panasonic.companion.view.widget.GridRecyclerView is not derived from android.view.View
-[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Layout class aero.panasonic.companion.view.widget.RearrangeRecyclerView is not derived from android.view.View
-[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Layout class aero.panasonic.companion.view.widget.CustomFab is not derived from android.view.View
-[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Layout class aero.panasonic.companion.view.widget.ScrollingMediaLayout is not derived from android.view.View
-[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Layout class aero.panasonic.companion.view.widget.TruncationTextView is not derived from android.view.View
-[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Layout class aero.panasonic.companion.view.widget.TruncationTextView is not derived from android.view.View
-[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Layout class aero.panasonic.companion.view.widget.TruncationTextView is not derived from android.view.View
-[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Layout class aero.panasonic.companion.view.widget.TruncationTextView is not derived from android.view.View
-[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Layout class aero.panasonic.companion.view.widget.TruncationTextView is not derived from android.view.View
+[main] INFO soot.jimple.infoflow.android.callbacks.DefaultCallbackAnalyzer - Running incremental callback analysis for 82 components...
+[main] INFO soot.jimple.infoflow.android.callbacks.DefaultCallbackAnalyzer - Incremental callback analysis done.
+[main] INFO soot.jimple.infoflow.android.entryPointCreators.AndroidEntryPointCreator - Creating Android entry point for 82 components...
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.FragmentEntryPointCreator - Cannot generate constructor for phantom class androidx.fragment.app.Fragment
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.FragmentEntryPointCreator - Cannot generate constructor for phantom class androidx.fragment.app.Fragment
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Cannot create valid constructor for io.reactivex.ObservableEmitter, because it is an interface and cannot substitute with subclass
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ContentProviderEntryPointCreator - Cannot create valid constructor for com.mapbox.android.telemetry.location.LocationEngineController, because it is an interface and cannot substitute with subclass
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Cannot create valid constructor for aero.panasonic.companion.view.player.MediaPlayerSkin1$CloseHandler, because it is an interface and cannot substitute with subclass
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Cannot create valid constructor for aero.panasonic.companion.userdata.UserDataStore, because it is an interface and cannot substitute with subclass
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Cannot create valid constructor for aero.panasonic.companion.model.media.dao.MediaDao, because it is an interface and cannot substitute with subclass
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Cannot create valid constructor for aero.panasonic.companion.model.network.NetworkDao, because it is an interface and cannot substitute with subclass
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Cannot create valid constructor for io.reactivex.ObservableEmitter, because it is an interface and cannot substitute with subclass
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Cannot create valid constructor for io.reactivex.ObservableEmitter, because it is an interface and cannot substitute with subclass
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Cannot create valid constructor for aero.panasonic.companion.view.player.livetv.LiveTVMediaPlayerSkin$SystemUICallback, because it is an interface and cannot substitute with subclass
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Cannot create valid constructor for aero.panasonic.companion.view.appinfo.ParentalControlsActivity$OnDialogClickListener, because it is an interface and cannot substitute with subclass
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Cannot generate constructor for phantom class androidx.fragment.app.Fragment
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Cannot create valid constructor for com.jumio.sdk.util.LocationUtil$LocationCallback, because it is an interface and cannot substitute with subclass
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Cannot generate constructor for phantom class androidx.fragment.app.Fragment
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Cannot create valid constructor for io.reactivex.ObservableEmitter, because it is an interface and cannot substitute with subclass
+[main] INFO soot.jimple.infoflow.android.SetupApplication - Constructing the callgraph...
+[main] INFO soot.jimple.infoflow.android.callbacks.DefaultCallbackAnalyzer - Running incremental callback analysis for 49 components...
+[main] INFO soot.jimple.infoflow.android.callbacks.DefaultCallbackAnalyzer - Incremental callback analysis done.
+[main] INFO soot.jimple.infoflow.android.entryPointCreators.AndroidEntryPointCreator - Creating Android entry point for 82 components...
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.FragmentEntryPointCreator - Cannot generate constructor for phantom class androidx.fragment.app.Fragment
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.FragmentEntryPointCreator - Cannot generate constructor for phantom class androidx.fragment.app.Fragment
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Cannot create valid constructor for io.reactivex.ObservableEmitter, because it is an interface and cannot substitute with subclass
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ContentProviderEntryPointCreator - Cannot create valid constructor for com.mapbox.android.telemetry.location.LocationEngineController, because it is an interface and cannot substitute with subclass
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Cannot create valid constructor for aero.panasonic.companion.view.player.MediaPlayerSkin1$CloseHandler, because it is an interface and cannot substitute with subclass
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Cannot create valid constructor for aero.panasonic.companion.userdata.UserDataStore, because it is an interface and cannot substitute with subclass
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Cannot create valid constructor for aero.panasonic.companion.model.media.dao.MediaDao, because it is an interface and cannot substitute with subclass
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Cannot create valid constructor for aero.panasonic.companion.model.network.NetworkDao, because it is an interface and cannot substitute with subclass
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Cannot create valid constructor for io.reactivex.ObservableEmitter, because it is an interface and cannot substitute with subclass
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Cannot create valid constructor for io.reactivex.ObservableEmitter, because it is an interface and cannot substitute with subclass
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Cannot create valid constructor for aero.panasonic.companion.view.player.livetv.LiveTVMediaPlayerSkin$SystemUICallback, because it is an interface and cannot substitute with subclass
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Cannot create valid constructor for aero.panasonic.companion.view.appinfo.ParentalControlsActivity$OnDialogClickListener, because it is an interface and cannot substitute with subclass
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Cannot generate constructor for phantom class androidx.fragment.app.Fragment
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Cannot create valid constructor for com.jumio.sdk.util.LocationUtil$LocationCallback, because it is an interface and cannot substitute with subclass
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Cannot generate constructor for phantom class androidx.fragment.app.Fragment
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Cannot create valid constructor for io.reactivex.ObservableEmitter, because it is an interface and cannot substitute with subclass
+[main] INFO soot.jimple.infoflow.android.SetupApplication - Constructing the callgraph...
+[main] INFO soot.jimple.infoflow.android.callbacks.DefaultCallbackAnalyzer - Running incremental callback analysis for 44 components...
+[main] INFO soot.jimple.infoflow.android.callbacks.DefaultCallbackAnalyzer - Incremental callback analysis done.
+[main] INFO soot.jimple.infoflow.android.entryPointCreators.AndroidEntryPointCreator - Creating Android entry point for 82 components...
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.FragmentEntryPointCreator - Cannot generate constructor for phantom class androidx.fragment.app.Fragment
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.FragmentEntryPointCreator - Cannot generate constructor for phantom class androidx.fragment.app.Fragment
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Cannot create valid constructor for io.reactivex.ObservableEmitter, because it is an interface and cannot substitute with subclass
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ContentProviderEntryPointCreator - Cannot create valid constructor for com.mapbox.android.telemetry.location.LocationEngineController, because it is an interface and cannot substitute with subclass
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Cannot create valid constructor for aero.panasonic.companion.view.player.MediaPlayerSkin1$CloseHandler, because it is an interface and cannot substitute with subclass
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Cannot create valid constructor for aero.panasonic.companion.userdata.UserDataStore, because it is an interface and cannot substitute with subclass
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Cannot create valid constructor for aero.panasonic.companion.model.media.dao.MediaDao, because it is an interface and cannot substitute with subclass
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Cannot create valid constructor for aero.panasonic.companion.model.network.NetworkDao, because it is an interface and cannot substitute with subclass
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Cannot create valid constructor for io.reactivex.ObservableEmitter, because it is an interface and cannot substitute with subclass
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Cannot create valid constructor for io.reactivex.ObservableEmitter, because it is an interface and cannot substitute with subclass
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Cannot create valid constructor for aero.panasonic.companion.view.player.livetv.LiveTVMediaPlayerSkin$SystemUICallback, because it is an interface and cannot substitute with subclass
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Cannot create valid constructor for aero.panasonic.companion.view.appinfo.ParentalControlsActivity$OnDialogClickListener, because it is an interface and cannot substitute with subclass
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Cannot generate constructor for phantom class androidx.fragment.app.Fragment
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Cannot create valid constructor for com.jumio.sdk.util.LocationUtil$LocationCallback, because it is an interface and cannot substitute with subclass
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Cannot generate constructor for phantom class androidx.fragment.app.Fragment
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Cannot create valid constructor for io.reactivex.ObservableEmitter, because it is an interface and cannot substitute with subclass
+[main] INFO soot.jimple.infoflow.android.SetupApplication - Constructing the callgraph...
+[main] INFO soot.jimple.infoflow.android.callbacks.DefaultCallbackAnalyzer - Running incremental callback analysis for 43 components...
+[main] INFO soot.jimple.infoflow.android.callbacks.DefaultCallbackAnalyzer - Incremental callback analysis done.
+[main] INFO soot.jimple.infoflow.android.entryPointCreators.AndroidEntryPointCreator - Creating Android entry point for 82 components...
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.FragmentEntryPointCreator - Cannot generate constructor for phantom class androidx.fragment.app.Fragment
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.FragmentEntryPointCreator - Cannot generate constructor for phantom class androidx.fragment.app.Fragment
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Cannot create valid constructor for io.reactivex.ObservableEmitter, because it is an interface and cannot substitute with subclass
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ContentProviderEntryPointCreator - Cannot create valid constructor for com.mapbox.android.telemetry.location.LocationEngineController, because it is an interface and cannot substitute with subclass
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Cannot create valid constructor for aero.panasonic.companion.view.player.MediaPlayerSkin1$CloseHandler, because it is an interface and cannot substitute with subclass
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Cannot create valid constructor for aero.panasonic.companion.userdata.UserDataStore, because it is an interface and cannot substitute with subclass
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Cannot create valid constructor for aero.panasonic.companion.model.media.dao.MediaDao, because it is an interface and cannot substitute with subclass
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Cannot create valid constructor for aero.panasonic.companion.model.network.NetworkDao, because it is an interface and cannot substitute with subclass
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Cannot create valid constructor for io.reactivex.ObservableEmitter, because it is an interface and cannot substitute with subclass
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Cannot create valid constructor for io.reactivex.ObservableEmitter, because it is an interface and cannot substitute with subclass
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Cannot create valid constructor for aero.panasonic.companion.view.player.livetv.LiveTVMediaPlayerSkin$SystemUICallback, because it is an interface and cannot substitute with subclass
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Cannot create valid constructor for aero.panasonic.companion.view.appinfo.ParentalControlsActivity$OnDialogClickListener, because it is an interface and cannot substitute with subclass
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Cannot generate constructor for phantom class androidx.fragment.app.Fragment
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Cannot create valid constructor for com.jumio.sdk.util.LocationUtil$LocationCallback, because it is an interface and cannot substitute with subclass
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Cannot generate constructor for phantom class androidx.fragment.app.Fragment
+[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Cannot create valid constructor for io.reactivex.ObservableEmitter, because it is an interface and cannot substitute with subclass
+[main] INFO soot.jimple.infoflow.android.SetupApplication - Constructing the callgraph...
 [main] INFO soot.jimple.infoflow.android.callbacks.DefaultCallbackAnalyzer - Running incremental callback analysis for 38 components...
-[main] INFO soot.jimple.infoflow.android.callbacks.DefaultCallbackAnalyzer - Incremental callback analysis done.
-[main] INFO soot.jimple.infoflow.android.entryPointCreators.AndroidEntryPointCreator - Creating Android entry point for 81 components...
-[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.FragmentEntryPointCreator - Cannot generate constructor for phantom class androidx.fragment.app.Fragment
-[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Cannot create valid constructor for aero.panasonic.companion.view.player.livetv.LiveTVMediaPlayerSkin$SystemUICallback, because it is an interface and cannot substitute with subclass
-[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Cannot generate constructor for phantom class androidx.fragment.app.Fragment
-[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Cannot create valid constructor for aero.panasonic.companion.view.player.MediaPlayerSkin1$CloseHandler, because it is an interface and cannot substitute with subclass
-[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Cannot create valid constructor for aero.panasonic.companion.userdata.UserDataStore, because it is an interface and cannot substitute with subclass
-[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Cannot create valid constructor for aero.panasonic.companion.model.media.dao.MediaDao, because it is an interface and cannot substitute with subclass
-[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Cannot generate constructor for phantom class com.fasterxml.jackson.databind.ObjectMapper
-[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Cannot create valid constructor for aero.panasonic.companion.model.network.NetworkDao, because it is an interface and cannot substitute with subclass
-[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Cannot create valid constructor for aero.panasonic.companion.view.appinfo.ParentalControlsActivity$OnDialogClickListener, because it is an interface and cannot substitute with subclass
-[main] INFO soot.jimple.infoflow.android.SetupApplication - Constructing the callgraph...
-[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Layout class aero.panasonic.companion.view.widget.RestorePositionRecyclerView is not derived from android.view.View
-[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Layout class aero.panasonic.companion.view.widget.RestorePositionRecyclerView is not derived from android.view.View
-[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Layout class aero.panasonic.companion.view.widget.TruncationTextView is not derived from android.view.View
-[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Layout class aero.panasonic.companion.view.widget.RestorePositionRecyclerView is not derived from android.view.View
-[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Layout class aero.panasonic.companion.view.widget.CustomFab is not derived from android.view.View
-[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Layout class aero.panasonic.companion.view.widget.TruncationTextView is not derived from android.view.View
-[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Layout class aero.panasonic.companion.view.widget.TruncationTextView is not derived from android.view.View
-[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Layout class aero.panasonic.companion.view.widget.TruncationTextView is not derived from android.view.View
-[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Layout class aero.panasonic.companion.view.widget.ScrollingMediaLayout is not derived from android.view.View
-[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Layout class aero.panasonic.companion.view.widget.CustomViewPager is not derived from android.view.View
-[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Layout class aero.panasonic.companion.view.widget.TruncationTextView is not derived from android.view.View
-[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Layout class aero.panasonic.companion.view.featured.template1.FeaturedTemplateRecyclerView1 is not derived from android.view.View
-[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Layout class aero.panasonic.companion.view.featured.template2.FeaturedTemplateRecyclerView2 is not derived from android.view.View
-[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Layout class aero.panasonic.companion.view.widget.RestorePositionRecyclerView is not derived from android.view.View
-[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Layout class aero.panasonic.companion.view.entertainment.detail.BundleChildrenLayout is not derived from android.view.View
-[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Layout class aero.panasonic.companion.view.widget.TruncationTextView is not derived from android.view.View
-[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Layout class aero.panasonic.companion.view.widget.TruncationTextView is not derived from android.view.View
-[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Layout class aero.panasonic.companion.view.widget.GridRecyclerView is not derived from android.view.View
-[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Layout class aero.panasonic.companion.view.widget.RearrangeRecyclerView is not derived from android.view.View
-[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Layout class aero.panasonic.companion.view.widget.CustomFab is not derived from android.view.View
-[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Layout class aero.panasonic.companion.view.widget.ScrollingMediaLayout is not derived from android.view.View
-[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Layout class aero.panasonic.companion.view.widget.TruncationTextView is not derived from android.view.View
-[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Layout class aero.panasonic.companion.view.widget.TruncationTextView is not derived from android.view.View
-[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Layout class aero.panasonic.companion.view.widget.TruncationTextView is not derived from android.view.View
-[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Layout class aero.panasonic.companion.view.widget.TruncationTextView is not derived from android.view.View
-[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Layout class aero.panasonic.companion.view.widget.TruncationTextView is not derived from android.view.View
-[main] INFO soot.jimple.infoflow.android.callbacks.DefaultCallbackAnalyzer - Running incremental callback analysis for 31 components...
-[main] INFO soot.jimple.infoflow.android.callbacks.DefaultCallbackAnalyzer - Incremental callback analysis done.
-[main] INFO soot.jimple.infoflow.android.entryPointCreators.AndroidEntryPointCreator - Creating Android entry point for 81 components...
-[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.FragmentEntryPointCreator - Cannot generate constructor for phantom class androidx.fragment.app.Fragment
-[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Cannot create valid constructor for aero.panasonic.companion.view.player.livetv.LiveTVMediaPlayerSkin$SystemUICallback, because it is an interface and cannot substitute with subclass
-[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Cannot generate constructor for phantom class androidx.fragment.app.Fragment
-[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Cannot create valid constructor for aero.panasonic.companion.view.player.MediaPlayerSkin1$CloseHandler, because it is an interface and cannot substitute with subclass
-[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Cannot create valid constructor for aero.panasonic.companion.userdata.UserDataStore, because it is an interface and cannot substitute with subclass
-[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Cannot create valid constructor for aero.panasonic.companion.model.media.dao.MediaDao, because it is an interface and cannot substitute with subclass
-[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Cannot generate constructor for phantom class com.fasterxml.jackson.databind.ObjectMapper
-[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Cannot create valid constructor for aero.panasonic.companion.model.network.NetworkDao, because it is an interface and cannot substitute with subclass
-[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Cannot create valid constructor for aero.panasonic.companion.view.appinfo.ParentalControlsActivity$OnDialogClickListener, because it is an interface and cannot substitute with subclass
-[main] INFO soot.jimple.infoflow.android.SetupApplication - Constructing the callgraph...
-[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Layout class aero.panasonic.companion.view.widget.RestorePositionRecyclerView is not derived from android.view.View
-[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Layout class aero.panasonic.companion.view.widget.RestorePositionRecyclerView is not derived from android.view.View
-[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Layout class aero.panasonic.companion.view.widget.TruncationTextView is not derived from android.view.View
-[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Layout class aero.panasonic.companion.view.widget.RestorePositionRecyclerView is not derived from android.view.View
-[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Layout class aero.panasonic.companion.view.widget.CustomFab is not derived from android.view.View
-[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Layout class aero.panasonic.companion.view.widget.TruncationTextView is not derived from android.view.View
-[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Layout class aero.panasonic.companion.view.widget.TruncationTextView is not derived from android.view.View
-[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Layout class aero.panasonic.companion.view.widget.TruncationTextView is not derived from android.view.View
-[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Layout class aero.panasonic.companion.view.widget.ScrollingMediaLayout is not derived from android.view.View
-[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Layout class aero.panasonic.companion.view.widget.CustomViewPager is not derived from android.view.View
-[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Layout class aero.panasonic.companion.view.widget.TruncationTextView is not derived from android.view.View
-[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Layout class aero.panasonic.companion.view.featured.template1.FeaturedTemplateRecyclerView1 is not derived from android.view.View
-[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Layout class aero.panasonic.companion.view.featured.template2.FeaturedTemplateRecyclerView2 is not derived from android.view.View
-[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Layout class aero.panasonic.companion.view.widget.RestorePositionRecyclerView is not derived from android.view.View
-[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Layout class aero.panasonic.companion.view.entertainment.detail.BundleChildrenLayout is not derived from android.view.View
-[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Layout class aero.panasonic.companion.view.widget.TruncationTextView is not derived from android.view.View
-[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Layout class aero.panasonic.companion.view.widget.TruncationTextView is not derived from android.view.View
-[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Layout class aero.panasonic.companion.view.widget.GridRecyclerView is not derived from android.view.View
-[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Layout class aero.panasonic.companion.view.widget.RearrangeRecyclerView is not derived from android.view.View
-[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Layout class aero.panasonic.companion.view.widget.CustomFab is not derived from android.view.View
-[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Layout class aero.panasonic.companion.view.widget.ScrollingMediaLayout is not derived from android.view.View
-[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Layout class aero.panasonic.companion.view.widget.TruncationTextView is not derived from android.view.View
-[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Layout class aero.panasonic.companion.view.widget.TruncationTextView is not derived from android.view.View
-[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Layout class aero.panasonic.companion.view.widget.TruncationTextView is not derived from android.view.View
-[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Layout class aero.panasonic.companion.view.widget.TruncationTextView is not derived from android.view.View
-[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Layout class aero.panasonic.companion.view.widget.TruncationTextView is not derived from android.view.View
-[main] INFO soot.jimple.infoflow.android.callbacks.DefaultCallbackAnalyzer - Running incremental callback analysis for 30 components...
-[main] INFO soot.jimple.infoflow.android.callbacks.DefaultCallbackAnalyzer - Incremental callback analysis done.
-[main] INFO soot.jimple.infoflow.android.entryPointCreators.AndroidEntryPointCreator - Creating Android entry point for 81 components...
-[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.FragmentEntryPointCreator - Cannot generate constructor for phantom class androidx.fragment.app.Fragment
-[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Cannot create valid constructor for aero.panasonic.companion.view.player.livetv.LiveTVMediaPlayerSkin$SystemUICallback, because it is an interface and cannot substitute with subclass
-[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Cannot generate constructor for phantom class androidx.fragment.app.Fragment
-[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Cannot create valid constructor for aero.panasonic.companion.view.player.MediaPlayerSkin1$CloseHandler, because it is an interface and cannot substitute with subclass
-[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Cannot create valid constructor for aero.panasonic.companion.userdata.UserDataStore, because it is an interface and cannot substitute with subclass
-[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Cannot create valid constructor for aero.panasonic.companion.model.media.dao.MediaDao, because it is an interface and cannot substitute with subclass
-[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Cannot generate constructor for phantom class com.fasterxml.jackson.databind.ObjectMapper
-[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Cannot create valid constructor for aero.panasonic.companion.model.network.NetworkDao, because it is an interface and cannot substitute with subclass
-[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Cannot create valid constructor for aero.panasonic.companion.view.appinfo.ParentalControlsActivity$OnDialogClickListener, because it is an interface and cannot substitute with subclass
-[main] INFO soot.jimple.infoflow.android.SetupApplication - Constructing the callgraph...
-[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Layout class aero.panasonic.companion.view.widget.RestorePositionRecyclerView is not derived from android.view.View
-[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Layout class aero.panasonic.companion.view.widget.RestorePositionRecyclerView is not derived from android.view.View
-[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Layout class aero.panasonic.companion.view.widget.TruncationTextView is not derived from android.view.View
-[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Layout class aero.panasonic.companion.view.widget.RestorePositionRecyclerView is not derived from android.view.View
-[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Layout class aero.panasonic.companion.view.widget.CustomFab is not derived from android.view.View
-[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Layout class aero.panasonic.companion.view.widget.TruncationTextView is not derived from android.view.View
-[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Layout class aero.panasonic.companion.view.widget.TruncationTextView is not derived from android.view.View
-[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Layout class aero.panasonic.companion.view.widget.TruncationTextView is not derived from android.view.View
-[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Layout class aero.panasonic.companion.view.widget.ScrollingMediaLayout is not derived from android.view.View
-[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Layout class aero.panasonic.companion.view.widget.CustomViewPager is not derived from android.view.View
-[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Layout class aero.panasonic.companion.view.widget.TruncationTextView is not derived from android.view.View
-[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Layout class aero.panasonic.companion.view.featured.template1.FeaturedTemplateRecyclerView1 is not derived from android.view.View
-[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Layout class aero.panasonic.companion.view.featured.template2.FeaturedTemplateRecyclerView2 is not derived from android.view.View
-[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Layout class aero.panasonic.companion.view.widget.RestorePositionRecyclerView is not derived from android.view.View
-[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Layout class aero.panasonic.companion.view.entertainment.detail.BundleChildrenLayout is not derived from android.view.View
-[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Layout class aero.panasonic.companion.view.widget.TruncationTextView is not derived from android.view.View
-[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Layout class aero.panasonic.companion.view.widget.TruncationTextView is not derived from android.view.View
-[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Layout class aero.panasonic.companion.view.widget.GridRecyclerView is not derived from android.view.View
-[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Layout class aero.panasonic.companion.view.widget.RearrangeRecyclerView is not derived from android.view.View
-[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Layout class aero.panasonic.companion.view.widget.CustomFab is not derived from android.view.View
-[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Layout class aero.panasonic.companion.view.widget.ScrollingMediaLayout is not derived from android.view.View
-[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Layout class aero.panasonic.companion.view.widget.TruncationTextView is not derived from android.view.View
-[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Layout class aero.panasonic.companion.view.widget.TruncationTextView is not derived from android.view.View
-[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Layout class aero.panasonic.companion.view.widget.TruncationTextView is not derived from android.view.View
-[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Layout class aero.panasonic.companion.view.widget.TruncationTextView is not derived from android.view.View
-[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Layout class aero.panasonic.companion.view.widget.TruncationTextView is not derived from android.view.View
-[main] INFO soot.jimple.infoflow.android.callbacks.DefaultCallbackAnalyzer - Running incremental callback analysis for 30 components...
-[main] INFO soot.jimple.infoflow.android.callbacks.DefaultCallbackAnalyzer - Incremental callback analysis done.
-[main] INFO soot.jimple.infoflow.android.entryPointCreators.AndroidEntryPointCreator - Creating Android entry point for 81 components...
-[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.FragmentEntryPointCreator - Cannot generate constructor for phantom class androidx.fragment.app.Fragment
-[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Cannot create valid constructor for aero.panasonic.companion.view.player.livetv.LiveTVMediaPlayerSkin$SystemUICallback, because it is an interface and cannot substitute with subclass
-[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Cannot generate constructor for phantom class androidx.fragment.app.Fragment
-[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Cannot create valid constructor for aero.panasonic.companion.view.player.MediaPlayerSkin1$CloseHandler, because it is an interface and cannot substitute with subclass
-[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Cannot create valid constructor for aero.panasonic.companion.userdata.UserDataStore, because it is an interface and cannot substitute with subclass
-[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Cannot create valid constructor for aero.panasonic.companion.model.media.dao.MediaDao, because it is an interface and cannot substitute with subclass
-[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Cannot generate constructor for phantom class com.fasterxml.jackson.databind.ObjectMapper
-[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Cannot create valid constructor for aero.panasonic.companion.model.network.NetworkDao, because it is an interface and cannot substitute with subclass
-[main] WARN soot.jimple.infoflow.android.entryPointCreators.components.ActivityEntryPointCreator - Cannot create valid constructor for aero.panasonic.companion.view.appinfo.ParentalControlsActivity$OnDialogClickListener, because it is an interface and cannot substitute with subclass
-[main] INFO soot.jimple.infoflow.android.SetupApplication - Constructing the callgraph...
-[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Layout class aero.panasonic.companion.view.widget.RestorePositionRecyclerView is not derived from android.view.View
-[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Layout class aero.panasonic.companion.view.widget.RestorePositionRecyclerView is not derived from android.view.View
-[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Layout class aero.panasonic.companion.view.widget.TruncationTextView is not derived from android.view.View
-[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Layout class aero.panasonic.companion.view.widget.RestorePositionRecyclerView is not derived from android.view.View
-[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Layout class aero.panasonic.companion.view.widget.CustomFab is not derived from android.view.View
-[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Layout class aero.panasonic.companion.view.widget.TruncationTextView is not derived from android.view.View
-[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Layout class aero.panasonic.companion.view.widget.TruncationTextView is not derived from android.view.View
-[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Layout class aero.panasonic.companion.view.widget.TruncationTextView is not derived from android.view.View
-[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Layout class aero.panasonic.companion.view.widget.ScrollingMediaLayout is not derived from android.view.View
-[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Layout class aero.panasonic.companion.view.widget.CustomViewPager is not derived from android.view.View
-[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Layout class aero.panasonic.companion.view.widget.TruncationTextView is not derived from android.view.View
-[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Layout class aero.panasonic.companion.view.featured.template1.FeaturedTemplateRecyclerView1 is not derived from android.view.View
-[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Layout class aero.panasonic.companion.view.featured.template2.FeaturedTemplateRecyclerView2 is not derived from android.view.View
-[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Layout class aero.panasonic.companion.view.widget.RestorePositionRecyclerView is not derived from android.view.View
-[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Layout class aero.panasonic.companion.view.entertainment.detail.BundleChildrenLayout is not derived from android.view.View
-[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Layout class aero.panasonic.companion.view.widget.TruncationTextView is not derived from android.view.View
-[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Layout class aero.panasonic.companion.view.widget.TruncationTextView is not derived from android.view.View
-[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Layout class aero.panasonic.companion.view.widget.GridRecyclerView is not derived from android.view.View
-[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Layout class aero.panasonic.companion.view.widget.RearrangeRecyclerView is not derived from android.view.View
-[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Layout class aero.panasonic.companion.view.widget.CustomFab is not derived from android.view.View
-[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Layout class aero.panasonic.companion.view.widget.ScrollingMediaLayout is not derived from android.view.View
-[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Layout class aero.panasonic.companion.view.widget.TruncationTextView is not derived from android.view.View
-[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Layout class aero.panasonic.companion.view.widget.TruncationTextView is not derived from android.view.View
-[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Layout class aero.panasonic.companion.view.widget.TruncationTextView is not derived from android.view.View
-[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Layout class aero.panasonic.companion.view.widget.TruncationTextView is not derived from android.view.View
-[main] WARN soot.jimple.infoflow.android.resources.LayoutFileParser - Layout class aero.panasonic.companion.view.widget.TruncationTextView is not derived from android.view.View
-[main] INFO soot.jimple.infoflow.android.callbacks.DefaultCallbackAnalyzer - Running incremental callback analysis for 30 components...
 [main] INFO soot.jimple.infoflow.android.callbacks.DefaultCallbackAnalyzer - Incremental callback analysis done.
 [main] INFO soot.jimple.infoflow.memory.MemoryWarningSystem - Shutting down the memory warning system...
 [main] INFO soot.jimple.infoflow.android.SetupApplication - Callback analysis terminated normally
@@ -272,9 +125,9 @@
 [main] WARN soot.jimple.infoflow.android.data.parsers.PermissionMethodParser - Line does not match: <org.apache.xmlrpc.webserver.RequestData: java.lang.String getHttpVersion)> -> _SOURCE_
 [main] WARN soot.jimple.infoflow.android.data.parsers.PermissionMethodParser - Line does not match: <org.apache.xmlrpc.webserver.HttpServletRequestImpl: void parseParameters)> -> _SOURCE_
 [main] WARN soot.jimple.infoflow.android.data.parsers.PermissionMethodParser - Line does not match:     
-[main] INFO soot.jimple.infoflow.android.source.AccessPathBasedSourceSinkManager - Created a SourceSinkManager with 71 sources, 193 sinks, and 177 callback methods.
-[main] INFO soot.jimple.infoflow.android.SetupApplication - Collecting callbacks and building a callgraph took 26 seconds
-[main] INFO soot.jimple.infoflow.android.SetupApplication - Running data flow analysis on /home/yacine/Art/static_analysis/APKs/com.hawaiianairlines.app.apk with 71 sources and 193 sinks...
+[main] INFO soot.jimple.infoflow.android.source.AccessPathBasedSourceSinkManager - Created a SourceSinkManager with 71 sources, 193 sinks, and 407 callback methods.
+[main] INFO soot.jimple.infoflow.android.SetupApplication - Collecting callbacks and building a callgraph took 165 seconds
+[main] INFO soot.jimple.infoflow.android.SetupApplication - Running data flow analysis on /mnt/aiongpfs/users/mbenali/static_analysis/APKs/com.hawaiianairlines.app.apk with 71 sources and 193 sinks...
 [main] INFO soot.jimple.infoflow.InfoflowConfiguration - Implicit flow tracking is NOT enabled
 [main] INFO soot.jimple.infoflow.InfoflowConfiguration - Exceptional flow tracking is enabled
 [main] INFO soot.jimple.infoflow.InfoflowConfiguration - Running with a maximum access path length of 5
@@ -282,27 +135,25 @@
 [main] INFO soot.jimple.infoflow.InfoflowConfiguration - Recursive access path shortening is enabled
 [main] INFO soot.jimple.infoflow.InfoflowConfiguration - Taint analysis enabled: true
 [main] INFO soot.jimple.infoflow.InfoflowConfiguration - Using alias algorithm FlowSensitive
-[main] INFO soot.jimple.infoflow.memory.MemoryWarningSystem - Registered a memory warning system for 14,450.4 MiB
+[main] INFO soot.jimple.infoflow.memory.MemoryWarningSystem - Registered a memory warning system for 4,915.35 MiB
+[FlowDroid Timeout Watcher] INFO soot.jimple.infoflow.memory.FlowDroidTimeoutWatcher - FlowDroid timeout watcher terminated
 [main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - Callgraph construction took 0 seconds
 [main] INFO soot.jimple.infoflow.codeOptimization.InterproceduralConstantValuePropagator - Removing side-effect free methods is disabled
-[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - Dead code elimination took 0.447554708 seconds
-[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - Callgraph has 11745 edges
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - Dead code elimination took 2.396020177 seconds
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - Callgraph has 34690 edges
 [main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - Starting Taint Analysis
 [main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - Using context- and flow-sensitive solver
 [main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - Using context- and flow-sensitive solver
-[main] INFO soot.jimple.infoflow.memory.FlowDroidTimeoutWatcher - FlowDroid timeout watcher started
 [main] WARN soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - Running with limited join point abstractions can break context-sensitive path builders
 [main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - Looking for sources and sinks...
-[FlowDroid Timeout Watcher] INFO soot.jimple.infoflow.memory.FlowDroidTimeoutWatcher - FlowDroid timeout watcher terminated
-[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - Source lookup done, found 3 sources and 63 sinks.
-[Low memory monitor] INFO soot.jimple.infoflow.memory.MemoryWarningSystem - Triggering memory warning at 15321 MB (16835 MB max, 15200 in watched memory pool)...
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - Source lookup done, found 42 sources and 210 sinks.
+[Low memory monitor] INFO soot.jimple.infoflow.memory.MemoryWarningSystem - Triggering memory warning at 5379 MB (5726 MB max, 5160 in watched memory pool)...
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - Taint wrapper hits: 345207
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - Taint wrapper misses: 14197343
 [Low memory monitor] WARN soot.jimple.infoflow.memory.FlowDroidMemoryWatcher - Running out of memory, solvers terminated
-[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - Taint wrapper hits: 593581
-[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - Taint wrapper misses: 35529094
-[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - IFDS problem with 27788088 forward and 30747554 backward edges solved in 180 seconds, processing 212 results...
-[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - Current memory consumption: 15326 MB
-[FlowDroid Timeout Watcher] INFO soot.jimple.infoflow.memory.FlowDroidTimeoutWatcher - FlowDroid timeout watcher terminated
-[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - Memory consumption after cleanup: 4788 MB
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - IFDS problem with 11075138 forward and 14514020 backward edges solved in 153 seconds, processing 243 results...
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - Current memory consumption: 5425 MB
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - Memory consumption after cleanup: 2393 MB
 [main] INFO soot.jimple.infoflow.memory.FlowDroidTimeoutWatcher - FlowDroid timeout watcher started
 [main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$ShutdownBatchPathBuilder - Running path reconstruction batch 1 with 5 elements
 [main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Obtainted 5 connections between sources and sinks
@@ -313,12 +164,34 @@
 [main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 5...
 [main] ERROR soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Could not wait for executor termination
 java.lang.InterruptedException
-	at java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer.tryAcquireSharedNanos(AbstractQueuedSynchronizer.java:1133)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.tryAcquireSharedNanos(AbstractQueuedSynchronizer.java:1326)
 	at heros.solver.CountLatch.awaitZero(CountLatch.java:79)
 	at heros.solver.CountingThreadPoolExecutor.awaitCompletion(CountingThreadPoolExecutor.java:86)
 	at soot.jimple.infoflow.solver.executors.InterruptableExecutor.awaitCompletion(InterruptableExecutor.java:88)
 	at soot.jimple.infoflow.data.pathBuilders.ContextSensitivePathBuilder.computeTaintPaths(ContextSensitivePathBuilder.java:270)
 	at soot.jimple.infoflow.data.pathBuilders.BatchPathBuilder.computeTaintPaths(BatchPathBuilder.java:47)
+	at soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$ShutdownBatchPathBuilder.computeTaintPaths(DefaultPathBuilderFactory.java:56)
+	at soot.jimple.infoflow.AbstractInfoflow.runTaintAnalysis(AbstractInfoflow.java:1107)
+	at soot.jimple.infoflow.AbstractInfoflow.runAnalysis(AbstractInfoflow.java:634)
+	at soot.jimple.infoflow.AbstractInfoflow.runAnalysis(AbstractInfoflow.java:567)
+	at soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow.runAnalysis(SetupApplication.java:1320)
+	at soot.jimple.infoflow.android.SetupApplication.processEntryPoint(SetupApplication.java:1609)
+	at soot.jimple.infoflow.android.SetupApplication.runInfoflow(SetupApplication.java:1544)
+	at soot.jimple.infoflow.android.SetupApplication.runInfoflow(SetupApplication.java:1491)
+	at soot.jimple.infoflow.cmd.MainClass.run(MainClass.java:358)
+	at soot.jimple.infoflow.cmd.MainClass.main(MainClass.java:256)
+[FlowDroid Timeout Watcher] WARN soot.jimple.infoflow.memory.FlowDroidTimeoutWatcher - Timeout reached, stopping the solvers...
+[FlowDroid Timeout Watcher] WARN soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Path reconstruction terminated due to low memory
+[FlowDroid Timeout Watcher] WARN soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Path reconstruction terminated due to low memory
+[FlowDroid Timeout Watcher] INFO soot.jimple.infoflow.memory.FlowDroidTimeoutWatcher - FlowDroid timeout watcher terminated
+[main] ERROR soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$ShutdownBatchPathBuilder - Could not wait for executor termination
+java.lang.InterruptedException
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.doAcquireSharedNanos(AbstractQueuedSynchronizer.java:1039)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.tryAcquireSharedNanos(AbstractQueuedSynchronizer.java:1328)
+	at heros.solver.CountLatch.awaitZero(CountLatch.java:79)
+	at heros.solver.CountingThreadPoolExecutor.awaitCompletion(CountingThreadPoolExecutor.java:86)
+	at soot.jimple.infoflow.solver.executors.InterruptableExecutor.awaitCompletion(InterruptableExecutor.java:88)
+	at soot.jimple.infoflow.data.pathBuilders.BatchPathBuilder.computeTaintPaths(BatchPathBuilder.java:64)
 	at soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$ShutdownBatchPathBuilder.computeTaintPaths(DefaultPathBuilderFactory.java:56)
 	at soot.jimple.infoflow.AbstractInfoflow.runTaintAnalysis(AbstractInfoflow.java:1107)
 	at soot.jimple.infoflow.AbstractInfoflow.runAnalysis(AbstractInfoflow.java:634)
@@ -336,27 +209,9 @@ java.lang.InterruptedException
 [main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 3...
 [main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 4...
 [main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 5...
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$ShutdownBatchPathBuilder - Running path reconstruction batch 3 with 5 elements
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Obtainted 5 connections between sources and sinks
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 1...
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 2...
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 3...
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 4...
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 5...
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$ShutdownBatchPathBuilder - Running path reconstruction batch 4 with 5 elements
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Obtainted 5 connections between sources and sinks
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 1...
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 2...
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 3...
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 4...
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 5...
-[FlowDroid Timeout Watcher] WARN soot.jimple.infoflow.memory.FlowDroidTimeoutWatcher - Timeout reached, stopping the solvers...
-[FlowDroid Timeout Watcher] WARN soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Path reconstruction terminated due to low memory
-[FlowDroid Timeout Watcher] WARN soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Path reconstruction terminated due to low memory
-[FlowDroid Timeout Watcher] INFO soot.jimple.infoflow.memory.FlowDroidTimeoutWatcher - FlowDroid timeout watcher terminated
 [main] ERROR soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Could not wait for executor termination
 java.lang.InterruptedException
-	at java.base/java.util.concurrent.locks.AbstractQueuedSynchronizer.tryAcquireSharedNanos(AbstractQueuedSynchronizer.java:1133)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.tryAcquireSharedNanos(AbstractQueuedSynchronizer.java:1326)
 	at heros.solver.CountLatch.awaitZero(CountLatch.java:79)
 	at heros.solver.CountingThreadPoolExecutor.awaitCompletion(CountingThreadPoolExecutor.java:86)
 	at soot.jimple.infoflow.solver.executors.InterruptableExecutor.awaitCompletion(InterruptableExecutor.java:88)
@@ -372,6 +227,20 @@ java.lang.InterruptedException
 	at soot.jimple.infoflow.android.SetupApplication.runInfoflow(SetupApplication.java:1491)
 	at soot.jimple.infoflow.cmd.MainClass.run(MainClass.java:358)
 	at soot.jimple.infoflow.cmd.MainClass.main(MainClass.java:256)
+[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$ShutdownBatchPathBuilder - Running path reconstruction batch 3 with 5 elements
+[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Obtainted 5 connections between sources and sinks
+[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 1...
+[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 2...
+[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 3...
+[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 4...
+[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 5...
+[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$ShutdownBatchPathBuilder - Running path reconstruction batch 4 with 5 elements
+[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Obtainted 5 connections between sources and sinks
+[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 1...
+[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 2...
+[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 3...
+[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 4...
+[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 5...
 [main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$ShutdownBatchPathBuilder - Running path reconstruction batch 5 with 5 elements
 [main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Obtainted 5 connections between sources and sinks
 [main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 1...
@@ -442,349 +311,3 @@ java.lang.InterruptedException
 [main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 3...
 [main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 4...
 [main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 5...
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$ShutdownBatchPathBuilder - Running path reconstruction batch 15 with 5 elements
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Obtainted 5 connections between sources and sinks
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 1...
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 2...
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 3...
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 4...
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 5...
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$ShutdownBatchPathBuilder - Running path reconstruction batch 16 with 5 elements
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Obtainted 5 connections between sources and sinks
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 1...
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 2...
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 3...
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 4...
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 5...
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$ShutdownBatchPathBuilder - Running path reconstruction batch 17 with 5 elements
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Obtainted 5 connections between sources and sinks
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 1...
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 2...
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 3...
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 4...
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 5...
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$ShutdownBatchPathBuilder - Running path reconstruction batch 18 with 5 elements
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Obtainted 5 connections between sources and sinks
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 1...
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 2...
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 3...
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 4...
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 5...
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$ShutdownBatchPathBuilder - Running path reconstruction batch 19 with 5 elements
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Obtainted 5 connections between sources and sinks
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 1...
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 2...
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 3...
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 4...
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 5...
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$ShutdownBatchPathBuilder - Running path reconstruction batch 20 with 5 elements
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Obtainted 5 connections between sources and sinks
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 1...
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 2...
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 3...
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 4...
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 5...
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$ShutdownBatchPathBuilder - Running path reconstruction batch 21 with 5 elements
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Obtainted 5 connections between sources and sinks
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 1...
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 2...
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 3...
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 4...
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 5...
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$ShutdownBatchPathBuilder - Running path reconstruction batch 22 with 5 elements
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Obtainted 5 connections between sources and sinks
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 1...
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 2...
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 3...
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 4...
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 5...
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$ShutdownBatchPathBuilder - Running path reconstruction batch 23 with 5 elements
-[Path reconstruction] WARN soot.jimple.infoflow.solver.executors.InterruptableExecutor - Executor has terminated. Call reset() before submitting new tasks.
-[Path reconstruction] WARN soot.jimple.infoflow.solver.executors.InterruptableExecutor - Executor has terminated. Call reset() before submitting new tasks.
-[Path reconstruction] WARN soot.jimple.infoflow.solver.executors.InterruptableExecutor - Executor has terminated. Call reset() before submitting new tasks.
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Obtainted 5 connections between sources and sinks
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 1...
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 2...
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 3...
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 4...
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 5...
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$ShutdownBatchPathBuilder - Running path reconstruction batch 24 with 5 elements
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Obtainted 5 connections between sources and sinks
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 1...
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 2...
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 3...
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 4...
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 5...
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$ShutdownBatchPathBuilder - Running path reconstruction batch 25 with 5 elements
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Obtainted 5 connections between sources and sinks
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 1...
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 2...
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 3...
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 4...
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 5...
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$ShutdownBatchPathBuilder - Running path reconstruction batch 26 with 5 elements
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Obtainted 5 connections between sources and sinks
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 1...
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 2...
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 3...
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 4...
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 5...
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$ShutdownBatchPathBuilder - Running path reconstruction batch 27 with 5 elements
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Obtainted 5 connections between sources and sinks
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 1...
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 2...
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 3...
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 4...
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 5...
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$ShutdownBatchPathBuilder - Running path reconstruction batch 28 with 5 elements
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Obtainted 5 connections between sources and sinks
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 1...
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 2...
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 3...
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 4...
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 5...
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$ShutdownBatchPathBuilder - Running path reconstruction batch 29 with 5 elements
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Obtainted 5 connections between sources and sinks
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 1...
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 2...
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 3...
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 4...
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 5...
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$ShutdownBatchPathBuilder - Running path reconstruction batch 30 with 5 elements
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Obtainted 5 connections between sources and sinks
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 1...
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 2...
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 3...
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 4...
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 5...
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$ShutdownBatchPathBuilder - Running path reconstruction batch 31 with 5 elements
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Obtainted 5 connections between sources and sinks
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 1...
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 2...
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 3...
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 4...
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 5...
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$ShutdownBatchPathBuilder - Running path reconstruction batch 32 with 5 elements
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Obtainted 5 connections between sources and sinks
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 1...
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 2...
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 3...
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 4...
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 5...
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$ShutdownBatchPathBuilder - Running path reconstruction batch 33 with 5 elements
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Obtainted 5 connections between sources and sinks
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 1...
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 2...
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 3...
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 4...
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 5...
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$ShutdownBatchPathBuilder - Running path reconstruction batch 34 with 5 elements
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Obtainted 5 connections between sources and sinks
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 1...
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 2...
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 3...
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 4...
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 5...
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$ShutdownBatchPathBuilder - Running path reconstruction batch 35 with 5 elements
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Obtainted 5 connections between sources and sinks
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 1...
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 2...
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 3...
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 4...
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 5...
-[Path reconstruction] WARN soot.jimple.infoflow.solver.executors.InterruptableExecutor - Executor has terminated. Call reset() before submitting new tasks.
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$ShutdownBatchPathBuilder - Running path reconstruction batch 36 with 5 elements
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Obtainted 5 connections between sources and sinks
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 1...
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 2...
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 3...
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 4...
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 5...
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$ShutdownBatchPathBuilder - Running path reconstruction batch 37 with 5 elements
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Obtainted 5 connections between sources and sinks
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 1...
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 2...
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 3...
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 4...
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 5...
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$ShutdownBatchPathBuilder - Running path reconstruction batch 38 with 5 elements
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Obtainted 5 connections between sources and sinks
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 1...
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 2...
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 3...
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 4...
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 5...
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$ShutdownBatchPathBuilder - Running path reconstruction batch 39 with 5 elements
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Obtainted 5 connections between sources and sinks
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 1...
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 2...
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 3...
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 4...
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 5...
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$ShutdownBatchPathBuilder - Running path reconstruction batch 40 with 5 elements
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Obtainted 5 connections between sources and sinks
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 1...
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 2...
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 3...
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 4...
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 5...
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$ShutdownBatchPathBuilder - Running path reconstruction batch 41 with 5 elements
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Obtainted 5 connections between sources and sinks
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 1...
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 2...
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 3...
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 4...
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 5...
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$ShutdownBatchPathBuilder - Running path reconstruction batch 42 with 5 elements
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Obtainted 5 connections between sources and sinks
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 1...
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 2...
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 3...
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 4...
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 5...
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$ShutdownBatchPathBuilder - Running path reconstruction batch 43 with 2 elements
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Obtainted 2 connections between sources and sinks
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 1...
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 2...
-[main] INFO soot.jimple.infoflow.memory.MemoryWarningSystem - Shutting down the memory warning system...
-[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - Memory consumption after path building: 15423 MB
-[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - Path reconstruction took 30517 seconds
-[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - The sink virtualinvoke $r0.<androidx.activity.ComponentActivity: void startActivityForResult(android.content.Intent,int,android.os.Bundle)>(null, 0, null) in method <dummyMainClass: aero.panasonic.companion.view.maps.MapsActivity dummyMainMethod_aero_panasonic_companion_view_maps_MapsActivity(android.content.Intent)> was called with values from the following sources:
-[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r4 = virtualinvoke $r8.<android.net.wifi.WifiInfo: java.lang.String getSSID()>() in method <aero.panasonic.companion.view.LifeCycleHookActivity: java.lang.String createHash()>
-[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - The sink virtualinvoke $r0.<androidx.activity.ComponentActivity: void startActivityForResult(android.content.Intent,int,android.os.Bundle)>(null, 0, null) in method <dummyMainClass: aero.panasonic.companion.view.KidsZoneActivity dummyMainMethod_aero_panasonic_companion_view_KidsZoneActivity(android.content.Intent)> was called with values from the following sources:
-[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r4 = virtualinvoke $r8.<android.net.wifi.WifiInfo: java.lang.String getSSID()>() in method <aero.panasonic.companion.view.LifeCycleHookActivity: java.lang.String createHash()>
-[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - The sink virtualinvoke $r0.<androidx.activity.ComponentActivity: void startActivityForResult(android.content.Intent,int)>(null, 0) in method <dummyMainClass: aero.panasonic.companion.view.entertainment.detail.PaymentFormActivity dummyMainMethod_aero_panasonic_companion_view_entertainment_detail_PaymentFormActivity(android.content.Intent)> was called with values from the following sources:
-[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r4 = virtualinvoke $r8.<android.net.wifi.WifiInfo: java.lang.String getSSID()>() in method <aero.panasonic.companion.view.LifeCycleHookActivity: java.lang.String createHash()>
-[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - The sink virtualinvoke $r0.<androidx.activity.ComponentActivity: void startActivityForResult(android.content.Intent,int)>(null, 0) in method <dummyMainClass: aero.panasonic.companion.view.entertainment.MediaActivity dummyMainMethod_aero_panasonic_companion_view_entertainment_MediaActivity(android.content.Intent)> was called with values from the following sources:
-[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r4 = virtualinvoke $r8.<android.net.wifi.WifiInfo: java.lang.String getSSID()>() in method <aero.panasonic.companion.view.LifeCycleHookActivity: java.lang.String createHash()>
-[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - The sink virtualinvoke $r0.<androidx.activity.ComponentActivity: void startActivityForResult(android.content.Intent,int,android.os.Bundle)>(null, 0, null) in method <dummyMainClass: aero.panasonic.companion.view.favorites.FavoritesActivity dummyMainMethod_aero_panasonic_companion_view_favorites_FavoritesActivity(android.content.Intent)> was called with values from the following sources:
-[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r4 = virtualinvoke $r8.<android.net.wifi.WifiInfo: java.lang.String getSSID()>() in method <aero.panasonic.companion.view.LifeCycleHookActivity: java.lang.String createHash()>
-[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - The sink virtualinvoke $r0.<androidx.activity.ComponentActivity: void startActivityForResult(android.content.Intent,int,android.os.Bundle)>(null, 0, null) in method <dummyMainClass: aero.panasonic.companion.view.news.ArticleViewActivity dummyMainMethod_aero_panasonic_companion_view_news_ArticleViewActivity(android.content.Intent)> was called with values from the following sources:
-[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r4 = virtualinvoke $r8.<android.net.wifi.WifiInfo: java.lang.String getSSID()>() in method <aero.panasonic.companion.view.LifeCycleHookActivity: java.lang.String createHash()>
-[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - The sink virtualinvoke $r0.<androidx.activity.ComponentActivity: void startActivityForResult(android.content.Intent,int,android.os.Bundle)>(null, 0, null) in method <dummyMainClass: aero.panasonic.companion.view.WebActivity dummyMainMethod_aero_panasonic_companion_view_WebActivity(android.content.Intent)> was called with values from the following sources:
-[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r4 = virtualinvoke $r8.<android.net.wifi.WifiInfo: java.lang.String getSSID()>() in method <aero.panasonic.companion.view.LifeCycleHookActivity: java.lang.String createHash()>
-[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - The sink virtualinvoke $r0.<androidx.activity.ComponentActivity: void startActivityForResult(android.content.Intent,int)>(null, 0) in method <dummyMainClass: aero.panasonic.companion.view.WebActivity dummyMainMethod_aero_panasonic_companion_view_WebActivity(android.content.Intent)> was called with values from the following sources:
-[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r4 = virtualinvoke $r8.<android.net.wifi.WifiInfo: java.lang.String getSSID()>() in method <aero.panasonic.companion.view.LifeCycleHookActivity: java.lang.String createHash()>
-[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - The sink virtualinvoke $r0.<androidx.activity.ComponentActivity: void startActivityForResult(android.content.Intent,int,android.os.Bundle)>(null, 0, null) in method <dummyMainClass: aero.panasonic.companion.view.news.NewsActivity dummyMainMethod_aero_panasonic_companion_view_news_NewsActivity(android.content.Intent)> was called with values from the following sources:
-[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r4 = virtualinvoke $r8.<android.net.wifi.WifiInfo: java.lang.String getSSID()>() in method <aero.panasonic.companion.view.LifeCycleHookActivity: java.lang.String createHash()>
-[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - The sink virtualinvoke $r0.<androidx.activity.ComponentActivity: void startActivityForResult(android.content.Intent,int)>(null, 0) in method <dummyMainClass: aero.panasonic.companion.view.entertainment.playlist.PlaylistActivity dummyMainMethod_aero_panasonic_companion_view_entertainment_playlist_PlaylistActivity(android.content.Intent)> was called with values from the following sources:
-[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r4 = virtualinvoke $r8.<android.net.wifi.WifiInfo: java.lang.String getSSID()>() in method <aero.panasonic.companion.view.LifeCycleHookActivity: java.lang.String createHash()>
-[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - The sink virtualinvoke $r0.<androidx.activity.ComponentActivity: void startActivityForResult(android.content.Intent,int)>(null, 0) in method <dummyMainClass: aero.panasonic.companion.view.remotecontrol.RemoteControlActivity dummyMainMethod_aero_panasonic_companion_view_remotecontrol_RemoteControlActivity(android.content.Intent)> was called with values from the following sources:
-[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r4 = virtualinvoke $r8.<android.net.wifi.WifiInfo: java.lang.String getSSID()>() in method <aero.panasonic.companion.view.LifeCycleHookActivity: java.lang.String createHash()>
-[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - The sink virtualinvoke $r0.<androidx.activity.ComponentActivity: void startActivityForResult(android.content.Intent,int)>(null, 0) in method <dummyMainClass: aero.panasonic.companion.view.favorites.FavoritesActivity dummyMainMethod_aero_panasonic_companion_view_favorites_FavoritesActivity(android.content.Intent)> was called with values from the following sources:
-[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r4 = virtualinvoke $r8.<android.net.wifi.WifiInfo: java.lang.String getSSID()>() in method <aero.panasonic.companion.view.LifeCycleHookActivity: java.lang.String createHash()>
-[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - The sink virtualinvoke $r0.<androidx.activity.ComponentActivity: void startActivityForResult(android.content.Intent,int,android.os.Bundle)>(null, 0, null) in method <dummyMainClass: aero.panasonic.companion.view.entertainment.detail.MediaDetailActivity dummyMainMethod_aero_panasonic_companion_view_entertainment_detail_MediaDetailActivity(android.content.Intent)> was called with values from the following sources:
-[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r4 = virtualinvoke $r8.<android.net.wifi.WifiInfo: java.lang.String getSSID()>() in method <aero.panasonic.companion.view.LifeCycleHookActivity: java.lang.String createHash()>
-[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - The sink virtualinvoke $r0.<androidx.activity.ComponentActivity: void startActivityForResult(android.content.Intent,int)>(null, 0) in method <dummyMainClass: aero.panasonic.companion.view.shopping.ShoppingBagActivity dummyMainMethod_aero_panasonic_companion_view_shopping_ShoppingBagActivity(android.content.Intent)> was called with values from the following sources:
-[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r4 = virtualinvoke $r8.<android.net.wifi.WifiInfo: java.lang.String getSSID()>() in method <aero.panasonic.companion.view.LifeCycleHookActivity: java.lang.String createHash()>
-[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - The sink virtualinvoke $r0.<androidx.activity.ComponentActivity: void startActivityForResult(android.content.Intent,int,android.os.Bundle)>(null, 0, null) in method <dummyMainClass: aero.panasonic.companion.view.entertainment.playlist.PlaylistActivity dummyMainMethod_aero_panasonic_companion_view_entertainment_playlist_PlaylistActivity(android.content.Intent)> was called with values from the following sources:
-[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r4 = virtualinvoke $r8.<android.net.wifi.WifiInfo: java.lang.String getSSID()>() in method <aero.panasonic.companion.view.LifeCycleHookActivity: java.lang.String createHash()>
-[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - The sink virtualinvoke $r0.<androidx.activity.ComponentActivity: void startActivityForResult(android.content.Intent,int)>(null, 0) in method <dummyMainClass: aero.panasonic.companion.view.NoticeActivity dummyMainMethod_aero_panasonic_companion_view_NoticeActivity(android.content.Intent)> was called with values from the following sources:
-[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r4 = virtualinvoke $r8.<android.net.wifi.WifiInfo: java.lang.String getSSID()>() in method <aero.panasonic.companion.view.LifeCycleHookActivity: java.lang.String createHash()>
-[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - The sink virtualinvoke $r0.<androidx.activity.ComponentActivity: void startActivityForResult(android.content.Intent,int)>(null, 0) in method <dummyMainClass: aero.panasonic.companion.view.appinfo.AppInfoActivity dummyMainMethod_aero_panasonic_companion_view_appinfo_AppInfoActivity(android.content.Intent)> was called with values from the following sources:
-[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r4 = virtualinvoke $r8.<android.net.wifi.WifiInfo: java.lang.String getSSID()>() in method <aero.panasonic.companion.view.LifeCycleHookActivity: java.lang.String createHash()>
-[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - The sink virtualinvoke $r0.<androidx.activity.ComponentActivity: void startActivityForResult(android.content.Intent,int)>(null, 0) in method <dummyMainClass: aero.panasonic.companion.view.maps.MapsActivity dummyMainMethod_aero_panasonic_companion_view_maps_MapsActivity(android.content.Intent)> was called with values from the following sources:
-[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r4 = virtualinvoke $r8.<android.net.wifi.WifiInfo: java.lang.String getSSID()>() in method <aero.panasonic.companion.view.LifeCycleHookActivity: java.lang.String createHash()>
-[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - The sink virtualinvoke $r0.<androidx.activity.ComponentActivity: void startActivityForResult(android.content.Intent,int,android.os.Bundle)>(null, 0, null) in method <dummyMainClass: aero.panasonic.companion.view.NoticeActivity dummyMainMethod_aero_panasonic_companion_view_NoticeActivity(android.content.Intent)> was called with values from the following sources:
-[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r4 = virtualinvoke $r8.<android.net.wifi.WifiInfo: java.lang.String getSSID()>() in method <aero.panasonic.companion.view.LifeCycleHookActivity: java.lang.String createHash()>
-[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - The sink virtualinvoke $r0.<androidx.activity.ComponentActivity: void startActivityForResult(android.content.Intent,int,android.os.Bundle)>(null, 0, null) in method <dummyMainClass: aero.panasonic.companion.view.pairing.PairingHelpActivity dummyMainMethod_aero_panasonic_companion_view_pairing_PairingHelpActivity(android.content.Intent)> was called with values from the following sources:
-[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r4 = virtualinvoke $r8.<android.net.wifi.WifiInfo: java.lang.String getSSID()>() in method <aero.panasonic.companion.view.LifeCycleHookActivity: java.lang.String createHash()>
-[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - The sink staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>($r0, $r1) in method <aero.panasonic.inflight.services.utils.Log: void setIsSeatBack(int,java.lang.String,java.lang.String)> was called with values from the following sources:
-[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r4 = virtualinvoke $r8.<android.net.wifi.WifiInfo: java.lang.String getSSID()>() in method <aero.panasonic.companion.view.LifeCycleHookActivity: java.lang.String createHash()>
-[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r10 = interfaceinvoke $r9.<android.database.Cursor: java.lang.String getString(int)>($i0) in method <aero.panasonic.inflight.services.data.iicore.cp.IICoreQuery: java.lang.String queryString(android.net.Uri)>
-[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - The sink virtualinvoke $r0.<androidx.activity.ComponentActivity: void startActivityForResult(android.content.Intent,int)>(null, 0) in method <dummyMainClass: aero.panasonic.companion.view.pairing.SeatbackPairActivity dummyMainMethod_aero_panasonic_companion_view_pairing_SeatbackPairActivity(android.content.Intent)> was called with values from the following sources:
-[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r4 = virtualinvoke $r8.<android.net.wifi.WifiInfo: java.lang.String getSSID()>() in method <aero.panasonic.companion.view.LifeCycleHookActivity: java.lang.String createHash()>
-[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - The sink virtualinvoke r0.<android.app.Activity: android.content.Intent registerReceiver(android.content.BroadcastReceiver,android.content.IntentFilter)>($r1, $r2) in method <aero.panasonic.companion.view.entertainment.livetv.EpgActivity: void onResumeInternal()> was called with values from the following sources:
-[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r4 = virtualinvoke $r8.<android.net.wifi.WifiInfo: java.lang.String getSSID()>() in method <aero.panasonic.companion.view.LifeCycleHookActivity: java.lang.String createHash()>
-[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - The sink virtualinvoke $r0.<androidx.activity.ComponentActivity: void startActivityForResult(android.content.Intent,int)>(null, 0) in method <dummyMainClass: aero.panasonic.companion.view.search.SearchActivity dummyMainMethod_aero_panasonic_companion_view_search_SearchActivity(android.content.Intent)> was called with values from the following sources:
-[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r4 = virtualinvoke $r8.<android.net.wifi.WifiInfo: java.lang.String getSSID()>() in method <aero.panasonic.companion.view.LifeCycleHookActivity: java.lang.String createHash()>
-[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - The sink virtualinvoke $r0.<androidx.activity.ComponentActivity: void startActivityForResult(android.content.Intent,int,android.os.Bundle)>(null, 0, null) in method <dummyMainClass: aero.panasonic.companion.view.FeaturedActivity dummyMainMethod_aero_panasonic_companion_view_FeaturedActivity(android.content.Intent)> was called with values from the following sources:
-[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r4 = virtualinvoke $r8.<android.net.wifi.WifiInfo: java.lang.String getSSID()>() in method <aero.panasonic.companion.view.LifeCycleHookActivity: java.lang.String createHash()>
-[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - The sink virtualinvoke $r0.<androidx.activity.ComponentActivity: void startActivityForResult(android.content.Intent,int,android.os.Bundle)>(null, 0, null) in method <dummyMainClass: aero.panasonic.companion.view.entertainment.MediaActivity dummyMainMethod_aero_panasonic_companion_view_entertainment_MediaActivity(android.content.Intent)> was called with values from the following sources:
-[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r4 = virtualinvoke $r8.<android.net.wifi.WifiInfo: java.lang.String getSSID()>() in method <aero.panasonic.companion.view.LifeCycleHookActivity: java.lang.String createHash()>
-[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - The sink staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>($r0, $r1) in method <aero.panasonic.inflight.services.utils.Log: void setIsSeatBack(int,java.lang.String,java.lang.String)> was called with values from the following sources:
-[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r4 = virtualinvoke $r8.<android.net.wifi.WifiInfo: java.lang.String getSSID()>() in method <aero.panasonic.companion.view.LifeCycleHookActivity: java.lang.String createHash()>
-[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r10 = interfaceinvoke $r9.<android.database.Cursor: java.lang.String getString(int)>($i0) in method <aero.panasonic.inflight.services.data.iicore.cp.IICoreQuery: java.lang.String queryString(android.net.Uri)>
-[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - The sink virtualinvoke $r0.<androidx.activity.ComponentActivity: void startActivityForResult(android.content.Intent,int,android.os.Bundle)>(null, 0, null) in method <dummyMainClass: aero.panasonic.companion.view.favorites.v2.FavoritesActivity dummyMainMethod_aero_panasonic_companion_view_favorites_v2_FavoritesActivity(android.content.Intent)> was called with values from the following sources:
-[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r4 = virtualinvoke $r8.<android.net.wifi.WifiInfo: java.lang.String getSSID()>() in method <aero.panasonic.companion.view.LifeCycleHookActivity: java.lang.String createHash()>
-[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - The sink virtualinvoke $r0.<androidx.activity.ComponentActivity: void startActivityForResult(android.content.Intent,int)>(null, 0) in method <dummyMainClass: aero.panasonic.companion.view.favorites.v2.FavoritesActivity dummyMainMethod_aero_panasonic_companion_view_favorites_v2_FavoritesActivity(android.content.Intent)> was called with values from the following sources:
-[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r4 = virtualinvoke $r8.<android.net.wifi.WifiInfo: java.lang.String getSSID()>() in method <aero.panasonic.companion.view.LifeCycleHookActivity: java.lang.String createHash()>
-[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - The sink virtualinvoke $r0.<androidx.activity.ComponentActivity: void startActivityForResult(android.content.Intent,int)>(null, 0) in method <dummyMainClass: aero.panasonic.companion.view.shopping.ShoppingDetailActivity dummyMainMethod_aero_panasonic_companion_view_shopping_ShoppingDetailActivity(android.content.Intent)> was called with values from the following sources:
-[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r4 = virtualinvoke $r8.<android.net.wifi.WifiInfo: java.lang.String getSSID()>() in method <aero.panasonic.companion.view.LifeCycleHookActivity: java.lang.String createHash()>
-[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - The sink virtualinvoke $r0.<androidx.activity.ComponentActivity: void startActivityForResult(android.content.Intent,int,android.os.Bundle)>(null, 0, null) in method <dummyMainClass: aero.panasonic.companion.view.player.miniplayer.ExpandedMiniPlayerActivity dummyMainMethod_aero_panasonic_companion_view_player_miniplayer_ExpandedMiniPlayerActivity(android.content.Intent)> was called with values from the following sources:
-[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r4 = virtualinvoke $r8.<android.net.wifi.WifiInfo: java.lang.String getSSID()>() in method <aero.panasonic.companion.view.LifeCycleHookActivity: java.lang.String createHash()>
-[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - The sink virtualinvoke $r0.<androidx.activity.ComponentActivity: void startActivityForResult(android.content.Intent,int,android.os.Bundle)>(null, 0, null) in method <dummyMainClass: aero.panasonic.companion.view.appinfo.ParentalControlsActivity dummyMainMethod_aero_panasonic_companion_view_appinfo_ParentalControlsActivity(android.content.Intent)> was called with values from the following sources:
-[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r4 = virtualinvoke $r8.<android.net.wifi.WifiInfo: java.lang.String getSSID()>() in method <aero.panasonic.companion.view.LifeCycleHookActivity: java.lang.String createHash()>
-[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - The sink staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>($r0, $r1) in method <aero.panasonic.inflight.services.utils.Log: void setIsSeatBack(int,java.lang.String,java.lang.String)> was called with values from the following sources:
-[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r4 = virtualinvoke $r8.<android.net.wifi.WifiInfo: java.lang.String getSSID()>() in method <aero.panasonic.companion.view.LifeCycleHookActivity: java.lang.String createHash()>
-[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r10 = interfaceinvoke $r9.<android.database.Cursor: java.lang.String getString(int)>($i0) in method <aero.panasonic.inflight.services.data.iicore.cp.IICoreQuery: java.lang.String queryString(android.net.Uri)>
-[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - The sink virtualinvoke $r0.<androidx.activity.ComponentActivity: void startActivityForResult(android.content.Intent,int)>(null, 0) in method <dummyMainClass: aero.panasonic.companion.view.entertainment.livetv.EpgActivity dummyMainMethod_aero_panasonic_companion_view_entertainment_livetv_EpgActivity(android.content.Intent)> was called with values from the following sources:
-[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r4 = virtualinvoke $r8.<android.net.wifi.WifiInfo: java.lang.String getSSID()>() in method <aero.panasonic.companion.view.LifeCycleHookActivity: java.lang.String createHash()>
-[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - The sink virtualinvoke $r0.<androidx.activity.ComponentActivity: void startActivityForResult(android.content.Intent,int)>(null, 0) in method <dummyMainClass: aero.panasonic.companion.view.entertainment.detail.MediaDetailActivity dummyMainMethod_aero_panasonic_companion_view_entertainment_detail_MediaDetailActivity(android.content.Intent)> was called with values from the following sources:
-[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r4 = virtualinvoke $r8.<android.net.wifi.WifiInfo: java.lang.String getSSID()>() in method <aero.panasonic.companion.view.LifeCycleHookActivity: java.lang.String createHash()>
-[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - The sink virtualinvoke $r0.<androidx.activity.ComponentActivity: void startActivityForResult(android.content.Intent,int)>(null, 0) in method <dummyMainClass: aero.panasonic.companion.view.player.livetv.LiveTVMediaPlayerActivity dummyMainMethod_aero_panasonic_companion_view_player_livetv_LiveTVMediaPlayerActivity(android.content.Intent)> was called with values from the following sources:
-[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r4 = virtualinvoke $r8.<android.net.wifi.WifiInfo: java.lang.String getSSID()>() in method <aero.panasonic.companion.view.LifeCycleHookActivity: java.lang.String createHash()>
-[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - The sink virtualinvoke $r0.<androidx.activity.ComponentActivity: void startActivityForResult(android.content.Intent,int,android.os.Bundle)>(null, 0, null) in method <dummyMainClass: aero.panasonic.companion.view.shopping.ShoppingDetailActivity dummyMainMethod_aero_panasonic_companion_view_shopping_ShoppingDetailActivity(android.content.Intent)> was called with values from the following sources:
-[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r4 = virtualinvoke $r8.<android.net.wifi.WifiInfo: java.lang.String getSSID()>() in method <aero.panasonic.companion.view.LifeCycleHookActivity: java.lang.String createHash()>
-[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - The sink virtualinvoke $r0.<androidx.activity.ComponentActivity: void startActivityForResult(android.content.Intent,int,android.os.Bundle)>(null, 0, null) in method <dummyMainClass: aero.panasonic.companion.view.pairing.SeatbackPairActivity dummyMainMethod_aero_panasonic_companion_view_pairing_SeatbackPairActivity(android.content.Intent)> was called with values from the following sources:
-[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r4 = virtualinvoke $r8.<android.net.wifi.WifiInfo: java.lang.String getSSID()>() in method <aero.panasonic.companion.view.LifeCycleHookActivity: java.lang.String createHash()>
-[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - The sink virtualinvoke $r0.<androidx.activity.ComponentActivity: void startActivityForResult(android.content.Intent,int,android.os.Bundle)>(null, 0, null) in method <dummyMainClass: aero.panasonic.companion.view.shopping.ShoppingBagActivity dummyMainMethod_aero_panasonic_companion_view_shopping_ShoppingBagActivity(android.content.Intent)> was called with values from the following sources:
-[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r4 = virtualinvoke $r8.<android.net.wifi.WifiInfo: java.lang.String getSSID()>() in method <aero.panasonic.companion.view.LifeCycleHookActivity: java.lang.String createHash()>
-[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - The sink virtualinvoke $r0.<androidx.activity.ComponentActivity: void startActivityForResult(android.content.Intent,int)>(null, 0) in method <dummyMainClass: aero.panasonic.companion.view.player.MediaPlayerActivity dummyMainMethod_aero_panasonic_companion_view_player_MediaPlayerActivity(android.content.Intent)> was called with values from the following sources:
-[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r4 = virtualinvoke $r8.<android.net.wifi.WifiInfo: java.lang.String getSSID()>() in method <aero.panasonic.companion.view.LifeCycleHookActivity: java.lang.String createHash()>
-[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - The sink staticinvoke <android.util.Log: int w(java.lang.String,java.lang.String)>($r0, $r1) in method <aero.panasonic.inflight.services.utils.Log: void setIsSeatBack(int,java.lang.String,java.lang.String)> was called with values from the following sources:
-[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r4 = virtualinvoke $r8.<android.net.wifi.WifiInfo: java.lang.String getSSID()>() in method <aero.panasonic.companion.view.LifeCycleHookActivity: java.lang.String createHash()>
-[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r10 = interfaceinvoke $r9.<android.database.Cursor: java.lang.String getString(int)>($i0) in method <aero.panasonic.inflight.services.data.iicore.cp.IICoreQuery: java.lang.String queryString(android.net.Uri)>
-[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - The sink virtualinvoke $r1.<android.app.Activity: boolean bindService(android.content.Intent,android.content.ServiceConnection,int)>($r2, $r4, 0) in method <aero.panasonic.companion.view.music.ServiceBindingDelegate: void onStart()> was called with values from the following sources:
-[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r4 = virtualinvoke $r8.<android.net.wifi.WifiInfo: java.lang.String getSSID()>() in method <aero.panasonic.companion.view.LifeCycleHookActivity: java.lang.String createHash()>
-[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - The sink virtualinvoke $r1.<android.os.Bundle: void putBoolean(java.lang.String,boolean)>("extra:player_seeking", $z0) in method <aero.panasonic.companion.view.player.MediaPlayerPresenter: android.os.Bundle getSaveInstanceBundle()> was called with values from the following sources:
-[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r4 = virtualinvoke $r8.<android.net.wifi.WifiInfo: java.lang.String getSSID()>() in method <aero.panasonic.companion.view.LifeCycleHookActivity: java.lang.String createHash()>
-[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - The sink virtualinvoke $r0.<androidx.activity.ComponentActivity: void startActivityForResult(android.content.Intent,int,android.os.Bundle)>(null, 0, null) in method <dummyMainClass: aero.panasonic.companion.view.search.SearchActivity dummyMainMethod_aero_panasonic_companion_view_search_SearchActivity(android.content.Intent)> was called with values from the following sources:
-[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r4 = virtualinvoke $r8.<android.net.wifi.WifiInfo: java.lang.String getSSID()>() in method <aero.panasonic.companion.view.LifeCycleHookActivity: java.lang.String createHash()>
-[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - The sink virtualinvoke $r0.<androidx.activity.ComponentActivity: void startActivityForResult(android.content.Intent,int,android.os.Bundle)>(null, 0, null) in method <dummyMainClass: aero.panasonic.companion.view.weather.WeatherActivity dummyMainMethod_aero_panasonic_companion_view_weather_WeatherActivity(android.content.Intent)> was called with values from the following sources:
-[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r4 = virtualinvoke $r8.<android.net.wifi.WifiInfo: java.lang.String getSSID()>() in method <aero.panasonic.companion.view.LifeCycleHookActivity: java.lang.String createHash()>
-[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - The sink virtualinvoke $r0.<androidx.activity.ComponentActivity: void startActivityForResult(android.content.Intent,int)>(null, 0) in method <dummyMainClass: aero.panasonic.companion.view.shopping.ShoppingActivity dummyMainMethod_aero_panasonic_companion_view_shopping_ShoppingActivity(android.content.Intent)> was called with values from the following sources:
-[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r4 = virtualinvoke $r8.<android.net.wifi.WifiInfo: java.lang.String getSSID()>() in method <aero.panasonic.companion.view.LifeCycleHookActivity: java.lang.String createHash()>
-[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - The sink virtualinvoke $r0.<androidx.activity.ComponentActivity: void startActivityForResult(android.content.Intent,int)>(null, 0) in method <dummyMainClass: aero.panasonic.companion.view.news.NewsActivity dummyMainMethod_aero_panasonic_companion_view_news_NewsActivity(android.content.Intent)> was called with values from the following sources:
-[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r4 = virtualinvoke $r8.<android.net.wifi.WifiInfo: java.lang.String getSSID()>() in method <aero.panasonic.companion.view.LifeCycleHookActivity: java.lang.String createHash()>
-[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - The sink virtualinvoke $r0.<androidx.activity.ComponentActivity: void startActivityForResult(android.content.Intent,int)>(null, 0) in method <dummyMainClass: aero.panasonic.companion.view.player.miniplayer.ExpandedMiniPlayerActivity dummyMainMethod_aero_panasonic_companion_view_player_miniplayer_ExpandedMiniPlayerActivity(android.content.Intent)> was called with values from the following sources:
-[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r4 = virtualinvoke $r8.<android.net.wifi.WifiInfo: java.lang.String getSSID()>() in method <aero.panasonic.companion.view.LifeCycleHookActivity: java.lang.String createHash()>
-[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - The sink virtualinvoke $r0.<androidx.activity.ComponentActivity: void startActivityForResult(android.content.Intent,int,android.os.Bundle)>(null, 0, null) in method <dummyMainClass: aero.panasonic.companion.view.entertainment.livetv.EpgActivity dummyMainMethod_aero_panasonic_companion_view_entertainment_livetv_EpgActivity(android.content.Intent)> was called with values from the following sources:
-[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r4 = virtualinvoke $r8.<android.net.wifi.WifiInfo: java.lang.String getSSID()>() in method <aero.panasonic.companion.view.LifeCycleHookActivity: java.lang.String createHash()>
-[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - The sink staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r0, $r1) in method <aero.panasonic.inflight.services.utils.Log: void setIsSeatBack(int,java.lang.String,java.lang.String)> was called with values from the following sources:
-[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r4 = virtualinvoke $r8.<android.net.wifi.WifiInfo: java.lang.String getSSID()>() in method <aero.panasonic.companion.view.LifeCycleHookActivity: java.lang.String createHash()>
-[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r10 = interfaceinvoke $r9.<android.database.Cursor: java.lang.String getString(int)>($i0) in method <aero.panasonic.inflight.services.data.iicore.cp.IICoreQuery: java.lang.String queryString(android.net.Uri)>
-[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - The sink virtualinvoke $r0.<androidx.activity.ComponentActivity: void startActivityForResult(android.content.Intent,int,android.os.Bundle)>(null, 0, null) in method <dummyMainClass: aero.panasonic.companion.view.appinfo.AppInfoActivity dummyMainMethod_aero_panasonic_companion_view_appinfo_AppInfoActivity(android.content.Intent)> was called with values from the following sources:
-[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r4 = virtualinvoke $r8.<android.net.wifi.WifiInfo: java.lang.String getSSID()>() in method <aero.panasonic.companion.view.LifeCycleHookActivity: java.lang.String createHash()>
-[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - The sink virtualinvoke $r0.<androidx.activity.ComponentActivity: void startActivityForResult(android.content.Intent,int)>(null, 0) in method <dummyMainClass: aero.panasonic.companion.view.FeaturedActivity dummyMainMethod_aero_panasonic_companion_view_FeaturedActivity(android.content.Intent)> was called with values from the following sources:
-[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r4 = virtualinvoke $r8.<android.net.wifi.WifiInfo: java.lang.String getSSID()>() in method <aero.panasonic.companion.view.LifeCycleHookActivity: java.lang.String createHash()>
-[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - The sink virtualinvoke $r0.<androidx.activity.ComponentActivity: void startActivityForResult(android.content.Intent,int)>(null, 0) in method <dummyMainClass: aero.panasonic.companion.view.weather.WeatherActivity dummyMainMethod_aero_panasonic_companion_view_weather_WeatherActivity(android.content.Intent)> was called with values from the following sources:
-[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r4 = virtualinvoke $r8.<android.net.wifi.WifiInfo: java.lang.String getSSID()>() in method <aero.panasonic.companion.view.LifeCycleHookActivity: java.lang.String createHash()>
-[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - The sink virtualinvoke $r0.<androidx.activity.ComponentActivity: void startActivityForResult(android.content.Intent,int)>(null, 0) in method <dummyMainClass: aero.panasonic.companion.view.appinfo.ParentalControlsActivity dummyMainMethod_aero_panasonic_companion_view_appinfo_ParentalControlsActivity(android.content.Intent)> was called with values from the following sources:
-[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r4 = virtualinvoke $r8.<android.net.wifi.WifiInfo: java.lang.String getSSID()>() in method <aero.panasonic.companion.view.LifeCycleHookActivity: java.lang.String createHash()>
-[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - The sink virtualinvoke $r1.<android.os.Bundle: void putBoolean(java.lang.String,boolean)>("extra:view_seeking", $z0) in method <aero.panasonic.companion.view.player.MediaPlayerPresenter: android.os.Bundle getSaveInstanceBundle()> was called with values from the following sources:
-[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r4 = virtualinvoke $r8.<android.net.wifi.WifiInfo: java.lang.String getSSID()>() in method <aero.panasonic.companion.view.LifeCycleHookActivity: java.lang.String createHash()>
-[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - The sink virtualinvoke $r0.<androidx.activity.ComponentActivity: void startActivityForResult(android.content.Intent,int,android.os.Bundle)>(null, 0, null) in method <dummyMainClass: aero.panasonic.companion.view.appinfo.ClassificationActivity dummyMainMethod_aero_panasonic_companion_view_appinfo_ClassificationActivity(android.content.Intent)> was called with values from the following sources:
-[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r4 = virtualinvoke $r8.<android.net.wifi.WifiInfo: java.lang.String getSSID()>() in method <aero.panasonic.companion.view.LifeCycleHookActivity: java.lang.String createHash()>
-[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - The sink virtualinvoke $r0.<androidx.activity.ComponentActivity: void startActivityForResult(android.content.Intent,int,android.os.Bundle)>(null, 0, null) in method <dummyMainClass: aero.panasonic.companion.view.entertainment.detail.PaymentFormActivity dummyMainMethod_aero_panasonic_companion_view_entertainment_detail_PaymentFormActivity(android.content.Intent)> was called with values from the following sources:
-[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r4 = virtualinvoke $r8.<android.net.wifi.WifiInfo: java.lang.String getSSID()>() in method <aero.panasonic.companion.view.LifeCycleHookActivity: java.lang.String createHash()>
-[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - The sink virtualinvoke $r0.<androidx.activity.ComponentActivity: void startActivityForResult(android.content.Intent,int,android.os.Bundle)>(null, 0, null) in method <dummyMainClass: aero.panasonic.companion.view.shopping.ShoppingActivity dummyMainMethod_aero_panasonic_companion_view_shopping_ShoppingActivity(android.content.Intent)> was called with values from the following sources:
-[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r4 = virtualinvoke $r8.<android.net.wifi.WifiInfo: java.lang.String getSSID()>() in method <aero.panasonic.companion.view.LifeCycleHookActivity: java.lang.String createHash()>
-[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - The sink virtualinvoke $r0.<androidx.activity.ComponentActivity: void startActivityForResult(android.content.Intent,int,android.os.Bundle)>(null, 0, null) in method <dummyMainClass: aero.panasonic.companion.view.player.MediaPlayerActivity dummyMainMethod_aero_panasonic_companion_view_player_MediaPlayerActivity(android.content.Intent)> was called with values from the following sources:
-[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r4 = virtualinvoke $r8.<android.net.wifi.WifiInfo: java.lang.String getSSID()>() in method <aero.panasonic.companion.view.LifeCycleHookActivity: java.lang.String createHash()>
-[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - The sink virtualinvoke $r0.<androidx.activity.ComponentActivity: void startActivityForResult(android.content.Intent,int)>(null, 0) in method <dummyMainClass: aero.panasonic.companion.view.news.ArticleViewActivity dummyMainMethod_aero_panasonic_companion_view_news_ArticleViewActivity(android.content.Intent)> was called with values from the following sources:
-[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r4 = virtualinvoke $r8.<android.net.wifi.WifiInfo: java.lang.String getSSID()>() in method <aero.panasonic.companion.view.LifeCycleHookActivity: java.lang.String createHash()>
-[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - The sink virtualinvoke $r0.<androidx.activity.ComponentActivity: void startActivityForResult(android.content.Intent,int,android.os.Bundle)>(null, 0, null) in method <dummyMainClass: aero.panasonic.companion.view.remotecontrol.RemoteControlActivity dummyMainMethod_aero_panasonic_companion_view_remotecontrol_RemoteControlActivity(android.content.Intent)> was called with values from the following sources:
-[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r4 = virtualinvoke $r8.<android.net.wifi.WifiInfo: java.lang.String getSSID()>() in method <aero.panasonic.companion.view.LifeCycleHookActivity: java.lang.String createHash()>
-[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - The sink virtualinvoke $r0.<androidx.activity.ComponentActivity: void startActivityForResult(android.content.Intent,int)>(null, 0) in method <dummyMainClass: aero.panasonic.companion.view.remotecontrol.RemoteControlSettingsActivity dummyMainMethod_aero_panasonic_companion_view_remotecontrol_RemoteControlSettingsActivity(android.content.Intent)> was called with values from the following sources:
-[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r4 = virtualinvoke $r8.<android.net.wifi.WifiInfo: java.lang.String getSSID()>() in method <aero.panasonic.companion.view.LifeCycleHookActivity: java.lang.String createHash()>
-[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - The sink virtualinvoke $r0.<androidx.activity.ComponentActivity: void startActivityForResult(android.content.Intent,int)>(null, 0) in method <dummyMainClass: aero.panasonic.companion.view.appinfo.ClassificationActivity dummyMainMethod_aero_panasonic_companion_view_appinfo_ClassificationActivity(android.content.Intent)> was called with values from the following sources:
-[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r4 = virtualinvoke $r8.<android.net.wifi.WifiInfo: java.lang.String getSSID()>() in method <aero.panasonic.companion.view.LifeCycleHookActivity: java.lang.String createHash()>
-[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - The sink virtualinvoke $r0.<androidx.activity.ComponentActivity: void startActivityForResult(android.content.Intent,int)>(null, 0) in method <dummyMainClass: aero.panasonic.companion.view.pairing.PairingHelpActivity dummyMainMethod_aero_panasonic_companion_view_pairing_PairingHelpActivity(android.content.Intent)> was called with values from the following sources:
-[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r4 = virtualinvoke $r8.<android.net.wifi.WifiInfo: java.lang.String getSSID()>() in method <aero.panasonic.companion.view.LifeCycleHookActivity: java.lang.String createHash()>
-[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - The sink virtualinvoke $r0.<androidx.activity.ComponentActivity: void startActivityForResult(android.content.Intent,int)>(null, 0) in method <dummyMainClass: aero.panasonic.companion.view.KidsZoneActivity dummyMainMethod_aero_panasonic_companion_view_KidsZoneActivity(android.content.Intent)> was called with values from the following sources:
-[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r4 = virtualinvoke $r8.<android.net.wifi.WifiInfo: java.lang.String getSSID()>() in method <aero.panasonic.companion.view.LifeCycleHookActivity: java.lang.String createHash()>
-[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - The sink virtualinvoke $r0.<androidx.activity.ComponentActivity: void startActivityForResult(android.content.Intent,int,android.os.Bundle)>(null, 0, null) in method <dummyMainClass: aero.panasonic.companion.view.remotecontrol.RemoteControlSettingsActivity dummyMainMethod_aero_panasonic_companion_view_remotecontrol_RemoteControlSettingsActivity(android.content.Intent)> was called with values from the following sources:
-[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r4 = virtualinvoke $r8.<android.net.wifi.WifiInfo: java.lang.String getSSID()>() in method <aero.panasonic.companion.view.LifeCycleHookActivity: java.lang.String createHash()>
-[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - Data flow solver took 30703 seconds. Maximum memory consumption: 15424 MB
-[main] INFO soot.jimple.infoflow.android.SetupApplication - Found 66 leaks
