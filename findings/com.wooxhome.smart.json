@@ -1,1 +1,102 @@
-{"app_name": "com.wooxhome.smart", "smali_analysis": [{"file": "./SMALI/com.wooxhome.smart/smali_classes9/com/tuya/smart/personal/account/security/plug/cell/TerminateAccountCell$a.smali", "findings": {"keyword_matches": ["terminateaccount"], "api_matches": [], "context": [{"match": "terminateaccount", "context": ".class public final lcom/tuya/smart/personal/account/security/plug/cell/terminateaccountcell$a;\n.super ljava/lang/object;\n.source \"terminateaccountcell.kt\"\n\n\n# annotations"}, {"match": "terminateaccount", "context": ".class public final lcom/tuya/smart/personal/account/security/plug/cell/terminateaccountcell$a;\n.super ljava/lang/object;\n.source \"terminateaccountcell.kt\"\n\n\n# annotations\n.annotation system ldalvik/annotation/enclosingclass;\n    value = lcom/tuya/smart/personal/account/security/plug/cell/terminateaccountcell;"}, {"match": "terminateaccount", "context": ".source \"terminateaccountcell.kt\"\n\n\n# annotations\n.annotation system ldalvik/annotation/enclosingclass;\n    value = lcom/tuya/smart/personal/account/security/plug/cell/terminateaccountcell;\n.end annotation\n\n.annotation system ldalvik/annotation/innerclass;\n    accessflags = 0x19\n    name = \"a\""}, {"match": "terminateaccount", "context": ".annotation runtime lkotlin/metadata;\n    d1 = {\n        \"\\u0000\\u0012\\n\\u0002\\u0018\\u0002\\n\\u0002\\u0010\\u0000\\n\\u0002\\u0008\\u0002\\n\\u0002\\u0010\\u000e\\n\\u0000\\u0008\\u0086\\u0003\\u0018\\u00002\\u00020\\u0001b\\u0007\\u0008\\u0002\\u00a2\\u0006\\u0002\\u0010\\u0002r\\u000e\\u0010\\u0003\\u001a\\u00020\\u0004x\\u0086t\\u00a2\\u0006\\u0002\\n\\u0000\\u00a8\\u0006\\u0005\"\n    }\n    d2 = {\n        \"lcom/tuya/smart/personal/account/security/plug/cell/terminateaccountcell$companion;\",\n        \"\",\n        \"()v\",\n        \"activity_log_off\",\n        \"\",\n        \"personal-setting-plug_release\""}, {"match": "terminateaccount", "context": ".end method\n\n.method public synthetic constructor <init>(lkotlin/jvm/internal/defaultconstructormarker;)v\n    .locals 0\n\n    invoke-direct {p0}, lcom/tuya/smart/personal/account/security/plug/cell/terminateaccountcell$a;-><init>()v\n\n    return-void\n.end method\n"}]}}, {"file": "./SMALI/com.wooxhome.smart/smali_classes9/com/tuya/smart/personal/account/security/plug/cell/TerminateAccountCell.smali", "findings": {"keyword_matches": ["terminateaccount"], "api_matches": [], "context": [{"match": "terminateaccount", "context": ".class public final lcom/tuya/smart/personal/account/security/plug/cell/terminateaccountcell;\n.super lcom/tuya/smart/personal/account/security/plug/cell/base/clickabletextcell;\n.source \"terminateaccountcell.kt\"\n\n# interfaces\n.implements landroid/view/view$onclicklistener;"}, {"match": "terminateaccount", "context": ".class public final lcom/tuya/smart/personal/account/security/plug/cell/terminateaccountcell;\n.super lcom/tuya/smart/personal/account/security/plug/cell/base/clickabletextcell;\n.source \"terminateaccountcell.kt\"\n\n# interfaces\n.implements landroid/view/view$onclicklistener;\n\n"}, {"match": "terminateaccount", "context": ".annotation runtime lcom/tuya/smart/archer/anno/archercell;\n.end annotation\n\n.annotation system ldalvik/annotation/memberclasses;\n    value = {\n        lcom/tuya/smart/personal/account/security/plug/cell/terminateaccountcell$a;\n    }\n.end annotation\n\n.annotation runtime lkotlin/metadata;\n    d1 = {"}, {"match": "terminateaccount", "context": ".annotation runtime lkotlin/metadata;\n    d1 = {\n        \"\\u0000&\\n\\u0002\\u0018\\u0002\\n\\u0002\\u0018\\u0002\\n\\u0002\\u0018\\u0002\\n\\u0002\\u0008\\u0002\\n\\u0002\\u0010\\u0002\\n\\u0000\\n\\u0002\\u0018\\u0002\\n\\u0002\\u0008\\u0002\\n\\u0002\\u0018\\u0002\\n\\u0002\\u0008\\u0002\\u0008\\u0007\\u0018\\u0000 \\u000b2\\u00020\\u00012\\u00020\\u0002:\\u0001\\u000bb\\u0005\\u00a2\\u0006\\u0002\\u0010\\u0003j\\u0010\\u0010\\u0004\\u001a\\u00020\\u00052\\u0006\\u0010\\u0006\\u001a\\u00020\\u0007h\\u0016j\\u0010\\u0010\\u0008\\u001a\\u00020\\u00052\\u0006\\u0010\\t\\u001a\\u00020\\nh\\u0016\\u00a8\\u0006\\u000c\"\n    }\n    d2 = {\n        \"lcom/tuya/smart/personal/account/security/plug/cell/terminateaccountcell;\",\n        \"lcom/tuya/smart/personal/account/security/plug/cell/base/clickabletextcell;\",\n        \"landroid/view/view$onclicklistener;\",\n        \"()v\",\n        \"onbindviewholder\",\n        \"\","}, {"match": "terminateaccount", "context": "    xi = 0x30\n.end annotation\n\n\n# static fields\n.field public static final a:lcom/tuya/smart/personal/account/security/plug/cell/terminateaccountcell$a;\n\n\n# direct methods\n.method static constructor <clinit>()v\n    .locals 2"}, {"match": "terminateaccount", "context": "\n# direct methods\n.method static constructor <clinit>()v\n    .locals 2\n\n    new-instance v0, lcom/tuya/smart/personal/account/security/plug/cell/terminateaccountcell$a;\n\n    const/4 v1, 0x0\n\n    invoke-direct {v0, v1}, lcom/tuya/smart/personal/account/security/plug/cell/terminateaccountcell$a;-><init>(lkotlin/jvm/internal/defaultconstructormarker;)v\n"}, {"match": "terminateaccount", "context": "\n    new-instance v0, lcom/tuya/smart/personal/account/security/plug/cell/terminateaccountcell$a;\n\n    const/4 v1, 0x0\n\n    invoke-direct {v0, v1}, lcom/tuya/smart/personal/account/security/plug/cell/terminateaccountcell$a;-><init>(lkotlin/jvm/internal/defaultconstructormarker;)v\n\n    sput-object v0, lcom/tuya/smart/personal/account/security/plug/cell/terminateaccountcell;->a:lcom/tuya/smart/personal/account/security/plug/cell/terminateaccountcell$a;\n\n    invoke-static {}, lbd;->a()v\n"}, {"match": "terminateaccount", "context": "\n    const/4 v1, 0x0\n\n    invoke-direct {v0, v1}, lcom/tuya/smart/personal/account/security/plug/cell/terminateaccountcell$a;-><init>(lkotlin/jvm/internal/defaultconstructormarker;)v\n\n    sput-object v0, lcom/tuya/smart/personal/account/security/plug/cell/terminateaccountcell;->a:lcom/tuya/smart/personal/account/security/plug/cell/terminateaccountcell$a;\n\n    invoke-static {}, lbd;->a()v\n\n    invoke-static {}, lbd;->a()v\n"}, {"match": "terminateaccount", "context": "    .locals 0\n\n    .line 17\n    check-cast p1, lcom/tuya/smart/uispec/list/plug/text/clickable/d;\n\n    invoke-virtual {p0, p1}, lcom/tuya/smart/personal/account/security/plug/cell/terminateaccountcell;->a(lcom/tuya/smart/uispec/list/plug/text/clickable/d;)v\n\n    return-void\n.end method\n\n.method public a(lcom/tuya/smart/uispec/list/plug/text/clickable/d;)v"}]}}], "strings_analysis": [{"matched_pattern": "deactivate account", "name": "terminate_account", "text": "Deactivate Account"}, {"matched_pattern": "delete account", "name": "ty_logoff_query_sure", "text": "Are you sure to delete account?"}, {"matched_pattern": "delete account", "name": "ty_logoff_title", "text": "Delete Account"}], "layout_analysis": [], "total_files_processed": 11463}
+{
+    "app_name": "com.wooxhome.smart",
+    "smali_analysis": [
+        {
+            "file": "./SMALI/com.wooxhome.smart/smali_classes9/com/tuya/smart/personal/account/security/plug/cell/TerminateAccountCell$a.smali",
+            "findings": {
+                "keyword_matches": [
+                    "terminateaccount"
+                ],
+                "api_matches": [],
+                "context": [
+                    {
+                        "match": "terminateaccount",
+                        "context": ".class public final lcom/tuya/smart/personal/account/security/plug/cell/terminateaccountcell$a;\n.super ljava/lang/object;\n.source \"terminateaccountcell.kt\"\n\n\n# annotations"
+                    },
+                    {
+                        "match": "terminateaccount",
+                        "context": ".class public final lcom/tuya/smart/personal/account/security/plug/cell/terminateaccountcell$a;\n.super ljava/lang/object;\n.source \"terminateaccountcell.kt\"\n\n\n# annotations\n.annotation system ldalvik/annotation/enclosingclass;\n    value = lcom/tuya/smart/personal/account/security/plug/cell/terminateaccountcell;"
+                    },
+                    {
+                        "match": "terminateaccount",
+                        "context": ".source \"terminateaccountcell.kt\"\n\n\n# annotations\n.annotation system ldalvik/annotation/enclosingclass;\n    value = lcom/tuya/smart/personal/account/security/plug/cell/terminateaccountcell;\n.end annotation\n\n.annotation system ldalvik/annotation/innerclass;\n    accessflags = 0x19\n    name = \"a\""
+                    },
+                    {
+                        "match": "terminateaccount",
+                        "context": ".annotation runtime lkotlin/metadata;\n    d1 = {\n        \"\\u0000\\u0012\\n\\u0002\\u0018\\u0002\\n\\u0002\\u0010\\u0000\\n\\u0002\\u0008\\u0002\\n\\u0002\\u0010\\u000e\\n\\u0000\\u0008\\u0086\\u0003\\u0018\\u00002\\u00020\\u0001b\\u0007\\u0008\\u0002\\u00a2\\u0006\\u0002\\u0010\\u0002r\\u000e\\u0010\\u0003\\u001a\\u00020\\u0004x\\u0086t\\u00a2\\u0006\\u0002\\n\\u0000\\u00a8\\u0006\\u0005\"\n    }\n    d2 = {\n        \"lcom/tuya/smart/personal/account/security/plug/cell/terminateaccountcell$companion;\",\n        \"\",\n        \"()v\",\n        \"activity_log_off\",\n        \"\",\n        \"personal-setting-plug_release\""
+                    },
+                    {
+                        "match": "terminateaccount",
+                        "context": ".end method\n\n.method public synthetic constructor <init>(lkotlin/jvm/internal/defaultconstructormarker;)v\n    .locals 0\n\n    invoke-direct {p0}, lcom/tuya/smart/personal/account/security/plug/cell/terminateaccountcell$a;-><init>()v\n\n    return-void\n.end method\n"
+                    }
+                ]
+            }
+        },
+        {
+            "file": "./SMALI/com.wooxhome.smart/smali_classes9/com/tuya/smart/personal/account/security/plug/cell/TerminateAccountCell.smali",
+            "findings": {
+                "keyword_matches": [
+                    "terminateaccount"
+                ],
+                "api_matches": [],
+                "context": [
+                    {
+                        "match": "terminateaccount",
+                        "context": ".class public final lcom/tuya/smart/personal/account/security/plug/cell/terminateaccountcell;\n.super lcom/tuya/smart/personal/account/security/plug/cell/base/clickabletextcell;\n.source \"terminateaccountcell.kt\"\n\n# interfaces\n.implements landroid/view/view$onclicklistener;"
+                    },
+                    {
+                        "match": "terminateaccount",
+                        "context": ".class public final lcom/tuya/smart/personal/account/security/plug/cell/terminateaccountcell;\n.super lcom/tuya/smart/personal/account/security/plug/cell/base/clickabletextcell;\n.source \"terminateaccountcell.kt\"\n\n# interfaces\n.implements landroid/view/view$onclicklistener;\n\n"
+                    },
+                    {
+                        "match": "terminateaccount",
+                        "context": ".annotation runtime lcom/tuya/smart/archer/anno/archercell;\n.end annotation\n\n.annotation system ldalvik/annotation/memberclasses;\n    value = {\n        lcom/tuya/smart/personal/account/security/plug/cell/terminateaccountcell$a;\n    }\n.end annotation\n\n.annotation runtime lkotlin/metadata;\n    d1 = {"
+                    },
+                    {
+                        "match": "terminateaccount",
+                        "context": ".annotation runtime lkotlin/metadata;\n    d1 = {\n        \"\\u0000&\\n\\u0002\\u0018\\u0002\\n\\u0002\\u0018\\u0002\\n\\u0002\\u0018\\u0002\\n\\u0002\\u0008\\u0002\\n\\u0002\\u0010\\u0002\\n\\u0000\\n\\u0002\\u0018\\u0002\\n\\u0002\\u0008\\u0002\\n\\u0002\\u0018\\u0002\\n\\u0002\\u0008\\u0002\\u0008\\u0007\\u0018\\u0000 \\u000b2\\u00020\\u00012\\u00020\\u0002:\\u0001\\u000bb\\u0005\\u00a2\\u0006\\u0002\\u0010\\u0003j\\u0010\\u0010\\u0004\\u001a\\u00020\\u00052\\u0006\\u0010\\u0006\\u001a\\u00020\\u0007h\\u0016j\\u0010\\u0010\\u0008\\u001a\\u00020\\u00052\\u0006\\u0010\\t\\u001a\\u00020\\nh\\u0016\\u00a8\\u0006\\u000c\"\n    }\n    d2 = {\n        \"lcom/tuya/smart/personal/account/security/plug/cell/terminateaccountcell;\",\n        \"lcom/tuya/smart/personal/account/security/plug/cell/base/clickabletextcell;\",\n        \"landroid/view/view$onclicklistener;\",\n        \"()v\",\n        \"onbindviewholder\",\n        \"\","
+                    },
+                    {
+                        "match": "terminateaccount",
+                        "context": "    xi = 0x30\n.end annotation\n\n\n# static fields\n.field public static final a:lcom/tuya/smart/personal/account/security/plug/cell/terminateaccountcell$a;\n\n\n# direct methods\n.method static constructor <clinit>()v\n    .locals 2"
+                    },
+                    {
+                        "match": "terminateaccount",
+                        "context": "\n# direct methods\n.method static constructor <clinit>()v\n    .locals 2\n\n    new-instance v0, lcom/tuya/smart/personal/account/security/plug/cell/terminateaccountcell$a;\n\n    const/4 v1, 0x0\n\n    invoke-direct {v0, v1}, lcom/tuya/smart/personal/account/security/plug/cell/terminateaccountcell$a;-><init>(lkotlin/jvm/internal/defaultconstructormarker;)v\n"
+                    },
+                    {
+                        "match": "terminateaccount",
+                        "context": "\n    new-instance v0, lcom/tuya/smart/personal/account/security/plug/cell/terminateaccountcell$a;\n\n    const/4 v1, 0x0\n\n    invoke-direct {v0, v1}, lcom/tuya/smart/personal/account/security/plug/cell/terminateaccountcell$a;-><init>(lkotlin/jvm/internal/defaultconstructormarker;)v\n\n    sput-object v0, lcom/tuya/smart/personal/account/security/plug/cell/terminateaccountcell;->a:lcom/tuya/smart/personal/account/security/plug/cell/terminateaccountcell$a;\n\n    invoke-static {}, lbd;->a()v\n"
+                    },
+                    {
+                        "match": "terminateaccount",
+                        "context": "\n    const/4 v1, 0x0\n\n    invoke-direct {v0, v1}, lcom/tuya/smart/personal/account/security/plug/cell/terminateaccountcell$a;-><init>(lkotlin/jvm/internal/defaultconstructormarker;)v\n\n    sput-object v0, lcom/tuya/smart/personal/account/security/plug/cell/terminateaccountcell;->a:lcom/tuya/smart/personal/account/security/plug/cell/terminateaccountcell$a;\n\n    invoke-static {}, lbd;->a()v\n\n    invoke-static {}, lbd;->a()v\n"
+                    },
+                    {
+                        "match": "terminateaccount",
+                        "context": "    .locals 0\n\n    .line 17\n    check-cast p1, lcom/tuya/smart/uispec/list/plug/text/clickable/d;\n\n    invoke-virtual {p0, p1}, lcom/tuya/smart/personal/account/security/plug/cell/terminateaccountcell;->a(lcom/tuya/smart/uispec/list/plug/text/clickable/d;)v\n\n    return-void\n.end method\n\n.method public a(lcom/tuya/smart/uispec/list/plug/text/clickable/d;)v"
+                    }
+                ]
+            }
+        }
+    ],
+    "strings_analysis": [
+        {
+            "matched_pattern": "deactivate account",
+            "name": "terminate_account",
+            "text": "Deactivate Account"
+        },
+        {
+            "matched_pattern": "delete account",
+            "name": "ty_logoff_query_sure",
+            "text": "Are you sure to delete account?"
+        },
+        {
+            "matched_pattern": "delete account",
+            "name": "ty_logoff_title",
+            "text": "Delete Account"
+        }
+    ],
+    "layout_analysis": [],
+    "total_files_processed": 11463
+}

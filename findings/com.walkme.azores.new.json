@@ -1,1 +1,242 @@
-{"app_name": "com.walkme.azores.new", "smali_analysis": [{"file": "./SMALI/com.walkme.azores.new/smali/com/walkme/SettingsActivity$doButtonDeleteAccount$1$1$1.smali", "findings": {"keyword_matches": ["deleteaccount"], "api_matches": [], "context": [{"match": "deleteaccount", "context": ".class public final lcom/walkme/settingsactivity$dobuttondeleteaccount$1$1$1;\n.super lkotlin/coroutines/jvm/internal/suspendlambda;\n.source \"settingsactivity.kt\"\n\n# interfaces\n.implements lkotlin/jvm/functions/function2;"}, {"match": "deleteaccount", "context": "        \">;\"\n    }\n.end annotation\n\n.annotation runtime lkotlin/coroutines/jvm/internal/debugmetadata;\n    c = \"com.walkme.settingsactivity$dobuttondeleteaccount$1$1$1\"\n    f = \"settingsactivity.kt\"\n    l = {}\n    m = \"invokesuspend\"\n.end annotation\n"}, {"match": "deleteaccount", "context": "        value = {\n            \"(\",\n            \"lcom/walkme/settingsactivity;\",\n            \"lkotlin/coroutines/continuation<\",\n            \"-\",\n            \"lcom/walkme/settingsactivity$dobuttondeleteaccount$1$1$1;\",\n            \">;)v\"\n        }\n    .end annotation\n\n    iput-object p1, p0, lcom/walkme/settingsactivity$dobuttondeleteaccount$1$1$1;->this$0:lcom/walkme/settingsactivity;"}, {"match": "deleteaccount", "context": "            \"lcom/walkme/settingsactivity$dobuttondeleteaccount$1$1$1;\",\n            \">;)v\"\n        }\n    .end annotation\n\n    iput-object p1, p0, lcom/walkme/settingsactivity$dobuttondeleteaccount$1$1$1;->this$0:lcom/walkme/settingsactivity;\n\n    invoke-direct {p0, p2}, lkotlin/coroutines/jvm/internal/suspendlambda;-><init>(lkotlin/coroutines/continuation;)v\n\n    return-void\n.end method"}, {"match": "deleteaccount", "context": "            \"lkotlin/unit;\",\n            \">;\"\n        }\n    .end annotation\n\n    new-instance p1, lcom/walkme/settingsactivity$dobuttondeleteaccount$1$1$1;\n\n    iget-object v0, p0, lcom/walkme/settingsactivity$dobuttondeleteaccount$1$1$1;->this$0:lcom/walkme/settingsactivity;\n\n    invoke-direct {p1, v0, p2}, lcom/walkme/settingsactivity$dobuttondeleteaccount$1$1$1;-><init>(lcom/walkme/settingsactivity;lkotlin/coroutines/continuation;)v\n"}, {"match": "deleteaccount", "context": "        }\n    .end annotation\n\n    new-instance p1, lcom/walkme/settingsactivity$dobuttondeleteaccount$1$1$1;\n\n    iget-object v0, p0, lcom/walkme/settingsactivity$dobuttondeleteaccount$1$1$1;->this$0:lcom/walkme/settingsactivity;\n\n    invoke-direct {p1, v0, p2}, lcom/walkme/settingsactivity$dobuttondeleteaccount$1$1$1;-><init>(lcom/walkme/settingsactivity;lkotlin/coroutines/continuation;)v\n\n    return-object p1\n.end method"}, {"match": "deleteaccount", "context": "\n    new-instance p1, lcom/walkme/settingsactivity$dobuttondeleteaccount$1$1$1;\n\n    iget-object v0, p0, lcom/walkme/settingsactivity$dobuttondeleteaccount$1$1$1;->this$0:lcom/walkme/settingsactivity;\n\n    invoke-direct {p1, v0, p2}, lcom/walkme/settingsactivity$dobuttondeleteaccount$1$1$1;-><init>(lcom/walkme/settingsactivity;lkotlin/coroutines/continuation;)v\n\n    return-object p1\n.end method\n\n.method public final invoke(ljava/lang/object;ljava/lang/object;)ljava/lang/object;"}, {"match": "deleteaccount", "context": "\n    check-cast p1, lkotlinx/coroutines/coroutinescope;\n\n    check-cast p2, lkotlin/coroutines/continuation;\n\n    invoke-virtual {p0, p1, p2}, lcom/walkme/settingsactivity$dobuttondeleteaccount$1$1$1;->create(ljava/lang/object;lkotlin/coroutines/continuation;)lkotlin/coroutines/continuation;\n\n    move-result-object p1\n\n    check-cast p1, lcom/walkme/settingsactivity$dobuttondeleteaccount$1$1$1;\n"}, {"match": "deleteaccount", "context": "\n    invoke-virtual {p0, p1, p2}, lcom/walkme/settingsactivity$dobuttondeleteaccount$1$1$1;->create(ljava/lang/object;lkotlin/coroutines/continuation;)lkotlin/coroutines/continuation;\n\n    move-result-object p1\n\n    check-cast p1, lcom/walkme/settingsactivity$dobuttondeleteaccount$1$1$1;\n\n    sget-object p2, lkotlin/unit;->instance:lkotlin/unit;\n\n    invoke-virtual {p1, p2}, lcom/walkme/settingsactivity$dobuttondeleteaccount$1$1$1;->invokesuspend(ljava/lang/object;)ljava/lang/object;\n"}, {"match": "deleteaccount", "context": "\n    check-cast p1, lcom/walkme/settingsactivity$dobuttondeleteaccount$1$1$1;\n\n    sget-object p2, lkotlin/unit;->instance:lkotlin/unit;\n\n    invoke-virtual {p1, p2}, lcom/walkme/settingsactivity$dobuttondeleteaccount$1$1$1;->invokesuspend(ljava/lang/object;)ljava/lang/object;\n\n    return-object p2\n.end method\n\n.method public final invokesuspend(ljava/lang/object;)ljava/lang/object;"}, {"match": "deleteaccount", "context": "    invoke-static {p1}, lkotlin/resultkt;->throwonfailure(ljava/lang/object;)v\n\n    .line 2\n    sget-object p1, lcom/walkme/api/api;->instance:lcom/walkme/api/api;\n\n    invoke-virtual {p1}, lcom/walkme/api/api;->deleteaccount()lcom/walkme/api/api$errorcode;\n\n    move-result-object p1\n\n    .line 3\n    sget-object v0, lcom/walkme/api/api$errorcode;->success:lcom/walkme/api/api$errorcode;"}, {"match": "deleteaccount", "context": "    const/4 v1, 0x0\n\n    if-ne p1, v0, :cond_0\n\n    .line 4\n    iget-object p1, p0, lcom/walkme/settingsactivity$dobuttondeleteaccount$1$1$1;->this$0:lcom/walkme/settingsactivity;\n\n    new-instance v0, lcom/walkme/settingsactivity$dobuttondeleteaccount$1$1$1$1;\n\n    invoke-direct {v0, p1}, lcom/walkme/settingsactivity$dobuttondeleteaccount$1$1$1$1;-><init>(lcom/walkme/settingsactivity;)v\n"}, {"match": "deleteaccount", "context": "    if-ne p1, v0, :cond_0\n\n    .line 4\n    iget-object p1, p0, lcom/walkme/settingsactivity$dobuttondeleteaccount$1$1$1;->this$0:lcom/walkme/settingsactivity;\n\n    new-instance v0, lcom/walkme/settingsactivity$dobuttondeleteaccount$1$1$1$1;\n\n    invoke-direct {v0, p1}, lcom/walkme/settingsactivity$dobuttondeleteaccount$1$1$1$1;-><init>(lcom/walkme/settingsactivity;)v\n\n    .line 5\n    sget-object p1, lkotlinx/coroutines/dispatchers;->io:lkotlinx/coroutines/scheduling/defaultioscheduler;"}, {"match": "deleteaccount", "context": "    .line 4\n    iget-object p1, p0, lcom/walkme/settingsactivity$dobuttondeleteaccount$1$1$1;->this$0:lcom/walkme/settingsactivity;\n\n    new-instance v0, lcom/walkme/settingsactivity$dobuttondeleteaccount$1$1$1$1;\n\n    invoke-direct {v0, p1}, lcom/walkme/settingsactivity$dobuttondeleteaccount$1$1$1$1;-><init>(lcom/walkme/settingsactivity;)v\n\n    .line 5\n    sget-object p1, lkotlinx/coroutines/dispatchers;->io:lkotlinx/coroutines/scheduling/defaultioscheduler;\n\n    .line 6"}, {"match": "deleteaccount", "context": "    .catch ljava/lang/exception; {:try_start_0 .. :try_end_0} :catch_0\n\n    .line 8\n    :catch_0\n    :cond_1\n    iget-object p1, p0, lcom/walkme/settingsactivity$dobuttondeleteaccount$1$1$1;->this$0:lcom/walkme/settingsactivity;\n\n    const v0, 0x7f1100b2\n\n    const/4 v2, 0x3\n"}]}}, {"file": "./SMALI/com.walkme.azores.new/smali/com/walkme/SettingsActivity.smali", "findings": {"keyword_matches": ["delete account", "deleteaccount"], "api_matches": [], "context": [{"match": "delete account", "context": "\n    .line 53\n    :cond_7\n    sget-object p1, lcom/walkme/wmanalytics/wmanalyticsmanager;->companion:lcom/walkme/wmanalytics/wmanalyticsmanager$companion;\n\n    const-string v3, \"delete account\"\n\n    invoke-virtual {p1, v7, v3, v6}, lcom/walkme/wmanalytics/wmanalyticsmanager$companion;->sendevent(ljava/lang/string;ljava/lang/string;ljava/lang/string;)v\n\n    .line 54\n    sget-object p1, lcom/walkme/views/dialogs/popup;->instance:lcom/walkme/views/dialogs/popup;"}, {"match": "deleteaccount", "context": "    .line 49\n    iget-object v1, v0, lcom/walkme/settingsactivity;->binding:lcom/walkme/databinding/activitysettingsbinding;\n\n    if-eqz v1, :cond_18\n\n    iget-object v1, v1, lcom/walkme/databinding/activitysettingsbinding;->deleteaccountbutton:landroid/widget/button;\n\n    invoke-virtual {v1, v0}, landroid/view/view;->setonclicklistener(landroid/view/view$onclicklistener;)v\n\n    .line 50\n    iget-object v1, v0, lcom/walkme/settingsactivity;->binding:lcom/walkme/databinding/activitysettingsbinding;"}, {"match": "deleteaccount", "context": "    .line 15\n    iget-object v0, p0, lcom/walkme/settingsactivity;->binding:lcom/walkme/databinding/activitysettingsbinding;\n\n    if-eqz v0, :cond_2\n\n    iget-object v0, v0, lcom/walkme/databinding/activitysettingsbinding;->deleteaccounttextview:landroid/widget/textview;\n\n    const v3, 0x7f1101dd\n\n    invoke-static {v3, v1, v4}, lcom/walkme/aextensionskt;->localize$default(iljava/lang/string;i)ljava/lang/string;\n"}, {"match": "deleteaccount", "context": "    .line 16\n    iget-object v0, p0, lcom/walkme/settingsactivity;->binding:lcom/walkme/databinding/activitysettingsbinding;\n\n    if-eqz v0, :cond_1\n\n    iget-object v0, v0, lcom/walkme/databinding/activitysettingsbinding;->deleteaccountbutton:landroid/widget/button;\n\n    const v3, 0x7f11007d\n\n    invoke-static {v3, v1, v4}, lcom/walkme/aextensionskt;->localize$default(iljava/lang/string;i)ljava/lang/string;\n"}]}}, {"file": "./SMALI/com.walkme.azores.new/smali/com/walkme/SettingsActivity$$ExternalSyntheticLambda2.smali", "findings": {"keyword_matches": ["deleteaccount"], "api_matches": [], "context": [{"match": "deleteaccount", "context": "\n    .line 8\n    sget-object v0, lkotlinx/coroutines/dispatchers;->io:lkotlinx/coroutines/scheduling/defaultioscheduler;\n\n    .line 9\n    new-instance v2, lcom/walkme/settingsactivity$dobuttondeleteaccount$1$1$1;\n\n    invoke-direct {v2, p1, v1}, lcom/walkme/settingsactivity$dobuttondeleteaccount$1$1$1;-><init>(lcom/walkme/settingsactivity;lkotlin/coroutines/continuation;)v\n\n    const/4 p1, 0x2\n"}, {"match": "deleteaccount", "context": "    sget-object v0, lkotlinx/coroutines/dispatchers;->io:lkotlinx/coroutines/scheduling/defaultioscheduler;\n\n    .line 9\n    new-instance v2, lcom/walkme/settingsactivity$dobuttondeleteaccount$1$1$1;\n\n    invoke-direct {v2, p1, v1}, lcom/walkme/settingsactivity$dobuttondeleteaccount$1$1$1;-><init>(lcom/walkme/settingsactivity;lkotlin/coroutines/continuation;)v\n\n    const/4 p1, 0x2\n\n    invoke-static {v0, v2, p1}, lcom/airbnb/lottie/r$styleable;->launch$default(lkotlin/coroutines/coroutinecontext;lkotlin/jvm/functions/function2;i)lkotlinx/coroutines/job;\n"}]}}, {"file": "./SMALI/com.walkme.azores.new/smali/com/walkme/SettingsActivity$doButtonDeleteAccount$1$1$1$1.smali", "findings": {"keyword_matches": ["deleteaccount"], "api_matches": [], "context": [{"match": "deleteaccount", "context": ".class public final lcom/walkme/settingsactivity$dobuttondeleteaccount$1$1$1$1;\n.super lkotlin/jvm/internal/lambda;\n.source \"settingsactivity.kt\"\n\n# interfaces\n.implements lkotlin/jvm/functions/function0;"}, {"match": "deleteaccount", "context": ".implements lkotlin/jvm/functions/function0;\n\n\n# annotations\n.annotation system ldalvik/annotation/enclosingmethod;\n    value = lcom/walkme/settingsactivity$dobuttondeleteaccount$1$1$1;->invokesuspend(ljava/lang/object;)ljava/lang/object;\n.end annotation\n\n.annotation system ldalvik/annotation/innerclass;\n    accessflags = 0x19\n    name = null"}, {"match": "deleteaccount", "context": "\n# direct methods\n.method public constructor <init>(lcom/walkme/settingsactivity;)v\n    .locals 0\n\n    iput-object p1, p0, lcom/walkme/settingsactivity$dobuttondeleteaccount$1$1$1$1;->this$0:lcom/walkme/settingsactivity;\n\n    const/4 p1, 0x0\n\n    invoke-direct {p0, p1}, lkotlin/jvm/internal/lambda;-><init>(i)v\n"}, {"match": "deleteaccount", "context": "# virtual methods\n.method public final invoke()ljava/lang/object;\n    .locals 1\n\n    .line 1\n    iget-object v0, p0, lcom/walkme/settingsactivity$dobuttondeleteaccount$1$1$1$1;->this$0:lcom/walkme/settingsactivity;\n\n    invoke-virtual {v0}, lcom/walkme/settingsactivity;->refreshview()v\n\n    .line 2\n    :try_start_0"}]}}, {"file": "./SMALI/com.walkme.azores.new/smali/com/walkme/databinding/ActivitySettingsBinding.smali", "findings": {"keyword_matches": ["deleteaccount"], "api_matches": [], "context": [{"match": "deleteaccount", "context": ".field public final backbutton:lcom/walkme/views/extended/alphaimagebutton;\n    .annotation build landroidx/annotation/nonnull;\n    .end annotation\n.end field\n\n.field public final deleteaccountbutton:landroid/widget/button;\n    .annotation build landroidx/annotation/nonnull;\n    .end annotation\n.end field\n\n.field public final deleteaccounttextview:landroid/widget/textview;"}, {"match": "deleteaccount", "context": ".field public final deleteaccountbutton:landroid/widget/button;\n    .annotation build landroidx/annotation/nonnull;\n    .end annotation\n.end field\n\n.field public final deleteaccounttextview:landroid/widget/textview;\n    .annotation build landroidx/annotation/nonnull;\n    .end annotation\n.end field\n\n.field public final downloadmapbutton:landroid/widget/button;"}, {"match": "deleteaccount", "context": "            0x0\n        }\n        names = {\n            \"rootview\",\n            \"backbutton\",\n            \"deleteaccountbutton\",\n            \"deleteaccountcontainer\",\n            \"deleteaccounttextview\",\n            \"downloadbutton\",\n            \"downloadmapbutton\",\n            \"feedbackbutton\","}, {"match": "deleteaccount", "context": "        }\n        names = {\n            \"rootview\",\n            \"backbutton\",\n            \"deleteaccountbutton\",\n            \"deleteaccountcontainer\",\n            \"deleteaccounttextview\",\n            \"downloadbutton\",\n            \"downloadmapbutton\",\n            \"feedbackbutton\",\n            \"feedbackcontainer\","}, {"match": "deleteaccount", "context": "        names = {\n            \"rootview\",\n            \"backbutton\",\n            \"deleteaccountbutton\",\n            \"deleteaccountcontainer\",\n            \"deleteaccounttextview\",\n            \"downloadbutton\",\n            \"downloadmapbutton\",\n            \"feedbackbutton\",\n            \"feedbackcontainer\",\n            \"feedbacktextview\","}, {"match": "deleteaccount", "context": "    iput-object v1, v0, lcom/walkme/databinding/activitysettingsbinding;->backbutton:lcom/walkme/views/extended/alphaimagebutton;\n\n    move-object v1, p3\n\n    .line 4\n    iput-object v1, v0, lcom/walkme/databinding/activitysettingsbinding;->deleteaccountbutton:landroid/widget/button;\n\n    move-object v1, p4\n\n    .line 5\n    iput-object v1, v0, lcom/walkme/databinding/activitysettingsbinding;->deleteaccounttextview:landroid/widget/textview;"}, {"match": "deleteaccount", "context": "    iput-object v1, v0, lcom/walkme/databinding/activitysettingsbinding;->deleteaccountbutton:landroid/widget/button;\n\n    move-object v1, p4\n\n    .line 5\n    iput-object v1, v0, lcom/walkme/databinding/activitysettingsbinding;->deleteaccounttextview:landroid/widget/textview;\n\n    move-object v1, p5\n\n    .line 6\n    iput-object v1, v0, lcom/walkme/databinding/activitysettingsbinding;->downloadmapbutton:landroid/widget/button;"}]}}, {"file": "./SMALI/com.walkme.azores.new/smali/com/walkme/api/API.smali", "findings": {"keyword_matches": ["deleteaccount"], "api_matches": [], "context": [{"match": "deleteaccount", "context": "    invoke-virtual {p1}, ljava/lang/throwable;->printstacktrace()v\n\n    return-object v4\n.end method\n\n.method public final deleteaccount()lcom/walkme/api/api$errorcode;\n    .locals 9\n\n    .line 1\n    :try_start_0\n    invoke-static {}, ljava/lang/system;->currenttimemillis()j"}, {"match": "deleteaccount", "context": "\n    invoke-direct {v6, v7}, lcom/walkme/api/delete/deletepostobject;-><init>(ljava/lang/long;)v\n\n    invoke-direct {v4, v2, v5, v6}, lcom/walkme/api/post/postobject;-><init>(ljava/lang/string;ljava/lang/long;lcom/walkme/api/post/postdata;)v\n\n    invoke-interface {v3, v4}, lcom/walkme/api/api$apiendpointinterface;->deleteaccount(lcom/walkme/api/post/postobject;)lretrofit2/call;\n\n    move-result-object v2\n\n    .line 6\n    invoke-static {}, ljava/lang/system;->currenttimemillis()j"}]}}, {"file": "./SMALI/com.walkme.azores.new/smali/com/walkme/api/API$APIEndPointInterface.smali", "findings": {"keyword_matches": ["deleteaccount"], "api_matches": [], "context": [{"match": "deleteaccount", "context": "    .annotation runtime lretrofit2/http/post;\n        value = \"county-weather?key=utlcoisnqz5xoha9cs2c1mdot2exdkau2167vg1c\"\n    .end annotation\n.end method\n\n.method public abstract deleteaccount(lcom/walkme/api/post/postobject;)lretrofit2/call;\n    .param p1    # lcom/walkme/api/post/postobject;\n        .annotation runtime lretrofit2/http/body;\n        .end annotation\n    .end param\n    .annotation system ldalvik/annotation/signature;"}]}}], "strings_analysis": [{"matched_pattern": "delete account", "name": "deleteAccount", "text": "Delete account"}, {"matched_pattern": "deleteaccount", "name": "deleteAccount", "text": "Delete account"}, {"matched_pattern": "deleteaccount", "name": "deleteAccountConfirmation", "text": "\"Are you sure you want to delete your account?\nYou won't be able to recover it.\""}], "layout_analysis": [], "total_files_processed": 11744}
+{
+    "app_name": "com.walkme.azores.new",
+    "smali_analysis": [
+        {
+            "file": "./SMALI/com.walkme.azores.new/smali/com/walkme/SettingsActivity$doButtonDeleteAccount$1$1$1.smali",
+            "findings": {
+                "keyword_matches": [
+                    "deleteaccount"
+                ],
+                "api_matches": [],
+                "context": [
+                    {
+                        "match": "deleteaccount",
+                        "context": ".class public final lcom/walkme/settingsactivity$dobuttondeleteaccount$1$1$1;\n.super lkotlin/coroutines/jvm/internal/suspendlambda;\n.source \"settingsactivity.kt\"\n\n# interfaces\n.implements lkotlin/jvm/functions/function2;"
+                    },
+                    {
+                        "match": "deleteaccount",
+                        "context": "        \">;\"\n    }\n.end annotation\n\n.annotation runtime lkotlin/coroutines/jvm/internal/debugmetadata;\n    c = \"com.walkme.settingsactivity$dobuttondeleteaccount$1$1$1\"\n    f = \"settingsactivity.kt\"\n    l = {}\n    m = \"invokesuspend\"\n.end annotation\n"
+                    },
+                    {
+                        "match": "deleteaccount",
+                        "context": "        value = {\n            \"(\",\n            \"lcom/walkme/settingsactivity;\",\n            \"lkotlin/coroutines/continuation<\",\n            \"-\",\n            \"lcom/walkme/settingsactivity$dobuttondeleteaccount$1$1$1;\",\n            \">;)v\"\n        }\n    .end annotation\n\n    iput-object p1, p0, lcom/walkme/settingsactivity$dobuttondeleteaccount$1$1$1;->this$0:lcom/walkme/settingsactivity;"
+                    },
+                    {
+                        "match": "deleteaccount",
+                        "context": "            \"lcom/walkme/settingsactivity$dobuttondeleteaccount$1$1$1;\",\n            \">;)v\"\n        }\n    .end annotation\n\n    iput-object p1, p0, lcom/walkme/settingsactivity$dobuttondeleteaccount$1$1$1;->this$0:lcom/walkme/settingsactivity;\n\n    invoke-direct {p0, p2}, lkotlin/coroutines/jvm/internal/suspendlambda;-><init>(lkotlin/coroutines/continuation;)v\n\n    return-void\n.end method"
+                    },
+                    {
+                        "match": "deleteaccount",
+                        "context": "            \"lkotlin/unit;\",\n            \">;\"\n        }\n    .end annotation\n\n    new-instance p1, lcom/walkme/settingsactivity$dobuttondeleteaccount$1$1$1;\n\n    iget-object v0, p0, lcom/walkme/settingsactivity$dobuttondeleteaccount$1$1$1;->this$0:lcom/walkme/settingsactivity;\n\n    invoke-direct {p1, v0, p2}, lcom/walkme/settingsactivity$dobuttondeleteaccount$1$1$1;-><init>(lcom/walkme/settingsactivity;lkotlin/coroutines/continuation;)v\n"
+                    },
+                    {
+                        "match": "deleteaccount",
+                        "context": "        }\n    .end annotation\n\n    new-instance p1, lcom/walkme/settingsactivity$dobuttondeleteaccount$1$1$1;\n\n    iget-object v0, p0, lcom/walkme/settingsactivity$dobuttondeleteaccount$1$1$1;->this$0:lcom/walkme/settingsactivity;\n\n    invoke-direct {p1, v0, p2}, lcom/walkme/settingsactivity$dobuttondeleteaccount$1$1$1;-><init>(lcom/walkme/settingsactivity;lkotlin/coroutines/continuation;)v\n\n    return-object p1\n.end method"
+                    },
+                    {
+                        "match": "deleteaccount",
+                        "context": "\n    new-instance p1, lcom/walkme/settingsactivity$dobuttondeleteaccount$1$1$1;\n\n    iget-object v0, p0, lcom/walkme/settingsactivity$dobuttondeleteaccount$1$1$1;->this$0:lcom/walkme/settingsactivity;\n\n    invoke-direct {p1, v0, p2}, lcom/walkme/settingsactivity$dobuttondeleteaccount$1$1$1;-><init>(lcom/walkme/settingsactivity;lkotlin/coroutines/continuation;)v\n\n    return-object p1\n.end method\n\n.method public final invoke(ljava/lang/object;ljava/lang/object;)ljava/lang/object;"
+                    },
+                    {
+                        "match": "deleteaccount",
+                        "context": "\n    check-cast p1, lkotlinx/coroutines/coroutinescope;\n\n    check-cast p2, lkotlin/coroutines/continuation;\n\n    invoke-virtual {p0, p1, p2}, lcom/walkme/settingsactivity$dobuttondeleteaccount$1$1$1;->create(ljava/lang/object;lkotlin/coroutines/continuation;)lkotlin/coroutines/continuation;\n\n    move-result-object p1\n\n    check-cast p1, lcom/walkme/settingsactivity$dobuttondeleteaccount$1$1$1;\n"
+                    },
+                    {
+                        "match": "deleteaccount",
+                        "context": "\n    invoke-virtual {p0, p1, p2}, lcom/walkme/settingsactivity$dobuttondeleteaccount$1$1$1;->create(ljava/lang/object;lkotlin/coroutines/continuation;)lkotlin/coroutines/continuation;\n\n    move-result-object p1\n\n    check-cast p1, lcom/walkme/settingsactivity$dobuttondeleteaccount$1$1$1;\n\n    sget-object p2, lkotlin/unit;->instance:lkotlin/unit;\n\n    invoke-virtual {p1, p2}, lcom/walkme/settingsactivity$dobuttondeleteaccount$1$1$1;->invokesuspend(ljava/lang/object;)ljava/lang/object;\n"
+                    },
+                    {
+                        "match": "deleteaccount",
+                        "context": "\n    check-cast p1, lcom/walkme/settingsactivity$dobuttondeleteaccount$1$1$1;\n\n    sget-object p2, lkotlin/unit;->instance:lkotlin/unit;\n\n    invoke-virtual {p1, p2}, lcom/walkme/settingsactivity$dobuttondeleteaccount$1$1$1;->invokesuspend(ljava/lang/object;)ljava/lang/object;\n\n    return-object p2\n.end method\n\n.method public final invokesuspend(ljava/lang/object;)ljava/lang/object;"
+                    },
+                    {
+                        "match": "deleteaccount",
+                        "context": "    invoke-static {p1}, lkotlin/resultkt;->throwonfailure(ljava/lang/object;)v\n\n    .line 2\n    sget-object p1, lcom/walkme/api/api;->instance:lcom/walkme/api/api;\n\n    invoke-virtual {p1}, lcom/walkme/api/api;->deleteaccount()lcom/walkme/api/api$errorcode;\n\n    move-result-object p1\n\n    .line 3\n    sget-object v0, lcom/walkme/api/api$errorcode;->success:lcom/walkme/api/api$errorcode;"
+                    },
+                    {
+                        "match": "deleteaccount",
+                        "context": "    const/4 v1, 0x0\n\n    if-ne p1, v0, :cond_0\n\n    .line 4\n    iget-object p1, p0, lcom/walkme/settingsactivity$dobuttondeleteaccount$1$1$1;->this$0:lcom/walkme/settingsactivity;\n\n    new-instance v0, lcom/walkme/settingsactivity$dobuttondeleteaccount$1$1$1$1;\n\n    invoke-direct {v0, p1}, lcom/walkme/settingsactivity$dobuttondeleteaccount$1$1$1$1;-><init>(lcom/walkme/settingsactivity;)v\n"
+                    },
+                    {
+                        "match": "deleteaccount",
+                        "context": "    if-ne p1, v0, :cond_0\n\n    .line 4\n    iget-object p1, p0, lcom/walkme/settingsactivity$dobuttondeleteaccount$1$1$1;->this$0:lcom/walkme/settingsactivity;\n\n    new-instance v0, lcom/walkme/settingsactivity$dobuttondeleteaccount$1$1$1$1;\n\n    invoke-direct {v0, p1}, lcom/walkme/settingsactivity$dobuttondeleteaccount$1$1$1$1;-><init>(lcom/walkme/settingsactivity;)v\n\n    .line 5\n    sget-object p1, lkotlinx/coroutines/dispatchers;->io:lkotlinx/coroutines/scheduling/defaultioscheduler;"
+                    },
+                    {
+                        "match": "deleteaccount",
+                        "context": "    .line 4\n    iget-object p1, p0, lcom/walkme/settingsactivity$dobuttondeleteaccount$1$1$1;->this$0:lcom/walkme/settingsactivity;\n\n    new-instance v0, lcom/walkme/settingsactivity$dobuttondeleteaccount$1$1$1$1;\n\n    invoke-direct {v0, p1}, lcom/walkme/settingsactivity$dobuttondeleteaccount$1$1$1$1;-><init>(lcom/walkme/settingsactivity;)v\n\n    .line 5\n    sget-object p1, lkotlinx/coroutines/dispatchers;->io:lkotlinx/coroutines/scheduling/defaultioscheduler;\n\n    .line 6"
+                    },
+                    {
+                        "match": "deleteaccount",
+                        "context": "    .catch ljava/lang/exception; {:try_start_0 .. :try_end_0} :catch_0\n\n    .line 8\n    :catch_0\n    :cond_1\n    iget-object p1, p0, lcom/walkme/settingsactivity$dobuttondeleteaccount$1$1$1;->this$0:lcom/walkme/settingsactivity;\n\n    const v0, 0x7f1100b2\n\n    const/4 v2, 0x3\n"
+                    }
+                ]
+            }
+        },
+        {
+            "file": "./SMALI/com.walkme.azores.new/smali/com/walkme/SettingsActivity.smali",
+            "findings": {
+                "keyword_matches": [
+                    "delete account",
+                    "deleteaccount"
+                ],
+                "api_matches": [],
+                "context": [
+                    {
+                        "match": "delete account",
+                        "context": "\n    .line 53\n    :cond_7\n    sget-object p1, lcom/walkme/wmanalytics/wmanalyticsmanager;->companion:lcom/walkme/wmanalytics/wmanalyticsmanager$companion;\n\n    const-string v3, \"delete account\"\n\n    invoke-virtual {p1, v7, v3, v6}, lcom/walkme/wmanalytics/wmanalyticsmanager$companion;->sendevent(ljava/lang/string;ljava/lang/string;ljava/lang/string;)v\n\n    .line 54\n    sget-object p1, lcom/walkme/views/dialogs/popup;->instance:lcom/walkme/views/dialogs/popup;"
+                    },
+                    {
+                        "match": "deleteaccount",
+                        "context": "    .line 49\n    iget-object v1, v0, lcom/walkme/settingsactivity;->binding:lcom/walkme/databinding/activitysettingsbinding;\n\n    if-eqz v1, :cond_18\n\n    iget-object v1, v1, lcom/walkme/databinding/activitysettingsbinding;->deleteaccountbutton:landroid/widget/button;\n\n    invoke-virtual {v1, v0}, landroid/view/view;->setonclicklistener(landroid/view/view$onclicklistener;)v\n\n    .line 50\n    iget-object v1, v0, lcom/walkme/settingsactivity;->binding:lcom/walkme/databinding/activitysettingsbinding;"
+                    },
+                    {
+                        "match": "deleteaccount",
+                        "context": "    .line 15\n    iget-object v0, p0, lcom/walkme/settingsactivity;->binding:lcom/walkme/databinding/activitysettingsbinding;\n\n    if-eqz v0, :cond_2\n\n    iget-object v0, v0, lcom/walkme/databinding/activitysettingsbinding;->deleteaccounttextview:landroid/widget/textview;\n\n    const v3, 0x7f1101dd\n\n    invoke-static {v3, v1, v4}, lcom/walkme/aextensionskt;->localize$default(iljava/lang/string;i)ljava/lang/string;\n"
+                    },
+                    {
+                        "match": "deleteaccount",
+                        "context": "    .line 16\n    iget-object v0, p0, lcom/walkme/settingsactivity;->binding:lcom/walkme/databinding/activitysettingsbinding;\n\n    if-eqz v0, :cond_1\n\n    iget-object v0, v0, lcom/walkme/databinding/activitysettingsbinding;->deleteaccountbutton:landroid/widget/button;\n\n    const v3, 0x7f11007d\n\n    invoke-static {v3, v1, v4}, lcom/walkme/aextensionskt;->localize$default(iljava/lang/string;i)ljava/lang/string;\n"
+                    }
+                ]
+            }
+        },
+        {
+            "file": "./SMALI/com.walkme.azores.new/smali/com/walkme/SettingsActivity$$ExternalSyntheticLambda2.smali",
+            "findings": {
+                "keyword_matches": [
+                    "deleteaccount"
+                ],
+                "api_matches": [],
+                "context": [
+                    {
+                        "match": "deleteaccount",
+                        "context": "\n    .line 8\n    sget-object v0, lkotlinx/coroutines/dispatchers;->io:lkotlinx/coroutines/scheduling/defaultioscheduler;\n\n    .line 9\n    new-instance v2, lcom/walkme/settingsactivity$dobuttondeleteaccount$1$1$1;\n\n    invoke-direct {v2, p1, v1}, lcom/walkme/settingsactivity$dobuttondeleteaccount$1$1$1;-><init>(lcom/walkme/settingsactivity;lkotlin/coroutines/continuation;)v\n\n    const/4 p1, 0x2\n"
+                    },
+                    {
+                        "match": "deleteaccount",
+                        "context": "    sget-object v0, lkotlinx/coroutines/dispatchers;->io:lkotlinx/coroutines/scheduling/defaultioscheduler;\n\n    .line 9\n    new-instance v2, lcom/walkme/settingsactivity$dobuttondeleteaccount$1$1$1;\n\n    invoke-direct {v2, p1, v1}, lcom/walkme/settingsactivity$dobuttondeleteaccount$1$1$1;-><init>(lcom/walkme/settingsactivity;lkotlin/coroutines/continuation;)v\n\n    const/4 p1, 0x2\n\n    invoke-static {v0, v2, p1}, lcom/airbnb/lottie/r$styleable;->launch$default(lkotlin/coroutines/coroutinecontext;lkotlin/jvm/functions/function2;i)lkotlinx/coroutines/job;\n"
+                    }
+                ]
+            }
+        },
+        {
+            "file": "./SMALI/com.walkme.azores.new/smali/com/walkme/SettingsActivity$doButtonDeleteAccount$1$1$1$1.smali",
+            "findings": {
+                "keyword_matches": [
+                    "deleteaccount"
+                ],
+                "api_matches": [],
+                "context": [
+                    {
+                        "match": "deleteaccount",
+                        "context": ".class public final lcom/walkme/settingsactivity$dobuttondeleteaccount$1$1$1$1;\n.super lkotlin/jvm/internal/lambda;\n.source \"settingsactivity.kt\"\n\n# interfaces\n.implements lkotlin/jvm/functions/function0;"
+                    },
+                    {
+                        "match": "deleteaccount",
+                        "context": ".implements lkotlin/jvm/functions/function0;\n\n\n# annotations\n.annotation system ldalvik/annotation/enclosingmethod;\n    value = lcom/walkme/settingsactivity$dobuttondeleteaccount$1$1$1;->invokesuspend(ljava/lang/object;)ljava/lang/object;\n.end annotation\n\n.annotation system ldalvik/annotation/innerclass;\n    accessflags = 0x19\n    name = null"
+                    },
+                    {
+                        "match": "deleteaccount",
+                        "context": "\n# direct methods\n.method public constructor <init>(lcom/walkme/settingsactivity;)v\n    .locals 0\n\n    iput-object p1, p0, lcom/walkme/settingsactivity$dobuttondeleteaccount$1$1$1$1;->this$0:lcom/walkme/settingsactivity;\n\n    const/4 p1, 0x0\n\n    invoke-direct {p0, p1}, lkotlin/jvm/internal/lambda;-><init>(i)v\n"
+                    },
+                    {
+                        "match": "deleteaccount",
+                        "context": "# virtual methods\n.method public final invoke()ljava/lang/object;\n    .locals 1\n\n    .line 1\n    iget-object v0, p0, lcom/walkme/settingsactivity$dobuttondeleteaccount$1$1$1$1;->this$0:lcom/walkme/settingsactivity;\n\n    invoke-virtual {v0}, lcom/walkme/settingsactivity;->refreshview()v\n\n    .line 2\n    :try_start_0"
+                    }
+                ]
+            }
+        },
+        {
+            "file": "./SMALI/com.walkme.azores.new/smali/com/walkme/databinding/ActivitySettingsBinding.smali",
+            "findings": {
+                "keyword_matches": [
+                    "deleteaccount"
+                ],
+                "api_matches": [],
+                "context": [
+                    {
+                        "match": "deleteaccount",
+                        "context": ".field public final backbutton:lcom/walkme/views/extended/alphaimagebutton;\n    .annotation build landroidx/annotation/nonnull;\n    .end annotation\n.end field\n\n.field public final deleteaccountbutton:landroid/widget/button;\n    .annotation build landroidx/annotation/nonnull;\n    .end annotation\n.end field\n\n.field public final deleteaccounttextview:landroid/widget/textview;"
+                    },
+                    {
+                        "match": "deleteaccount",
+                        "context": ".field public final deleteaccountbutton:landroid/widget/button;\n    .annotation build landroidx/annotation/nonnull;\n    .end annotation\n.end field\n\n.field public final deleteaccounttextview:landroid/widget/textview;\n    .annotation build landroidx/annotation/nonnull;\n    .end annotation\n.end field\n\n.field public final downloadmapbutton:landroid/widget/button;"
+                    },
+                    {
+                        "match": "deleteaccount",
+                        "context": "            0x0\n        }\n        names = {\n            \"rootview\",\n            \"backbutton\",\n            \"deleteaccountbutton\",\n            \"deleteaccountcontainer\",\n            \"deleteaccounttextview\",\n            \"downloadbutton\",\n            \"downloadmapbutton\",\n            \"feedbackbutton\","
+                    },
+                    {
+                        "match": "deleteaccount",
+                        "context": "        }\n        names = {\n            \"rootview\",\n            \"backbutton\",\n            \"deleteaccountbutton\",\n            \"deleteaccountcontainer\",\n            \"deleteaccounttextview\",\n            \"downloadbutton\",\n            \"downloadmapbutton\",\n            \"feedbackbutton\",\n            \"feedbackcontainer\","
+                    },
+                    {
+                        "match": "deleteaccount",
+                        "context": "        names = {\n            \"rootview\",\n            \"backbutton\",\n            \"deleteaccountbutton\",\n            \"deleteaccountcontainer\",\n            \"deleteaccounttextview\",\n            \"downloadbutton\",\n            \"downloadmapbutton\",\n            \"feedbackbutton\",\n            \"feedbackcontainer\",\n            \"feedbacktextview\","
+                    },
+                    {
+                        "match": "deleteaccount",
+                        "context": "    iput-object v1, v0, lcom/walkme/databinding/activitysettingsbinding;->backbutton:lcom/walkme/views/extended/alphaimagebutton;\n\n    move-object v1, p3\n\n    .line 4\n    iput-object v1, v0, lcom/walkme/databinding/activitysettingsbinding;->deleteaccountbutton:landroid/widget/button;\n\n    move-object v1, p4\n\n    .line 5\n    iput-object v1, v0, lcom/walkme/databinding/activitysettingsbinding;->deleteaccounttextview:landroid/widget/textview;"
+                    },
+                    {
+                        "match": "deleteaccount",
+                        "context": "    iput-object v1, v0, lcom/walkme/databinding/activitysettingsbinding;->deleteaccountbutton:landroid/widget/button;\n\n    move-object v1, p4\n\n    .line 5\n    iput-object v1, v0, lcom/walkme/databinding/activitysettingsbinding;->deleteaccounttextview:landroid/widget/textview;\n\n    move-object v1, p5\n\n    .line 6\n    iput-object v1, v0, lcom/walkme/databinding/activitysettingsbinding;->downloadmapbutton:landroid/widget/button;"
+                    }
+                ]
+            }
+        },
+        {
+            "file": "./SMALI/com.walkme.azores.new/smali/com/walkme/api/API.smali",
+            "findings": {
+                "keyword_matches": [
+                    "deleteaccount"
+                ],
+                "api_matches": [],
+                "context": [
+                    {
+                        "match": "deleteaccount",
+                        "context": "    invoke-virtual {p1}, ljava/lang/throwable;->printstacktrace()v\n\n    return-object v4\n.end method\n\n.method public final deleteaccount()lcom/walkme/api/api$errorcode;\n    .locals 9\n\n    .line 1\n    :try_start_0\n    invoke-static {}, ljava/lang/system;->currenttimemillis()j"
+                    },
+                    {
+                        "match": "deleteaccount",
+                        "context": "\n    invoke-direct {v6, v7}, lcom/walkme/api/delete/deletepostobject;-><init>(ljava/lang/long;)v\n\n    invoke-direct {v4, v2, v5, v6}, lcom/walkme/api/post/postobject;-><init>(ljava/lang/string;ljava/lang/long;lcom/walkme/api/post/postdata;)v\n\n    invoke-interface {v3, v4}, lcom/walkme/api/api$apiendpointinterface;->deleteaccount(lcom/walkme/api/post/postobject;)lretrofit2/call;\n\n    move-result-object v2\n\n    .line 6\n    invoke-static {}, ljava/lang/system;->currenttimemillis()j"
+                    }
+                ]
+            }
+        },
+        {
+            "file": "./SMALI/com.walkme.azores.new/smali/com/walkme/api/API$APIEndPointInterface.smali",
+            "findings": {
+                "keyword_matches": [
+                    "deleteaccount"
+                ],
+                "api_matches": [],
+                "context": [
+                    {
+                        "match": "deleteaccount",
+                        "context": "    .annotation runtime lretrofit2/http/post;\n        value = \"county-weather?key=utlcoisnqz5xoha9cs2c1mdot2exdkau2167vg1c\"\n    .end annotation\n.end method\n\n.method public abstract deleteaccount(lcom/walkme/api/post/postobject;)lretrofit2/call;\n    .param p1    # lcom/walkme/api/post/postobject;\n        .annotation runtime lretrofit2/http/body;\n        .end annotation\n    .end param\n    .annotation system ldalvik/annotation/signature;"
+                    }
+                ]
+            }
+        }
+    ],
+    "strings_analysis": [
+        {
+            "matched_pattern": "delete account",
+            "name": "deleteAccount",
+            "text": "Delete account"
+        },
+        {
+            "matched_pattern": "deleteaccount",
+            "name": "deleteAccount",
+            "text": "Delete account"
+        },
+        {
+            "matched_pattern": "deleteaccount",
+            "name": "deleteAccountConfirmation",
+            "text": "\"Are you sure you want to delete your account?\nYou won't be able to recover it.\""
+        }
+    ],
+    "layout_analysis": [],
+    "total_files_processed": 11744
+}

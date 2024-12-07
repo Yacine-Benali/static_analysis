@@ -1,1 +1,42 @@
-{"app_name": "nz.co.stuff.android.news", "smali_analysis": [{"file": "./SMALI/nz.co.stuff.android.news/smali/com/gigya/socialize/android/GSWebBridge.smali", "findings": {"keyword_matches": ["removeaccount"], "api_matches": [], "context": [{"match": "removeaccount", "context": "\n    move-result-object v1\n\n    iget-object v2, v0, lcom/gigya/socialize/android/gswebbridge;->accountslistener:lcom/gigya/socialize/android/event/gsaccountseventlistener;\n\n    invoke-virtual {v1, v2}, lcom/gigya/socialize/android/gsapi;->removeaccountslistener(lcom/gigya/socialize/android/event/gsaccountseventlistener;)v\n\n    .line 132\n    invoke-static {}, lcom/gigya/socialize/android/gsapi;->getinstance()lcom/gigya/socialize/android/gsapi;\n\n    move-result-object v1"}]}}, {"file": "./SMALI/nz.co.stuff.android.news/smali/com/gigya/socialize/android/GSAPI.smali", "findings": {"keyword_matches": ["removeaccount"], "api_matches": [], "context": [{"match": "removeaccount", "context": "    .line 996\n    :cond_0\n    return-void\n.end method\n\n.method protected removeaccountslistener(lcom/gigya/socialize/android/event/gsaccountseventlistener;)v\n    .locals 1\n    .param p1, \"listener\"    # lcom/gigya/socialize/android/event/gsaccountseventlistener;\n\n    .prologue\n    .line 346"}, {"match": "removeaccount", "context": "\n    .prologue\n    .line 321\n    iget-object v0, p0, lcom/gigya/socialize/android/gsapi;->accountseventlistener:lcom/gigya/socialize/android/event/gsaccountseventlistener;\n\n    invoke-virtual {p0, v0}, lcom/gigya/socialize/android/gsapi;->removeaccountslistener(lcom/gigya/socialize/android/event/gsaccountseventlistener;)v\n\n    .line 323\n    if-eqz p1, :cond_0\n\n    .line 324"}]}}], "strings_analysis": [], "layout_analysis": [], "total_files_processed": 10269}
+{
+    "app_name": "nz.co.stuff.android.news",
+    "smali_analysis": [
+        {
+            "file": "./SMALI/nz.co.stuff.android.news/smali/com/gigya/socialize/android/GSWebBridge.smali",
+            "findings": {
+                "keyword_matches": [
+                    "removeaccount"
+                ],
+                "api_matches": [],
+                "context": [
+                    {
+                        "match": "removeaccount",
+                        "context": "\n    move-result-object v1\n\n    iget-object v2, v0, lcom/gigya/socialize/android/gswebbridge;->accountslistener:lcom/gigya/socialize/android/event/gsaccountseventlistener;\n\n    invoke-virtual {v1, v2}, lcom/gigya/socialize/android/gsapi;->removeaccountslistener(lcom/gigya/socialize/android/event/gsaccountseventlistener;)v\n\n    .line 132\n    invoke-static {}, lcom/gigya/socialize/android/gsapi;->getinstance()lcom/gigya/socialize/android/gsapi;\n\n    move-result-object v1"
+                    }
+                ]
+            }
+        },
+        {
+            "file": "./SMALI/nz.co.stuff.android.news/smali/com/gigya/socialize/android/GSAPI.smali",
+            "findings": {
+                "keyword_matches": [
+                    "removeaccount"
+                ],
+                "api_matches": [],
+                "context": [
+                    {
+                        "match": "removeaccount",
+                        "context": "    .line 996\n    :cond_0\n    return-void\n.end method\n\n.method protected removeaccountslistener(lcom/gigya/socialize/android/event/gsaccountseventlistener;)v\n    .locals 1\n    .param p1, \"listener\"    # lcom/gigya/socialize/android/event/gsaccountseventlistener;\n\n    .prologue\n    .line 346"
+                    },
+                    {
+                        "match": "removeaccount",
+                        "context": "\n    .prologue\n    .line 321\n    iget-object v0, p0, lcom/gigya/socialize/android/gsapi;->accountseventlistener:lcom/gigya/socialize/android/event/gsaccountseventlistener;\n\n    invoke-virtual {p0, v0}, lcom/gigya/socialize/android/gsapi;->removeaccountslistener(lcom/gigya/socialize/android/event/gsaccountseventlistener;)v\n\n    .line 323\n    if-eqz p1, :cond_0\n\n    .line 324"
+                    }
+                ]
+            }
+        }
+    ],
+    "strings_analysis": [],
+    "layout_analysis": [],
+    "total_files_processed": 10269
+}
