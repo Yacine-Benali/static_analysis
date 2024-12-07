@@ -3,8 +3,8 @@
 [main] INFO soot.jimple.infoflow.android.SetupApplication - Initializing Soot...
 [main] INFO soot.jimple.infoflow.android.SetupApplication - Loading dex files...
 [main] WARN soot.dexpler.DexFileProvider - Multiple dex files detected, only processing 'classes.dex'. Use '-process-multiple-dex' option to process them all.
-[main] INFO soot.jimple.infoflow.android.SetupApplication - ARSC file parsing took 0.219368766 seconds
-[main] INFO soot.jimple.infoflow.memory.MemoryWarningSystem - Registered a memory warning system for 18,431.1 MiB
+[main] INFO soot.jimple.infoflow.android.SetupApplication - ARSC file parsing took 0.198440174 seconds
+[main] INFO soot.jimple.infoflow.memory.MemoryWarningSystem - Registered a memory warning system for 4,915.35 MiB
 [main] INFO soot.jimple.infoflow.memory.FlowDroidTimeoutWatcher - FlowDroid timeout watcher started
 [main] INFO soot.jimple.infoflow.android.entryPointCreators.AndroidEntryPointCreator - Creating Android entry point for 400 components...
 [main] WARN soot.jimple.infoflow.android.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class androidx.core.content.FileProvider
@@ -58,7 +58,7 @@
 [main] WARN soot.jimple.infoflow.android.data.parsers.PermissionMethodParser - Line does not match: <org.apache.xmlrpc.webserver.HttpServletRequestImpl: void parseParameters)> -> _SOURCE_
 [main] WARN soot.jimple.infoflow.android.data.parsers.PermissionMethodParser - Line does not match:     
 [main] INFO soot.jimple.infoflow.android.source.AccessPathBasedSourceSinkManager - Created a SourceSinkManager with 71 sources, 193 sinks, and 210 callback methods.
-[main] INFO soot.jimple.infoflow.android.SetupApplication - Collecting callbacks and building a callgraph took 70 seconds
+[main] INFO soot.jimple.infoflow.android.SetupApplication - Collecting callbacks and building a callgraph took 92 seconds
 [main] INFO soot.jimple.infoflow.android.SetupApplication - Running data flow analysis on /mnt/aiongpfs/users/mbenali/static_analysis/APKs/linko.home.apk with 71 sources and 193 sinks...
 [main] WARN soot.jimple.infoflow.InfoflowConfiguration - Static field tracking is disabled, results may be incomplete
 [main] WARN soot.jimple.infoflow.InfoflowConfiguration - Using flow-insensitive alias tracking, results may be imprecise
@@ -69,11 +69,11 @@
 [main] INFO soot.jimple.infoflow.InfoflowConfiguration - Recursive access path shortening is enabled
 [main] INFO soot.jimple.infoflow.InfoflowConfiguration - Taint analysis enabled: true
 [main] INFO soot.jimple.infoflow.InfoflowConfiguration - Using alias algorithm FlowSensitive
-[main] INFO soot.jimple.infoflow.memory.MemoryWarningSystem - Registered a memory warning system for 18,431.1 MiB
+[main] INFO soot.jimple.infoflow.memory.MemoryWarningSystem - Registered a memory warning system for 4,915.35 MiB
 [main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - Callgraph construction took 0 seconds
 [FlowDroid Timeout Watcher] INFO soot.jimple.infoflow.memory.FlowDroidTimeoutWatcher - FlowDroid timeout watcher terminated
 [main] INFO soot.jimple.infoflow.codeOptimization.InterproceduralConstantValuePropagator - Removing side-effect free methods is disabled
-[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - Dead code elimination took 4.56162826 seconds
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - Dead code elimination took 4.602034003 seconds
 [main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - Callgraph has 189982 edges
 [main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - Starting Taint Analysis
 [main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - Using context- and flow-sensitive solver
@@ -81,12 +81,12 @@
 [main] INFO soot.jimple.infoflow.memory.FlowDroidTimeoutWatcher - FlowDroid timeout watcher started
 [main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - Looking for sources and sinks...
 [main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - Source lookup done, found 20 sources and 401 sinks.
-[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - Taint wrapper hits: 7790
-[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - Taint wrapper misses: 355649
-[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - IFDS problem with 388701 forward and 298724 backward edges solved in 4 seconds, processing 33 results...
-[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - Current memory consumption: 4751 MB
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - Taint wrapper hits: 7791
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - Taint wrapper misses: 355546
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - IFDS problem with 388623 forward and 298851 backward edges solved in 4 seconds, processing 33 results...
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - Current memory consumption: 2340 MB
 [FlowDroid Timeout Watcher] INFO soot.jimple.infoflow.memory.FlowDroidTimeoutWatcher - FlowDroid timeout watcher terminated
-[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - Memory consumption after cleanup: 569 MB
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - Memory consumption after cleanup: 447 MB
 [main] INFO soot.jimple.infoflow.memory.FlowDroidTimeoutWatcher - FlowDroid timeout watcher started
 [main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$ShutdownBatchPathBuilder - Running path reconstruction batch 1 with 5 elements
 [main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Obtainted 5 connections between sources and sinks
@@ -136,9 +136,8 @@
 [main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 2...
 [main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 3...
 [main] INFO soot.jimple.infoflow.memory.MemoryWarningSystem - Shutting down the memory warning system...
-[FlowDroid Timeout Watcher] INFO soot.jimple.infoflow.memory.FlowDroidTimeoutWatcher - FlowDroid timeout watcher terminated
-[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - Memory consumption after path building: 470 MB
-[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - Path reconstruction took 46 seconds
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - Memory consumption after path building: 463 MB
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - Path reconstruction took 26 seconds
 [main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - The sink interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("httpHost", $r7) in method <com.cmic.sso.sdk.d.b: void a(org.json.JSONObject)> was called with values from the following sources:
 [main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r15 = virtualinvoke $r9.<java.net.HttpURLConnection: java.io.InputStream getInputStream()>() in method <com.cmic.sso.sdk.h.d: void a(java.lang.String,java.lang.String,com.cmic.sso.sdk.h.d$b,android.net.Network,java.lang.String)>
 [main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - The sink staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("HttpUtils", $r0) in method <com.cmic.sso.sdk.h.f: void d(java.lang.String,java.lang.String)> was called with values from the following sources:
@@ -156,21 +155,29 @@
 [main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r10 = interfaceinvoke $r13.<android.database.Cursor: java.lang.String getString(int)>($i4) in method <com.facebook.internal.AttributionIdentifiers: com.facebook.internal.AttributionIdentifiers getAttributionIdentifiers(android.content.Context)>
 [main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - The sink $r12 = virtualinvoke $r9.<java.net.HttpURLConnection: java.io.OutputStream getOutputStream()>() in method <com.cmic.sso.sdk.h.d: void a(java.lang.String,java.lang.String,com.cmic.sso.sdk.h.d$b,android.net.Network,java.lang.String)> was called with values from the following sources:
 [main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r15 = virtualinvoke $r9.<java.net.HttpURLConnection: java.io.InputStream getInputStream()>() in method <com.cmic.sso.sdk.h.d: void a(java.lang.String,java.lang.String,com.cmic.sso.sdk.h.d$b,android.net.Network,java.lang.String)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - The sink interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("logHost", $r7) in method <com.cmic.sso.sdk.d.b: void a(org.json.JSONObject)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r15 = virtualinvoke $r9.<java.net.HttpURLConnection: java.io.InputStream getInputStream()>() in method <com.cmic.sso.sdk.h.d: void a(java.lang.String,java.lang.String,com.cmic.sso.sdk.h.d$b,android.net.Network,java.lang.String)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - The sink $r4 = virtualinvoke $r4.<java.lang.String: java.lang.String replace(java.lang.CharSequence,java.lang.CharSequence)>("h", "") in method <com.cmic.sso.sdk.d.b: void a(org.json.JSONObject)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r15 = virtualinvoke $r9.<java.net.HttpURLConnection: java.io.InputStream getInputStream()>() in method <com.cmic.sso.sdk.h.d: void a(java.lang.String,java.lang.String,com.cmic.sso.sdk.h.d$b,android.net.Network,java.lang.String)>
 [main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - The sink virtualinvoke $r16.<java.io.FileOutputStream: void write(byte[],int,int)>($r7, 0, $i5) in method <diy: boolean d(java.io.File)> was called with values from the following sources:
 [main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r9 = virtualinvoke $r1.<java.io.File: java.io.File getAbsoluteFile()>() in method <diy: boolean d(java.io.File)>
 [main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - The sink interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("httpsHost", $r6) in method <com.cmic.sso.sdk.d.b: void a(org.json.JSONObject)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r15 = virtualinvoke $r9.<java.net.HttpURLConnection: java.io.InputStream getInputStream()>() in method <com.cmic.sso.sdk.h.d: void a(java.lang.String,java.lang.String,com.cmic.sso.sdk.h.d$b,android.net.Network,java.lang.String)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - The sink interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("httpHost", $r7) in method <com.cmic.sso.sdk.d.b: void a(org.json.JSONObject)> was called with values from the following sources:
 [main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r15 = virtualinvoke $r9.<java.net.HttpURLConnection: java.io.InputStream getInputStream()>() in method <com.cmic.sso.sdk.h.d: void a(java.lang.String,java.lang.String,com.cmic.sso.sdk.h.d$b,android.net.Network,java.lang.String)>
 [main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - The sink $r0 = virtualinvoke $r0.<java.lang.String: java.lang.String replace(java.lang.CharSequence,java.lang.CharSequence)>($r6, $r7) in method <com.facebook.internal.Logger: java.lang.String replaceStrings(java.lang.String)> was called with values from the following sources:
 [main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r3 = virtualinvoke $r1.<java.net.HttpURLConnection: java.io.InputStream getInputStream()>() in method <com.facebook.GraphResponse: java.util.List fromHttpConnection(java.net.HttpURLConnection,com.facebook.GraphRequestBatch)>
 [main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - The sink interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("CERT_INFO", $r4) in method <com.cmic.sso.sdk.d.b: void a(org.json.JSONObject)> was called with values from the following sources:
 [main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r15 = virtualinvoke $r9.<java.net.HttpURLConnection: java.io.InputStream getInputStream()>() in method <com.cmic.sso.sdk.h.d: void a(java.lang.String,java.lang.String,com.cmic.sso.sdk.h.d$b,android.net.Network,java.lang.String)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - The sink interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putInt(java.lang.String,int)>("maxFailedLogTimes", $i0) in method <com.cmic.sso.sdk.d.b: void a(org.json.JSONObject)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r15 = virtualinvoke $r9.<java.net.HttpURLConnection: java.io.InputStream getInputStream()>() in method <com.cmic.sso.sdk.h.d: void a(java.lang.String,java.lang.String,com.cmic.sso.sdk.h.d$b,android.net.Network,java.lang.String)>
 [main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - The sink interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>($r1, $r2) in method <com.cmic.sso.sdk.d.b: void a(org.json.JSONObject,java.lang.String,java.lang.String,android.content.SharedPreferences$Editor)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r15 = virtualinvoke $r9.<java.net.HttpURLConnection: java.io.InputStream getInputStream()>() in method <com.cmic.sso.sdk.h.d: void a(java.lang.String,java.lang.String,com.cmic.sso.sdk.h.d$b,android.net.Network,java.lang.String)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - The sink $r15 = virtualinvoke $r9.<java.net.HttpURLConnection: java.io.InputStream getInputStream()>() in method <com.cmic.sso.sdk.h.d: void a(java.lang.String,java.lang.String,com.cmic.sso.sdk.h.d$b,android.net.Network,java.lang.String)> was called with values from the following sources:
 [main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r15 = virtualinvoke $r9.<java.net.HttpURLConnection: java.io.InputStream getInputStream()>() in method <com.cmic.sso.sdk.h.d: void a(java.lang.String,java.lang.String,com.cmic.sso.sdk.h.d$b,android.net.Network,java.lang.String)>
 [main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - The sink interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("httpsHost", $r7) in method <com.cmic.sso.sdk.d.b: void a(org.json.JSONObject)> was called with values from the following sources:
 [main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r15 = virtualinvoke $r9.<java.net.HttpURLConnection: java.io.InputStream getInputStream()>() in method <com.cmic.sso.sdk.h.d: void a(java.lang.String,java.lang.String,com.cmic.sso.sdk.h.d$b,android.net.Network,java.lang.String)>
-[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - The sink interfaceinvoke $r3.<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)>("configHost", $r4) in method <com.cmic.sso.sdk.d.b: void a(org.json.JSONObject)> was called with values from the following sources:
-[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r15 = virtualinvoke $r9.<java.net.HttpURLConnection: java.io.InputStream getInputStream()>() in method <com.cmic.sso.sdk.h.d: void a(java.lang.String,java.lang.String,com.cmic.sso.sdk.h.d$b,android.net.Network,java.lang.String)>
 [main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - The sink virtualinvoke $r27.<java.io.DataOutputStream: void write(byte[],int,int)>($r13, 0, $i0) in method <com.cmic.sso.sdk.h.d: void a(java.lang.String,java.lang.String,com.cmic.sso.sdk.h.d$b,android.net.Network,java.lang.String)> was called with values from the following sources:
 [main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r15 = virtualinvoke $r9.<java.net.HttpURLConnection: java.io.InputStream getInputStream()>() in method <com.cmic.sso.sdk.h.d: void a(java.lang.String,java.lang.String,com.cmic.sso.sdk.h.d$b,android.net.Network,java.lang.String)>
-[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - Data flow solver took 57 seconds. Maximum memory consumption: 4751 MB
-[main] INFO soot.jimple.infoflow.android.SetupApplication - Found 16 leaks
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - Data flow solver took 37 seconds. Maximum memory consumption: 2340 MB
+[main] INFO soot.jimple.infoflow.android.SetupApplication - Found 20 leaks
