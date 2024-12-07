@@ -36,7 +36,7 @@ for APK_PATH in "${APK_FILES[@]}"; do
         echo "Analyzing ${APK_FILENAME} with a timeout of ${TIMEOUT_MINUTES} minutes (${TIMEOUT_SECONDS} seconds)..."
 
         # Run FlowDroid analysis in the background
-        java -jar "$FLOWDROID_JAR" --aliasflowins --aplength 1 --noexceptions --nostatic  \
+        java -Xms10G -jar "$FLOWDROID_JAR" --aliasflowins --aplength 1 --noexceptions --nostatic  \
             -a "$APK_PATH" \
             -p "$PLATFORMS_DIR" \
             -s "$SOURCES_AND_SINKS" \
