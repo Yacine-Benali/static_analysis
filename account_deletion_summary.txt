@@ -1,0 +1,84 @@
+Account Deletion Functionality Analysis Summary
+==========================================
+
+
+App: com.tado
+-------------
+No clear evidence of account deletion functionality found.
+
+--------------------------------------------------
+
+App: mynt.app
+-------------
+Evidence of account deletion functionality:
+- Found 9 relevant code patterns
+
+Likelihood of account deletion feature: High
+
+--------------------------------------------------
+
+App: com.wooxhome.smart
+-----------------------
+Evidence of account deletion functionality:
+- Found 3 relevant string resources
+- Found 2 relevant code patterns
+
+Likelihood of account deletion feature: High
+
+--------------------------------------------------
+
+App: com.walkme.azores.new
+--------------------------
+Evidence of account deletion functionality:
+- Found 3 relevant string resources
+- Found 7 relevant code patterns
+
+Likelihood of account deletion feature: High
+
+--------------------------------------------------
+
+App: com.hawaiianairlines.app
+-----------------------------
+No clear evidence of account deletion functionality found.
+
+--------------------------------------------------
+
+App: nz.co.stuff.android.news
+-----------------------------
+Evidence of account deletion functionality:
+- Found 2 relevant code patterns
+
+Likelihood of account deletion feature: Medium
+
+--------------------------------------------------
+
+App: linko.home
+---------------
+Evidence of account deletion functionality:
+- Found 3 relevant string resources
+
+Likelihood of account deletion feature: High
+
+--------------------------------------------------
+
+App: com.imo.android.imoim
+--------------------------
+Evidence of account deletion functionality:
+- Found 7 relevant string resources
+- Found 35 relevant code patterns
+
+Likelihood of account deletion feature: High
+
+--------------------------------------------------
+
+App: com.delhi.metro.dtc
+------------------------
+No clear evidence of account deletion functionality found.
+
+--------------------------------------------------
+
+App: com.yourdelivery.pyszne
+----------------------------
+No clear evidence of account deletion functionality found.
+
+--------------------------------------------------
