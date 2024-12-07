@@ -3,8 +3,8 @@
 [main] INFO soot.jimple.infoflow.android.SetupApplication - Initializing Soot...
 [main] INFO soot.jimple.infoflow.android.SetupApplication - Loading dex files...
 [main] WARN soot.dexpler.DexFileProvider - Multiple dex files detected, only processing 'classes.dex'. Use '-process-multiple-dex' option to process them all.
-[main] INFO soot.jimple.infoflow.android.SetupApplication - ARSC file parsing took 0.07215385 seconds
-[main] INFO soot.jimple.infoflow.memory.MemoryWarningSystem - Registered a memory warning system for 18,431.1 MiB
+[main] INFO soot.jimple.infoflow.android.SetupApplication - ARSC file parsing took 0.084184035 seconds
+[main] INFO soot.jimple.infoflow.memory.MemoryWarningSystem - Registered a memory warning system for 4,915.35 MiB
 [main] INFO soot.jimple.infoflow.memory.FlowDroidTimeoutWatcher - FlowDroid timeout watcher started
 [main] INFO soot.jimple.infoflow.android.entryPointCreators.AndroidEntryPointCreator - Creating Android entry point for 530 components...
 [main] WARN soot.jimple.infoflow.android.entryPointCreators.AndroidEntryPointCreator - Cannot generate constructor for phantom class androidx.startup.InitializationProvider
@@ -38,7 +38,7 @@
 [main] WARN soot.jimple.infoflow.android.data.parsers.PermissionMethodParser - Line does not match: <org.apache.xmlrpc.webserver.HttpServletRequestImpl: void parseParameters)> -> _SOURCE_
 [main] WARN soot.jimple.infoflow.android.data.parsers.PermissionMethodParser - Line does not match:     
 [main] INFO soot.jimple.infoflow.android.source.AccessPathBasedSourceSinkManager - Created a SourceSinkManager with 71 sources, 193 sinks, and 32 callback methods.
-[main] INFO soot.jimple.infoflow.android.SetupApplication - Collecting callbacks and building a callgraph took 9 seconds
+[main] INFO soot.jimple.infoflow.android.SetupApplication - Collecting callbacks and building a callgraph took 13 seconds
 [main] INFO soot.jimple.infoflow.android.SetupApplication - Running data flow analysis on /mnt/aiongpfs/users/mbenali/static_analysis/APKs/com.imo.android.imoim.apk with 71 sources and 193 sinks...
 [main] WARN soot.jimple.infoflow.InfoflowConfiguration - Static field tracking is disabled, results may be incomplete
 [main] WARN soot.jimple.infoflow.InfoflowConfiguration - Using flow-insensitive alias tracking, results may be imprecise
@@ -49,10 +49,11 @@
 [main] INFO soot.jimple.infoflow.InfoflowConfiguration - Recursive access path shortening is enabled
 [main] INFO soot.jimple.infoflow.InfoflowConfiguration - Taint analysis enabled: true
 [main] INFO soot.jimple.infoflow.InfoflowConfiguration - Using alias algorithm FlowSensitive
-[main] INFO soot.jimple.infoflow.memory.MemoryWarningSystem - Registered a memory warning system for 18,431.1 MiB
+[main] INFO soot.jimple.infoflow.memory.MemoryWarningSystem - Registered a memory warning system for 4,915.35 MiB
 [main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - Callgraph construction took 0 seconds
 [main] INFO soot.jimple.infoflow.codeOptimization.InterproceduralConstantValuePropagator - Removing side-effect free methods is disabled
-[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - Dead code elimination took 0.25139767 seconds
+[FlowDroid Timeout Watcher] INFO soot.jimple.infoflow.memory.FlowDroidTimeoutWatcher - FlowDroid timeout watcher terminated
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - Dead code elimination took 0.236639823 seconds
 [main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - Callgraph has 3936 edges
 [main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - Starting Taint Analysis
 [main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - Using context- and flow-sensitive solver
@@ -60,13 +61,11 @@
 [main] INFO soot.jimple.infoflow.memory.FlowDroidTimeoutWatcher - FlowDroid timeout watcher started
 [main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - Looking for sources and sinks...
 [main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - Source lookup done, found 7 sources and 64 sinks.
-[FlowDroid Timeout Watcher] INFO soot.jimple.infoflow.memory.FlowDroidTimeoutWatcher - FlowDroid timeout watcher terminated
 [main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - Taint wrapper hits: 99
 [main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - Taint wrapper misses: 915
-[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - IFDS problem with 3560 forward and 2555 backward edges solved in 0 seconds, processing 3 results...
-[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - Current memory consumption: 1046 MB
-[FlowDroid Timeout Watcher] INFO soot.jimple.infoflow.memory.FlowDroidTimeoutWatcher - FlowDroid timeout watcher terminated
-[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - Memory consumption after cleanup: 226 MB
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - IFDS problem with 3559 forward and 2554 backward edges solved in 0 seconds, processing 3 results...
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - Current memory consumption: 1409 MB
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - Memory consumption after cleanup: 239 MB
 [main] INFO soot.jimple.infoflow.memory.FlowDroidTimeoutWatcher - FlowDroid timeout watcher started
 [main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$ShutdownBatchPathBuilder - Running path reconstruction batch 1 with 3 elements
 [main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Obtainted 3 connections between sources and sinks
@@ -74,7 +73,8 @@
 [main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 2...
 [main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 3...
 [main] INFO soot.jimple.infoflow.memory.MemoryWarningSystem - Shutting down the memory warning system...
-[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - Memory consumption after path building: 198 MB
+[FlowDroid Timeout Watcher] INFO soot.jimple.infoflow.memory.FlowDroidTimeoutWatcher - FlowDroid timeout watcher terminated
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - Memory consumption after path building: 203 MB
 [main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - Path reconstruction took 0 seconds
 [main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - The sink virtualinvoke $r10.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("advertiser_id", $r5) in method <com.imo.android.gap$b: void run()> was called with values from the following sources:
 [main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r15 = interfaceinvoke $r29.<android.database.Cursor: java.lang.String getString(int)>($i4) in method <com.facebook.internal.a$a: com.facebook.internal.a b(android.content.Context)>
@@ -82,5 +82,5 @@
 [main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r15 = interfaceinvoke $r29.<android.database.Cursor: java.lang.String getString(int)>($i4) in method <com.facebook.internal.a$a: com.facebook.internal.a b(android.content.Context)>
 [main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - The sink staticinvoke <android.util.Log: int i(java.lang.String,java.lang.String)>("AppsFlyer_6.11.0", $r2) in method <com.appsflyer.AFLogger: void afInfoLog(java.lang.String,boolean)> was called with values from the following sources:
 [main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r10 = virtualinvoke $r8.<android.content.pm.PackageManager: java.util.List queryBroadcastReceivers(android.content.Intent,int)>($r9, 0) in method <com.appsflyer.MultipleInstallBroadcastReceiver: void onReceive(android.content.Context,android.content.Intent)>
-[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - Data flow solver took 2 seconds. Maximum memory consumption: 1046 MB
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - Data flow solver took 2 seconds. Maximum memory consumption: 1409 MB
 [main] INFO soot.jimple.infoflow.android.SetupApplication - Found 3 leaks

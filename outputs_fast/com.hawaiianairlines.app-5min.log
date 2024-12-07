@@ -3,8 +3,8 @@
 [main] INFO soot.jimple.infoflow.android.SetupApplication - Initializing Soot...
 [main] INFO soot.jimple.infoflow.android.SetupApplication - Loading dex files...
 [main] WARN soot.dexpler.DexFileProvider - Multiple dex files detected, only processing 'classes.dex'. Use '-process-multiple-dex' option to process them all.
-[main] INFO soot.jimple.infoflow.android.SetupApplication - ARSC file parsing took 0.10505506 seconds
-[main] INFO soot.jimple.infoflow.memory.MemoryWarningSystem - Registered a memory warning system for 18,431.1 MiB
+[main] INFO soot.jimple.infoflow.android.SetupApplication - ARSC file parsing took 0.095324386 seconds
+[main] INFO soot.jimple.infoflow.memory.MemoryWarningSystem - Registered a memory warning system for 4,915.35 MiB
 [main] INFO soot.jimple.infoflow.memory.FlowDroidTimeoutWatcher - FlowDroid timeout watcher started
 [main] INFO soot.jimple.infoflow.android.entryPointCreators.AndroidEntryPointCreator - Creating Android entry point for 81 components...
 [main] INFO soot.jimple.infoflow.android.SetupApplication - Constructing the callgraph...
@@ -269,7 +269,7 @@
 [main] WARN soot.jimple.infoflow.android.data.parsers.PermissionMethodParser - Line does not match: <org.apache.xmlrpc.webserver.HttpServletRequestImpl: void parseParameters)> -> _SOURCE_
 [main] WARN soot.jimple.infoflow.android.data.parsers.PermissionMethodParser - Line does not match:     
 [main] INFO soot.jimple.infoflow.android.source.AccessPathBasedSourceSinkManager - Created a SourceSinkManager with 71 sources, 193 sinks, and 174 callback methods.
-[main] INFO soot.jimple.infoflow.android.SetupApplication - Collecting callbacks and building a callgraph took 26 seconds
+[main] INFO soot.jimple.infoflow.android.SetupApplication - Collecting callbacks and building a callgraph took 24 seconds
 [main] INFO soot.jimple.infoflow.android.SetupApplication - Running data flow analysis on /mnt/aiongpfs/users/mbenali/static_analysis/APKs/com.hawaiianairlines.app.apk with 71 sources and 193 sinks...
 [main] WARN soot.jimple.infoflow.InfoflowConfiguration - Static field tracking is disabled, results may be incomplete
 [main] WARN soot.jimple.infoflow.InfoflowConfiguration - Using flow-insensitive alias tracking, results may be imprecise
@@ -280,11 +280,11 @@
 [main] INFO soot.jimple.infoflow.InfoflowConfiguration - Recursive access path shortening is enabled
 [main] INFO soot.jimple.infoflow.InfoflowConfiguration - Taint analysis enabled: true
 [main] INFO soot.jimple.infoflow.InfoflowConfiguration - Using alias algorithm FlowSensitive
-[main] INFO soot.jimple.infoflow.memory.MemoryWarningSystem - Registered a memory warning system for 18,431.1 MiB
+[main] INFO soot.jimple.infoflow.memory.MemoryWarningSystem - Registered a memory warning system for 4,915.35 MiB
 [main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - Callgraph construction took 0 seconds
 [main] INFO soot.jimple.infoflow.codeOptimization.InterproceduralConstantValuePropagator - Removing side-effect free methods is disabled
 [FlowDroid Timeout Watcher] INFO soot.jimple.infoflow.memory.FlowDroidTimeoutWatcher - FlowDroid timeout watcher terminated
-[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - Dead code elimination took 0.697795615 seconds
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - Dead code elimination took 0.522590333 seconds
 [main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - Callgraph has 11745 edges
 [main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - Starting Taint Analysis
 [main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - Using context- and flow-sensitive solver
@@ -293,10 +293,11 @@
 [main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - Looking for sources and sinks...
 [main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - Source lookup done, found 3 sources and 63 sinks.
 [main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - Taint wrapper hits: 4195
-[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - Taint wrapper misses: 984276
-[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - IFDS problem with 510241 forward and 468808 backward edges solved in 8 seconds, processing 145 results...
-[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - Current memory consumption: 1184 MB
-[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - Memory consumption after cleanup: 534 MB
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - Taint wrapper misses: 984284
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - IFDS problem with 510015 forward and 468618 backward edges solved in 7 seconds, processing 145 results...
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - Current memory consumption: 2148 MB
+[FlowDroid Timeout Watcher] INFO soot.jimple.infoflow.memory.FlowDroidTimeoutWatcher - FlowDroid timeout watcher terminated
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - Memory consumption after cleanup: 458 MB
 [main] INFO soot.jimple.infoflow.memory.FlowDroidTimeoutWatcher - FlowDroid timeout watcher started
 [main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$ShutdownBatchPathBuilder - Running path reconstruction batch 1 with 5 elements
 [main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Obtainted 5 connections between sources and sinks
@@ -305,7 +306,42 @@
 [main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 3...
 [main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 4...
 [main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 5...
-[FlowDroid Timeout Watcher] INFO soot.jimple.infoflow.memory.FlowDroidTimeoutWatcher - FlowDroid timeout watcher terminated
+[Low memory monitor] INFO soot.jimple.infoflow.memory.MemoryWarningSystem - Triggering memory warning at 5177 MB (5726 MB max, 5154 in watched memory pool)...
+[Low memory monitor] WARN soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Path reconstruction terminated due to low memory
+[Low memory monitor] WARN soot.jimple.infoflow.memory.FlowDroidMemoryWatcher - Running out of memory, solvers terminated
+[main] ERROR soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Could not wait for executor termination
+java.lang.InterruptedException
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.doAcquireSharedNanos(AbstractQueuedSynchronizer.java:1039)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.tryAcquireSharedNanos(AbstractQueuedSynchronizer.java:1328)
+	at heros.solver.CountLatch.awaitZero(CountLatch.java:79)
+	at heros.solver.CountingThreadPoolExecutor.awaitCompletion(CountingThreadPoolExecutor.java:86)
+	at soot.jimple.infoflow.solver.executors.InterruptableExecutor.awaitCompletion(InterruptableExecutor.java:88)
+	at soot.jimple.infoflow.data.pathBuilders.ContextSensitivePathBuilder.computeTaintPaths(ContextSensitivePathBuilder.java:270)
+	at soot.jimple.infoflow.data.pathBuilders.BatchPathBuilder.computeTaintPaths(BatchPathBuilder.java:47)
+	at soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$ShutdownBatchPathBuilder.computeTaintPaths(DefaultPathBuilderFactory.java:56)
+	at soot.jimple.infoflow.AbstractInfoflow.runTaintAnalysis(AbstractInfoflow.java:1107)
+	at soot.jimple.infoflow.AbstractInfoflow.runAnalysis(AbstractInfoflow.java:634)
+	at soot.jimple.infoflow.AbstractInfoflow.runAnalysis(AbstractInfoflow.java:567)
+	at soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow.runAnalysis(SetupApplication.java:1320)
+	at soot.jimple.infoflow.android.SetupApplication.processEntryPoint(SetupApplication.java:1609)
+	at soot.jimple.infoflow.android.SetupApplication.runInfoflow(SetupApplication.java:1544)
+	at soot.jimple.infoflow.android.SetupApplication.runInfoflow(SetupApplication.java:1491)
+	at soot.jimple.infoflow.cmd.MainClass.run(MainClass.java:358)
+	at soot.jimple.infoflow.cmd.MainClass.main(MainClass.java:256)
+[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$ShutdownBatchPathBuilder - Running path reconstruction batch 2 with 5 elements
+[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Obtainted 5 connections between sources and sinks
+[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 1...
+[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 2...
+[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 3...
+[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 4...
+[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 5...
+[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$ShutdownBatchPathBuilder - Running path reconstruction batch 3 with 5 elements
+[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Obtainted 5 connections between sources and sinks
+[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 1...
+[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 2...
+[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 3...
+[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 4...
+[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 5...
 [FlowDroid Timeout Watcher] WARN soot.jimple.infoflow.memory.FlowDroidTimeoutWatcher - Timeout reached, stopping the solvers...
 [FlowDroid Timeout Watcher] WARN soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Path reconstruction terminated due to low memory
 [main] ERROR soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Could not wait for executor termination
@@ -327,37 +363,34 @@ java.lang.InterruptedException
 	at soot.jimple.infoflow.android.SetupApplication.runInfoflow(SetupApplication.java:1491)
 	at soot.jimple.infoflow.cmd.MainClass.run(MainClass.java:358)
 	at soot.jimple.infoflow.cmd.MainClass.main(MainClass.java:256)
-[FlowDroid Timeout Watcher] WARN soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Path reconstruction terminated due to low memory
-[FlowDroid Timeout Watcher] INFO soot.jimple.infoflow.memory.FlowDroidTimeoutWatcher - FlowDroid timeout watcher terminated
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$ShutdownBatchPathBuilder - Running path reconstruction batch 2 with 5 elements
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Obtainted 5 connections between sources and sinks
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 1...
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 2...
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 3...
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 4...
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 5...
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$ShutdownBatchPathBuilder - Running path reconstruction batch 3 with 5 elements
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Obtainted 5 connections between sources and sinks
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 1...
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 2...
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 3...
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 4...
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 5...
-[Path reconstruction] WARN soot.jimple.infoflow.solver.executors.InterruptableExecutor - Executor has terminated. Call reset() before submitting new tasks.
 [main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$ShutdownBatchPathBuilder - Running path reconstruction batch 4 with 5 elements
-[Path reconstruction] WARN soot.jimple.infoflow.solver.executors.InterruptableExecutor - Executor has terminated. Call reset() before submitting new tasks.
-[Path reconstruction] WARN soot.jimple.infoflow.solver.executors.InterruptableExecutor - Executor has terminated. Call reset() before submitting new tasks.
-[Path reconstruction] WARN soot.jimple.infoflow.solver.executors.InterruptableExecutor - Executor has terminated. Call reset() before submitting new tasks.
 [main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Obtainted 5 connections between sources and sinks
-[Path reconstruction] WARN soot.jimple.infoflow.solver.executors.InterruptableExecutor - Executor has terminated. Call reset() before submitting new tasks.
-[Path reconstruction] WARN soot.jimple.infoflow.solver.executors.InterruptableExecutor - Executor has terminated. Call reset() before submitting new tasks.
 [main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 1...
-[Path reconstruction] WARN soot.jimple.infoflow.solver.executors.InterruptableExecutor - Executor has terminated. Call reset() before submitting new tasks.
 [main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 2...
-[Path reconstruction] WARN soot.jimple.infoflow.solver.executors.InterruptableExecutor - Executor has terminated. Call reset() before submitting new tasks.
 [main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 3...
 [main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 4...
 [main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 5...
+[FlowDroid Timeout Watcher] WARN soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Path reconstruction terminated due to low memory
+[main] ERROR soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Could not wait for executor termination
+java.lang.InterruptedException
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.doAcquireSharedNanos(AbstractQueuedSynchronizer.java:1039)
+	at java.util.concurrent.locks.AbstractQueuedSynchronizer.tryAcquireSharedNanos(AbstractQueuedSynchronizer.java:1328)
+	at heros.solver.CountLatch.awaitZero(CountLatch.java:79)
+	at heros.solver.CountingThreadPoolExecutor.awaitCompletion(CountingThreadPoolExecutor.java:86)
+	at soot.jimple.infoflow.solver.executors.InterruptableExecutor.awaitCompletion(InterruptableExecutor.java:88)
+	at soot.jimple.infoflow.data.pathBuilders.ContextSensitivePathBuilder.computeTaintPaths(ContextSensitivePathBuilder.java:270)
+	at soot.jimple.infoflow.data.pathBuilders.BatchPathBuilder.computeTaintPaths(BatchPathBuilder.java:47)
+	at soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$ShutdownBatchPathBuilder.computeTaintPaths(DefaultPathBuilderFactory.java:56)
+	at soot.jimple.infoflow.AbstractInfoflow.runTaintAnalysis(AbstractInfoflow.java:1107)
+	at soot.jimple.infoflow.AbstractInfoflow.runAnalysis(AbstractInfoflow.java:634)
+	at soot.jimple.infoflow.AbstractInfoflow.runAnalysis(AbstractInfoflow.java:567)
+	at soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow.runAnalysis(SetupApplication.java:1320)
+	at soot.jimple.infoflow.android.SetupApplication.processEntryPoint(SetupApplication.java:1609)
+	at soot.jimple.infoflow.android.SetupApplication.runInfoflow(SetupApplication.java:1544)
+	at soot.jimple.infoflow.android.SetupApplication.runInfoflow(SetupApplication.java:1491)
+	at soot.jimple.infoflow.cmd.MainClass.run(MainClass.java:358)
+	at soot.jimple.infoflow.cmd.MainClass.main(MainClass.java:256)
+[FlowDroid Timeout Watcher] INFO soot.jimple.infoflow.memory.FlowDroidTimeoutWatcher - FlowDroid timeout watcher terminated
 [main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$ShutdownBatchPathBuilder - Running path reconstruction batch 5 with 5 elements
 [main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Obtainted 5 connections between sources and sinks
 [main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 1...
@@ -372,7 +405,6 @@ java.lang.InterruptedException
 [main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 3...
 [main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 4...
 [main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 5...
-[Path reconstruction] WARN soot.jimple.infoflow.solver.executors.InterruptableExecutor - Executor has terminated. Call reset() before submitting new tasks.
 [main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$ShutdownBatchPathBuilder - Running path reconstruction batch 7 with 5 elements
 [main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Obtainted 5 connections between sources and sinks
 [main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 1...
@@ -382,6 +414,7 @@ java.lang.InterruptedException
 [main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 5...
 [main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$ShutdownBatchPathBuilder - Running path reconstruction batch 8 with 5 elements
 [main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Obtainted 5 connections between sources and sinks
+[Path reconstruction] WARN soot.jimple.infoflow.solver.executors.InterruptableExecutor - Executor has terminated. Call reset() before submitting new tasks.
 [main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 1...
 [main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 2...
 [main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 3...
@@ -535,12 +568,13 @@ java.lang.InterruptedException
 [main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 4...
 [main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 5...
 [main] INFO soot.jimple.infoflow.memory.MemoryWarningSystem - Shutting down the memory warning system...
-[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - Memory consumption after path building: 2135 MB
-[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - Path reconstruction took 8053 seconds
-[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - The sink virtualinvoke $r17.<android.os.Handler: boolean sendMessage(android.os.Message)>($r5) in method <aero.panasonic.inflight.services.seatpairing.SeatController$Error: void valueOf(aero.panasonic.inflight.services.seatpairing.values)> was called with values from the following sources:
-[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r4 = virtualinvoke $r8.<android.net.wifi.WifiInfo: java.lang.String getSSID()>() in method <aero.panasonic.companion.view.LifeCycleHookActivity: java.lang.String createHash()>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - Memory consumption after path building: 5812 MB
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - Path reconstruction took 8086 seconds
 [main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - The sink staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r0, $r1) in method <aero.panasonic.inflight.services.utils.Log: void setIsSeatBack(int,java.lang.String,java.lang.String)> was called with values from the following sources:
 [main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r10 = interfaceinvoke $r9.<android.database.Cursor: java.lang.String getString(int)>($i0) in method <aero.panasonic.inflight.services.data.iicore.cp.IICoreQuery: java.lang.String queryString(android.net.Uri)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r4 = virtualinvoke $r8.<android.net.wifi.WifiInfo: java.lang.String getSSID()>() in method <aero.panasonic.companion.view.LifeCycleHookActivity: java.lang.String createHash()>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - The sink virtualinvoke $r17.<android.os.Handler: boolean sendMessage(android.os.Message)>($r5) in method <aero.panasonic.inflight.services.seatpairing.SeatController$Error: void valueOf(aero.panasonic.inflight.services.seatpairing.values)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r4 = virtualinvoke $r8.<android.net.wifi.WifiInfo: java.lang.String getSSID()>() in method <aero.panasonic.companion.view.LifeCycleHookActivity: java.lang.String createHash()>
 [main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - The sink virtualinvoke $r0.<androidx.activity.ComponentActivity: void startActivityForResult(android.content.Intent,int)>(null, 0) in method <dummyMainClass: aero.panasonic.companion.view.pairing.SeatbackPairActivity dummyMainMethod_aero_panasonic_companion_view_pairing_SeatbackPairActivity(android.content.Intent)> was called with values from the following sources:
 [main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r4 = virtualinvoke $r8.<android.net.wifi.WifiInfo: java.lang.String getSSID()>() in method <aero.panasonic.companion.view.LifeCycleHookActivity: java.lang.String createHash()>
 [main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - The sink virtualinvoke $r0.<androidx.activity.ComponentActivity: void startActivityForResult(android.content.Intent,int)>(null, 0) in method <dummyMainClass: aero.panasonic.companion.view.news.NewsActivity dummyMainMethod_aero_panasonic_companion_view_news_NewsActivity(android.content.Intent)> was called with values from the following sources:
@@ -551,8 +585,12 @@ java.lang.InterruptedException
 [main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r4 = virtualinvoke $r8.<android.net.wifi.WifiInfo: java.lang.String getSSID()>() in method <aero.panasonic.companion.view.LifeCycleHookActivity: java.lang.String createHash()>
 [main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - The sink virtualinvoke $r0.<androidx.activity.ComponentActivity: void startActivityForResult(android.content.Intent,int)>(null, 0) in method <dummyMainClass: aero.panasonic.companion.view.player.miniplayer.ExpandedMiniPlayerActivity dummyMainMethod_aero_panasonic_companion_view_player_miniplayer_ExpandedMiniPlayerActivity(android.content.Intent)> was called with values from the following sources:
 [main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r4 = virtualinvoke $r8.<android.net.wifi.WifiInfo: java.lang.String getSSID()>() in method <aero.panasonic.companion.view.LifeCycleHookActivity: java.lang.String createHash()>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - The sink virtualinvoke $r0.<androidx.activity.ComponentActivity: void startActivityForResult(android.content.Intent,int,android.os.Bundle)>(null, 0, null) in method <dummyMainClass: aero.panasonic.companion.view.shopping.ShoppingBagActivity dummyMainMethod_aero_panasonic_companion_view_shopping_ShoppingBagActivity(android.content.Intent)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r4 = virtualinvoke $r8.<android.net.wifi.WifiInfo: java.lang.String getSSID()>() in method <aero.panasonic.companion.view.LifeCycleHookActivity: java.lang.String createHash()>
 [main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - The sink staticinvoke <android.util.Log: int e(java.lang.String,java.lang.String)>($r0, $r1) in method <aero.panasonic.inflight.services.utils.Log: void setIsSeatBack(int,java.lang.String,java.lang.String)> was called with values from the following sources:
 [main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r10 = interfaceinvoke $r9.<android.database.Cursor: java.lang.String getString(int)>($i0) in method <aero.panasonic.inflight.services.data.iicore.cp.IICoreQuery: java.lang.String queryString(android.net.Uri)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r4 = virtualinvoke $r8.<android.net.wifi.WifiInfo: java.lang.String getSSID()>() in method <aero.panasonic.companion.view.LifeCycleHookActivity: java.lang.String createHash()>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - The sink virtualinvoke $r1.<android.app.Activity: android.content.ComponentName startService(android.content.Intent)>($r2) in method <aero.panasonic.companion.view.music.ServiceBindingDelegate: void onCreate()> was called with values from the following sources:
 [main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r4 = virtualinvoke $r8.<android.net.wifi.WifiInfo: java.lang.String getSSID()>() in method <aero.panasonic.companion.view.LifeCycleHookActivity: java.lang.String createHash()>
 [main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - The sink virtualinvoke $r1.<android.os.Bundle: void putBoolean(java.lang.String,boolean)>("extra:view_seeking", $z0) in method <aero.panasonic.companion.view.player.MediaPlayerPresenter: android.os.Bundle getSaveInstanceBundle()> was called with values from the following sources:
 [main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r4 = virtualinvoke $r8.<android.net.wifi.WifiInfo: java.lang.String getSSID()>() in method <aero.panasonic.companion.view.LifeCycleHookActivity: java.lang.String createHash()>
@@ -568,7 +606,11 @@ java.lang.InterruptedException
 [main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r4 = virtualinvoke $r8.<android.net.wifi.WifiInfo: java.lang.String getSSID()>() in method <aero.panasonic.companion.view.LifeCycleHookActivity: java.lang.String createHash()>
 [main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - The sink virtualinvoke $r0.<androidx.activity.ComponentActivity: void startActivityForResult(android.content.Intent,int,android.os.Bundle)>(null, 0, null) in method <dummyMainClass: aero.panasonic.companion.view.pairing.SeatbackPairActivity dummyMainMethod_aero_panasonic_companion_view_pairing_SeatbackPairActivity(android.content.Intent)> was called with values from the following sources:
 [main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r4 = virtualinvoke $r8.<android.net.wifi.WifiInfo: java.lang.String getSSID()>() in method <aero.panasonic.companion.view.LifeCycleHookActivity: java.lang.String createHash()>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - The sink $z0 = virtualinvoke $r1.<android.content.Context: boolean bindService(android.content.Intent,android.content.ServiceConnection,int)>($r10, $r5, 73) in method <aero.panasonic.inflight.services.seatpairing.SeatController: void <init>(android.content.Context)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r4 = virtualinvoke $r8.<android.net.wifi.WifiInfo: java.lang.String getSSID()>() in method <aero.panasonic.companion.view.LifeCycleHookActivity: java.lang.String createHash()>
 [main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - The sink virtualinvoke $r0.<androidx.activity.ComponentActivity: void startActivityForResult(android.content.Intent,int,android.os.Bundle)>(null, 0, null) in method <dummyMainClass: aero.panasonic.companion.view.FeaturedActivity dummyMainMethod_aero_panasonic_companion_view_FeaturedActivity(android.content.Intent)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r4 = virtualinvoke $r8.<android.net.wifi.WifiInfo: java.lang.String getSSID()>() in method <aero.panasonic.companion.view.LifeCycleHookActivity: java.lang.String createHash()>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - The sink virtualinvoke $r0.<androidx.activity.ComponentActivity: void startActivityForResult(android.content.Intent,int,android.os.Bundle)>(null, 0, null) in method <dummyMainClass: aero.panasonic.companion.view.KidsZoneActivity dummyMainMethod_aero_panasonic_companion_view_KidsZoneActivity(android.content.Intent)> was called with values from the following sources:
 [main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r4 = virtualinvoke $r8.<android.net.wifi.WifiInfo: java.lang.String getSSID()>() in method <aero.panasonic.companion.view.LifeCycleHookActivity: java.lang.String createHash()>
 [main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - The sink virtualinvoke $r0.<androidx.activity.ComponentActivity: void startActivityForResult(android.content.Intent,int)>(null, 0) in method <dummyMainClass: aero.panasonic.companion.view.search.SearchActivity dummyMainMethod_aero_panasonic_companion_view_search_SearchActivity(android.content.Intent)> was called with values from the following sources:
 [main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r4 = virtualinvoke $r8.<android.net.wifi.WifiInfo: java.lang.String getSSID()>() in method <aero.panasonic.companion.view.LifeCycleHookActivity: java.lang.String createHash()>
@@ -605,16 +647,15 @@ java.lang.InterruptedException
 [main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r4 = virtualinvoke $r8.<android.net.wifi.WifiInfo: java.lang.String getSSID()>() in method <aero.panasonic.companion.view.LifeCycleHookActivity: java.lang.String createHash()>
 [main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - The sink $z0 = virtualinvoke $r2.<android.content.Context: boolean bindService(android.content.Intent,android.content.ServiceConnection,int)>($r3, $r1, 73) in method <aero.panasonic.inflight.services.utils.ServiceUtil: void bindToIfeService(android.content.ServiceConnection,int)> was called with values from the following sources:
 [main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r10 = interfaceinvoke $r9.<android.database.Cursor: java.lang.String getString(int)>($i0) in method <aero.panasonic.inflight.services.data.iicore.cp.IICoreQuery: java.lang.String queryString(android.net.Uri)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r4 = virtualinvoke $r8.<android.net.wifi.WifiInfo: java.lang.String getSSID()>() in method <aero.panasonic.companion.view.LifeCycleHookActivity: java.lang.String createHash()>
 [main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - The sink virtualinvoke $r0.<androidx.activity.ComponentActivity: void startActivityForResult(android.content.Intent,int,android.os.Bundle)>(null, 0, null) in method <dummyMainClass: aero.panasonic.companion.view.entertainment.detail.MediaDetailActivity dummyMainMethod_aero_panasonic_companion_view_entertainment_detail_MediaDetailActivity(android.content.Intent)> was called with values from the following sources:
 [main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r4 = virtualinvoke $r8.<android.net.wifi.WifiInfo: java.lang.String getSSID()>() in method <aero.panasonic.companion.view.LifeCycleHookActivity: java.lang.String createHash()>
 [main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - The sink staticinvoke <android.util.Log: int w(java.lang.String,java.lang.String)>($r0, $r1) in method <aero.panasonic.inflight.services.utils.Log: void setIsSeatBack(int,java.lang.String,java.lang.String)> was called with values from the following sources:
 [main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r10 = interfaceinvoke $r9.<android.database.Cursor: java.lang.String getString(int)>($i0) in method <aero.panasonic.inflight.services.data.iicore.cp.IICoreQuery: java.lang.String queryString(android.net.Uri)>
 [main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r4 = virtualinvoke $r8.<android.net.wifi.WifiInfo: java.lang.String getSSID()>() in method <aero.panasonic.companion.view.LifeCycleHookActivity: java.lang.String createHash()>
-[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - The sink virtualinvoke $r0.<androidx.activity.ComponentActivity: void startActivityForResult(android.content.Intent,int)>(null, 0) in method <dummyMainClass: aero.panasonic.companion.view.appinfo.ParentalControlsActivity dummyMainMethod_aero_panasonic_companion_view_appinfo_ParentalControlsActivity(android.content.Intent)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - The sink virtualinvoke $r0.<androidx.activity.ComponentActivity: void startActivityForResult(android.content.Intent,int,android.os.Bundle)>(null, 0, null) in method <dummyMainClass: aero.panasonic.companion.view.appinfo.ParentalControlsActivity dummyMainMethod_aero_panasonic_companion_view_appinfo_ParentalControlsActivity(android.content.Intent)> was called with values from the following sources:
 [main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r4 = virtualinvoke $r8.<android.net.wifi.WifiInfo: java.lang.String getSSID()>() in method <aero.panasonic.companion.view.LifeCycleHookActivity: java.lang.String createHash()>
 [main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - The sink virtualinvoke $r0.<androidx.activity.ComponentActivity: void startActivityForResult(android.content.Intent,int,android.os.Bundle)>(null, 0, null) in method <dummyMainClass: aero.panasonic.companion.view.entertainment.detail.PaymentFormActivity dummyMainMethod_aero_panasonic_companion_view_entertainment_detail_PaymentFormActivity(android.content.Intent)> was called with values from the following sources:
-[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r4 = virtualinvoke $r8.<android.net.wifi.WifiInfo: java.lang.String getSSID()>() in method <aero.panasonic.companion.view.LifeCycleHookActivity: java.lang.String createHash()>
-[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - The sink virtualinvoke $r0.<androidx.activity.ComponentActivity: void startActivityForResult(android.content.Intent,int,android.os.Bundle)>(null, 0, null) in method <dummyMainClass: aero.panasonic.companion.view.player.livetv.LiveTVMediaPlayerActivity dummyMainMethod_aero_panasonic_companion_view_player_livetv_LiveTVMediaPlayerActivity(android.content.Intent)> was called with values from the following sources:
 [main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r4 = virtualinvoke $r8.<android.net.wifi.WifiInfo: java.lang.String getSSID()>() in method <aero.panasonic.companion.view.LifeCycleHookActivity: java.lang.String createHash()>
 [main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - The sink virtualinvoke $r0.<androidx.activity.ComponentActivity: void startActivityForResult(android.content.Intent,int)>(null, 0) in method <dummyMainClass: aero.panasonic.companion.view.news.ArticleViewActivity dummyMainMethod_aero_panasonic_companion_view_news_ArticleViewActivity(android.content.Intent)> was called with values from the following sources:
 [main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r4 = virtualinvoke $r8.<android.net.wifi.WifiInfo: java.lang.String getSSID()>() in method <aero.panasonic.companion.view.LifeCycleHookActivity: java.lang.String createHash()>
@@ -628,6 +669,8 @@ java.lang.InterruptedException
 [main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r4 = virtualinvoke $r8.<android.net.wifi.WifiInfo: java.lang.String getSSID()>() in method <aero.panasonic.companion.view.LifeCycleHookActivity: java.lang.String createHash()>
 [main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - The sink virtualinvoke $r0.<androidx.activity.ComponentActivity: void startActivityForResult(android.content.Intent,int)>(null, 0) in method <dummyMainClass: aero.panasonic.companion.view.entertainment.livetv.EpgActivity dummyMainMethod_aero_panasonic_companion_view_entertainment_livetv_EpgActivity(android.content.Intent)> was called with values from the following sources:
 [main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r4 = virtualinvoke $r8.<android.net.wifi.WifiInfo: java.lang.String getSSID()>() in method <aero.panasonic.companion.view.LifeCycleHookActivity: java.lang.String createHash()>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - The sink virtualinvoke $r1.<android.os.Bundle: void putBundle(java.lang.String,android.os.Bundle)>("extra:presenter_bundle", $r2) in method <aero.panasonic.companion.view.player.MediaPlayerActivity: void onSaveInstanceState(android.os.Bundle)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r4 = virtualinvoke $r8.<android.net.wifi.WifiInfo: java.lang.String getSSID()>() in method <aero.panasonic.companion.view.LifeCycleHookActivity: java.lang.String createHash()>
 [main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - The sink virtualinvoke $r1.<android.app.Activity: boolean bindService(android.content.Intent,android.content.ServiceConnection,int)>($r2, $r4, 0) in method <aero.panasonic.companion.view.music.ServiceBindingDelegate: void onStart()> was called with values from the following sources:
 [main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r4 = virtualinvoke $r8.<android.net.wifi.WifiInfo: java.lang.String getSSID()>() in method <aero.panasonic.companion.view.LifeCycleHookActivity: java.lang.String createHash()>
 [main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - The sink virtualinvoke $r0.<androidx.activity.ComponentActivity: void startActivityForResult(android.content.Intent,int,android.os.Bundle)>(null, 0, null) in method <dummyMainClass: aero.panasonic.companion.view.shopping.ShoppingActivity dummyMainMethod_aero_panasonic_companion_view_shopping_ShoppingActivity(android.content.Intent)> was called with values from the following sources:
@@ -640,6 +683,10 @@ java.lang.InterruptedException
 [main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r4 = virtualinvoke $r8.<android.net.wifi.WifiInfo: java.lang.String getSSID()>() in method <aero.panasonic.companion.view.LifeCycleHookActivity: java.lang.String createHash()>
 [main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - The sink staticinvoke <android.util.Log: int v(java.lang.String,java.lang.String)>($r0, $r1) in method <aero.panasonic.inflight.services.utils.Log: void setIsSeatBack(int,java.lang.String,java.lang.String)> was called with values from the following sources:
 [main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r10 = interfaceinvoke $r9.<android.database.Cursor: java.lang.String getString(int)>($i0) in method <aero.panasonic.inflight.services.data.iicore.cp.IICoreQuery: java.lang.String queryString(android.net.Uri)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r4 = virtualinvoke $r8.<android.net.wifi.WifiInfo: java.lang.String getSSID()>() in method <aero.panasonic.companion.view.LifeCycleHookActivity: java.lang.String createHash()>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - The sink virtualinvoke $r0.<androidx.activity.ComponentActivity: void startActivityForResult(android.content.Intent,int,android.os.Bundle)>(null, 0, null) in method <dummyMainClass: aero.panasonic.companion.view.remotecontrol.RemoteControlActivity dummyMainMethod_aero_panasonic_companion_view_remotecontrol_RemoteControlActivity(android.content.Intent)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r4 = virtualinvoke $r8.<android.net.wifi.WifiInfo: java.lang.String getSSID()>() in method <aero.panasonic.companion.view.LifeCycleHookActivity: java.lang.String createHash()>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - The sink virtualinvoke $r0.<androidx.activity.ComponentActivity: void startActivityForResult(android.content.Intent,int)>(null, 0) in method <dummyMainClass: aero.panasonic.companion.view.remotecontrol.RemoteControlSettingsActivity dummyMainMethod_aero_panasonic_companion_view_remotecontrol_RemoteControlSettingsActivity(android.content.Intent)> was called with values from the following sources:
 [main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r4 = virtualinvoke $r8.<android.net.wifi.WifiInfo: java.lang.String getSSID()>() in method <aero.panasonic.companion.view.LifeCycleHookActivity: java.lang.String createHash()>
 [main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - The sink virtualinvoke $r0.<androidx.activity.ComponentActivity: void startActivityForResult(android.content.Intent,int,android.os.Bundle)>(null, 0, null) in method <dummyMainClass: aero.panasonic.companion.view.player.MediaPlayerActivity dummyMainMethod_aero_panasonic_companion_view_player_MediaPlayerActivity(android.content.Intent)> was called with values from the following sources:
 [main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r4 = virtualinvoke $r8.<android.net.wifi.WifiInfo: java.lang.String getSSID()>() in method <aero.panasonic.companion.view.LifeCycleHookActivity: java.lang.String createHash()>
@@ -661,8 +708,6 @@ java.lang.InterruptedException
 [main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r4 = virtualinvoke $r8.<android.net.wifi.WifiInfo: java.lang.String getSSID()>() in method <aero.panasonic.companion.view.LifeCycleHookActivity: java.lang.String createHash()>
 [main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - The sink virtualinvoke $r0.<androidx.activity.ComponentActivity: void startActivityForResult(android.content.Intent,int)>(null, 0) in method <dummyMainClass: aero.panasonic.companion.view.shopping.ShoppingDetailActivity dummyMainMethod_aero_panasonic_companion_view_shopping_ShoppingDetailActivity(android.content.Intent)> was called with values from the following sources:
 [main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r4 = virtualinvoke $r8.<android.net.wifi.WifiInfo: java.lang.String getSSID()>() in method <aero.panasonic.companion.view.LifeCycleHookActivity: java.lang.String createHash()>
-[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - The sink virtualinvoke $r0.<androidx.activity.ComponentActivity: void startActivityForResult(android.content.Intent,int)>(null, 0) in method <dummyMainClass: aero.panasonic.companion.view.remotecontrol.RemoteControlActivity dummyMainMethod_aero_panasonic_companion_view_remotecontrol_RemoteControlActivity(android.content.Intent)> was called with values from the following sources:
-[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r4 = virtualinvoke $r8.<android.net.wifi.WifiInfo: java.lang.String getSSID()>() in method <aero.panasonic.companion.view.LifeCycleHookActivity: java.lang.String createHash()>
 [main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - The sink virtualinvoke $r0.<androidx.activity.ComponentActivity: void startActivityForResult(android.content.Intent,int,android.os.Bundle)>(null, 0, null) in method <dummyMainClass: aero.panasonic.companion.view.entertainment.playlist.PlaylistActivity dummyMainMethod_aero_panasonic_companion_view_entertainment_playlist_PlaylistActivity(android.content.Intent)> was called with values from the following sources:
 [main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r4 = virtualinvoke $r8.<android.net.wifi.WifiInfo: java.lang.String getSSID()>() in method <aero.panasonic.companion.view.LifeCycleHookActivity: java.lang.String createHash()>
 [main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - The sink virtualinvoke $r0.<androidx.activity.ComponentActivity: void startActivityForResult(android.content.Intent,int,android.os.Bundle)>(null, 0, null) in method <dummyMainClass: aero.panasonic.companion.view.favorites.FavoritesActivity dummyMainMethod_aero_panasonic_companion_view_favorites_FavoritesActivity(android.content.Intent)> was called with values from the following sources:
@@ -677,5 +722,5 @@ java.lang.InterruptedException
 [main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r4 = virtualinvoke $r8.<android.net.wifi.WifiInfo: java.lang.String getSSID()>() in method <aero.panasonic.companion.view.LifeCycleHookActivity: java.lang.String createHash()>
 [main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - The sink virtualinvoke $r0.<androidx.activity.ComponentActivity: void startActivityForResult(android.content.Intent,int,android.os.Bundle)>(null, 0, null) in method <dummyMainClass: aero.panasonic.companion.view.appinfo.ClassificationActivity dummyMainMethod_aero_panasonic_companion_view_appinfo_ClassificationActivity(android.content.Intent)> was called with values from the following sources:
 [main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r4 = virtualinvoke $r8.<android.net.wifi.WifiInfo: java.lang.String getSSID()>() in method <aero.panasonic.companion.view.LifeCycleHookActivity: java.lang.String createHash()>
-[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - Data flow solver took 8063 seconds. Maximum memory consumption: 2144 MB
-[main] INFO soot.jimple.infoflow.android.SetupApplication - Found 68 leaks
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - Data flow solver took 8094 seconds. Maximum memory consumption: 5891 MB
+[main] INFO soot.jimple.infoflow.android.SetupApplication - Found 73 leaks

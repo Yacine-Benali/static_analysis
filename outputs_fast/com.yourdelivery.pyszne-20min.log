@@ -2,8 +2,8 @@
 [main] INFO soot.jimple.infoflow.cmd.MainClass - Analyzing app /mnt/aiongpfs/users/mbenali/static_analysis/APKs/com.yourdelivery.pyszne.apk (1 of 1)...
 [main] INFO soot.jimple.infoflow.android.SetupApplication - Initializing Soot...
 [main] INFO soot.jimple.infoflow.android.SetupApplication - Loading dex files...
-[main] INFO soot.jimple.infoflow.android.SetupApplication - ARSC file parsing took 0.045811375 seconds
-[main] INFO soot.jimple.infoflow.memory.MemoryWarningSystem - Registered a memory warning system for 18,431.1 MiB
+[main] INFO soot.jimple.infoflow.android.SetupApplication - ARSC file parsing took 0.046778804 seconds
+[main] INFO soot.jimple.infoflow.memory.MemoryWarningSystem - Registered a memory warning system for 4,915.35 MiB
 [main] INFO soot.jimple.infoflow.memory.FlowDroidTimeoutWatcher - FlowDroid timeout watcher started
 [main] INFO soot.jimple.infoflow.android.entryPointCreators.AndroidEntryPointCreator - Creating Android entry point for 21 components...
 [main] INFO soot.jimple.infoflow.android.SetupApplication - Constructing the callgraph...
@@ -399,7 +399,7 @@
 [main] WARN soot.jimple.infoflow.android.data.parsers.PermissionMethodParser - Line does not match: <org.apache.xmlrpc.webserver.HttpServletRequestImpl: void parseParameters)> -> _SOURCE_
 [main] WARN soot.jimple.infoflow.android.data.parsers.PermissionMethodParser - Line does not match:     
 [main] INFO soot.jimple.infoflow.android.source.AccessPathBasedSourceSinkManager - Created a SourceSinkManager with 71 sources, 193 sinks, and 382 callback methods.
-[main] INFO soot.jimple.infoflow.android.SetupApplication - Collecting callbacks and building a callgraph took 51 seconds
+[main] INFO soot.jimple.infoflow.android.SetupApplication - Collecting callbacks and building a callgraph took 65 seconds
 [main] INFO soot.jimple.infoflow.android.SetupApplication - Running data flow analysis on /mnt/aiongpfs/users/mbenali/static_analysis/APKs/com.yourdelivery.pyszne.apk with 71 sources and 193 sinks...
 [main] WARN soot.jimple.infoflow.InfoflowConfiguration - Static field tracking is disabled, results may be incomplete
 [main] WARN soot.jimple.infoflow.InfoflowConfiguration - Using flow-insensitive alias tracking, results may be imprecise
@@ -410,11 +410,11 @@
 [main] INFO soot.jimple.infoflow.InfoflowConfiguration - Recursive access path shortening is enabled
 [main] INFO soot.jimple.infoflow.InfoflowConfiguration - Taint analysis enabled: true
 [main] INFO soot.jimple.infoflow.InfoflowConfiguration - Using alias algorithm FlowSensitive
-[main] INFO soot.jimple.infoflow.memory.MemoryWarningSystem - Registered a memory warning system for 18,431.1 MiB
+[main] INFO soot.jimple.infoflow.memory.MemoryWarningSystem - Registered a memory warning system for 4,915.35 MiB
 [main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - Callgraph construction took 0 seconds
-[main] INFO soot.jimple.infoflow.codeOptimization.InterproceduralConstantValuePropagator - Removing side-effect free methods is disabled
 [FlowDroid Timeout Watcher] INFO soot.jimple.infoflow.memory.FlowDroidTimeoutWatcher - FlowDroid timeout watcher terminated
-[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - Dead code elimination took 1.063059509 seconds
+[main] INFO soot.jimple.infoflow.codeOptimization.InterproceduralConstantValuePropagator - Removing side-effect free methods is disabled
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - Dead code elimination took 1.009030984 seconds
 [main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - Callgraph has 25225 edges
 [main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - Starting Taint Analysis
 [main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - Using context- and flow-sensitive solver
@@ -422,12 +422,11 @@
 [main] INFO soot.jimple.infoflow.memory.FlowDroidTimeoutWatcher - FlowDroid timeout watcher started
 [main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - Looking for sources and sinks...
 [main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - Source lookup done, found 37 sources and 576 sinks.
-[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - Taint wrapper hits: 8965
-[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - Taint wrapper misses: 104961
-[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - IFDS problem with 289316 forward and 191096 backward edges solved in 3 seconds, processing 53 results...
-[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - Current memory consumption: 3284 MB
-[FlowDroid Timeout Watcher] INFO soot.jimple.infoflow.memory.FlowDroidTimeoutWatcher - FlowDroid timeout watcher terminated
-[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - Memory consumption after cleanup: 321 MB
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - Taint wrapper hits: 8653
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - Taint wrapper misses: 98375
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - IFDS problem with 271070 forward and 181052 backward edges solved in 3 seconds, processing 51 results...
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - Current memory consumption: 1979 MB
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - Memory consumption after cleanup: 278 MB
 [main] INFO soot.jimple.infoflow.memory.FlowDroidTimeoutWatcher - FlowDroid timeout watcher started
 [main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$ShutdownBatchPathBuilder - Running path reconstruction batch 1 with 5 elements
 [main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Obtainted 5 connections between sources and sinks
@@ -436,6 +435,7 @@
 [main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 3...
 [main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 4...
 [main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 5...
+[FlowDroid Timeout Watcher] INFO soot.jimple.infoflow.memory.FlowDroidTimeoutWatcher - FlowDroid timeout watcher terminated
 [main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$ShutdownBatchPathBuilder - Running path reconstruction batch 2 with 5 elements
 [main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Obtainted 5 connections between sources and sinks
 [main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 1...
@@ -499,14 +499,12 @@
 [main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 3...
 [main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 4...
 [main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 5...
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$ShutdownBatchPathBuilder - Running path reconstruction batch 11 with 3 elements
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Obtainted 3 connections between sources and sinks
+[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$ShutdownBatchPathBuilder - Running path reconstruction batch 11 with 1 elements
+[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Obtainted 1 connections between sources and sinks
 [main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 1...
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 2...
-[main] INFO soot.jimple.infoflow.data.pathBuilders.DefaultPathBuilderFactory$RepeatableContextSensitivePathBuilder - Building path 3...
 [main] INFO soot.jimple.infoflow.memory.MemoryWarningSystem - Shutting down the memory warning system...
-[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - Memory consumption after path building: 417 MB
-[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - Path reconstruction took 44 seconds
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - Memory consumption after path building: 259 MB
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - Path reconstruction took 30 seconds
 [main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - The sink virtualinvoke $r1.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("com.facebook.UiLifecycleHelper.pendingFacebookDialogCallKey", $r4) in method <com.facebook.UiLifecycleHelper: void onSaveInstanceState(android.os.Bundle)> was called with values from the following sources:
 [main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r4 = virtualinvoke $r4.<android.view.View: android.view.View findViewById(int)>($i0) in method <com.yopeso.lieferando.fragments.search.RegistrationFragment: void onActivityCreated(android.os.Bundle)>
 [main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r4 = virtualinvoke $r4.<android.view.View: android.view.View findViewById(int)>($i0) in method <com.yopeso.lieferando.fragments.search.RegistrationFragment: void onActivityCreated(android.os.Bundle)>
@@ -523,9 +521,6 @@
 [main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - The sink staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r5, $r4) in method <com.yopeso.lieferando.custom.LRActivity: void onNewIntentDeepLink(android.content.Intent)> was called with values from the following sources:
 [main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r4 = virtualinvoke $r4.<android.view.View: android.view.View findViewById(int)>($i0) in method <com.yopeso.lieferando.fragments.search.RegistrationFragment: void onActivityCreated(android.os.Bundle)>
 [main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r4 = virtualinvoke $r4.<android.view.View: android.view.View findViewById(int)>($i0) in method <com.yopeso.lieferando.fragments.search.RegistrationFragment: void onActivityCreated(android.os.Bundle)>
-[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r3 = virtualinvoke $r3.<android.view.View: android.view.View findViewById(int)>($i0) in method <com.yopeso.lieferando.fragments.account.MainAccountFragment: void onActivityCreated(android.os.Bundle)>
-[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r3 = virtualinvoke $r3.<android.view.View: android.view.View findViewById(int)>($i0) in method <com.yopeso.lieferando.fragments.account.MainAccountFragment: void onActivityCreated(android.os.Bundle)>
-[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - The sink staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r2, $r4) in method <com.yopeso.lieferando.fragments.account.MapAddressFragment: void onClick(android.view.View)> was called with values from the following sources:
 [main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r3 = virtualinvoke $r3.<android.view.View: android.view.View findViewById(int)>($i0) in method <com.yopeso.lieferando.fragments.account.MainAccountFragment: void onActivityCreated(android.os.Bundle)>
 [main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r3 = virtualinvoke $r3.<android.view.View: android.view.View findViewById(int)>($i0) in method <com.yopeso.lieferando.fragments.account.MainAccountFragment: void onActivityCreated(android.os.Bundle)>
 [main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - The sink virtualinvoke $r1.<android.os.Bundle: void putParcelable(java.lang.String,android.os.Parcelable)>($r10, r8) in method <com.facebook.internal.PendingCallStore: void saveInstanceState(android.os.Bundle)> was called with values from the following sources:
@@ -598,9 +593,6 @@
 [main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - The sink $r0 = virtualinvoke $r0.<java.lang.String: java.lang.String replace(java.lang.CharSequence,java.lang.CharSequence)>(" ", "") in method <com.yopeso.lieferando.util.StringUtils: boolean isEmpty(java.lang.String)> was called with values from the following sources:
 [main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r3 = virtualinvoke $r3.<android.view.View: android.view.View findViewById(int)>($i0) in method <com.yopeso.lieferando.fragments.account.MainAccountFragment: void onActivityCreated(android.os.Bundle)>
 [main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r3 = virtualinvoke $r3.<android.view.View: android.view.View findViewById(int)>($i0) in method <com.yopeso.lieferando.fragments.account.MainAccountFragment: void onActivityCreated(android.os.Bundle)>
-[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - The sink staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r2, $r4) in method <com.yopeso.lieferando.util.UserStore: void setData(com.yopeso.lieferando.model.user.UserData)> was called with values from the following sources:
-[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r3 = virtualinvoke $r3.<android.view.View: android.view.View findViewById(int)>($i0) in method <com.yopeso.lieferando.fragments.account.MainAccountFragment: void onActivityCreated(android.os.Bundle)>
-[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r3 = virtualinvoke $r3.<android.view.View: android.view.View findViewById(int)>($i0) in method <com.yopeso.lieferando.fragments.account.MainAccountFragment: void onActivityCreated(android.os.Bundle)>
 [main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - The sink $r4 = virtualinvoke r3.<java.net.HttpURLConnection: java.io.InputStream getInputStream()>() in method <com.yopeso.lieferando.util.ImageUtils: android.graphics.Bitmap getBitmapFromURL(java.lang.String)> was called with values from the following sources:
 [main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r3 = virtualinvoke $r3.<android.view.View: android.view.View findViewById(int)>($i0) in method <com.yopeso.lieferando.fragments.account.MainAccountFragment: void onActivityCreated(android.os.Bundle)>
 [main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r3 = virtualinvoke $r3.<android.view.View: android.view.View findViewById(int)>($i0) in method <com.yopeso.lieferando.fragments.account.MainAccountFragment: void onActivityCreated(android.os.Bundle)>
@@ -609,12 +601,12 @@
 [main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r4 = virtualinvoke $r4.<android.view.View: android.view.View findViewById(int)>($i0) in method <com.yopeso.lieferando.fragments.search.RegistrationFragment: void onActivityCreated(android.os.Bundle)>
 [main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r3 = virtualinvoke $r3.<android.view.View: android.view.View findViewById(int)>($i0) in method <com.yopeso.lieferando.fragments.account.MainAccountFragment: void onActivityCreated(android.os.Bundle)>
 [main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r3 = virtualinvoke $r3.<android.view.View: android.view.View findViewById(int)>($i0) in method <com.yopeso.lieferando.fragments.account.MainAccountFragment: void onActivityCreated(android.os.Bundle)>
-[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - The sink $r0 = virtualinvoke $r0.<java.lang.String: java.lang.String replace(java.lang.CharSequence,java.lang.CharSequence)>("-0-0.", $r4) in method <com.yopeso.lieferando.util.ImageUtils: java.lang.String getOptimizedUserImage(java.lang.String,android.content.Context)> was called with values from the following sources:
-[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r3 = virtualinvoke $r3.<android.view.View: android.view.View findViewById(int)>($i0) in method <com.yopeso.lieferando.fragments.account.MainAccountFragment: void onActivityCreated(android.os.Bundle)>
-[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r3 = virtualinvoke $r3.<android.view.View: android.view.View findViewById(int)>($i0) in method <com.yopeso.lieferando.fragments.account.MainAccountFragment: void onActivityCreated(android.os.Bundle)>
 [main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - The sink virtualinvoke r0.<android.os.Bundle: void putInt(java.lang.String,int)>("current_day", $i2) in method <com.yopeso.lieferando.dialogs.DatePickerDialog: com.yopeso.lieferando.dialogs.DatePickerDialog newInstance(int,int,int)> was called with values from the following sources:
 [main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r4 = virtualinvoke $r4.<android.view.View: android.view.View findViewById(int)>($i0) in method <com.yopeso.lieferando.fragments.search.RegistrationFragment: void onActivityCreated(android.os.Bundle)>
 [main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r4 = virtualinvoke $r4.<android.view.View: android.view.View findViewById(int)>($i0) in method <com.yopeso.lieferando.fragments.search.RegistrationFragment: void onActivityCreated(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r3 = virtualinvoke $r3.<android.view.View: android.view.View findViewById(int)>($i0) in method <com.yopeso.lieferando.fragments.account.MainAccountFragment: void onActivityCreated(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r3 = virtualinvoke $r3.<android.view.View: android.view.View findViewById(int)>($i0) in method <com.yopeso.lieferando.fragments.account.MainAccountFragment: void onActivityCreated(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - The sink $r0 = virtualinvoke $r0.<java.lang.String: java.lang.String replace(java.lang.CharSequence,java.lang.CharSequence)>("-0-0.", $r4) in method <com.yopeso.lieferando.util.ImageUtils: java.lang.String getOptimizedUserImage(java.lang.String,android.content.Context)> was called with values from the following sources:
 [main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r3 = virtualinvoke $r3.<android.view.View: android.view.View findViewById(int)>($i0) in method <com.yopeso.lieferando.fragments.account.MainAccountFragment: void onActivityCreated(android.os.Bundle)>
 [main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r3 = virtualinvoke $r3.<android.view.View: android.view.View findViewById(int)>($i0) in method <com.yopeso.lieferando.fragments.account.MainAccountFragment: void onActivityCreated(android.os.Bundle)>
 [main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - The sink virtualinvoke r1.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("order_id_key", $r4) in method <com.yopeso.lieferando.activity.AccountActivity: void onResume()> was called with values from the following sources:
@@ -634,6 +626,8 @@
 [main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - The sink virtualinvoke r6.<android.os.Bundle: void putLong(java.lang.String,long)>("1_timestamp_ms", $l0) in method <com.facebook.Session: void logAuthorizationComplete(com.facebook.AuthorizationClient$Result$Code,java.util.Map,java.lang.Exception)> was called with values from the following sources:
 [main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r4 = virtualinvoke $r4.<android.view.View: android.view.View findViewById(int)>($i0) in method <com.yopeso.lieferando.fragments.search.RegistrationFragment: void onActivityCreated(android.os.Bundle)>
 [main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r4 = virtualinvoke $r4.<android.view.View: android.view.View findViewById(int)>($i0) in method <com.yopeso.lieferando.fragments.search.RegistrationFragment: void onActivityCreated(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r3 = virtualinvoke $r3.<android.view.View: android.view.View findViewById(int)>($i0) in method <com.yopeso.lieferando.fragments.account.MainAccountFragment: void onActivityCreated(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r3 = virtualinvoke $r3.<android.view.View: android.view.View findViewById(int)>($i0) in method <com.yopeso.lieferando.fragments.account.MainAccountFragment: void onActivityCreated(android.os.Bundle)>
 [main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - The sink virtualinvoke $r2.<java.io.OutputStream: void write(byte[],int,int)>(r3, 0, $i0) in method <com.novoda.imageloader.core.file.util.FileUtil: void copyStream(java.io.InputStream,java.io.OutputStream)> was called with values from the following sources:
 [main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r4 = virtualinvoke $r3.<java.net.HttpURLConnection: java.io.InputStream getInputStream()>() in method <com.newrelic.agent.android.instrumentation.HttpURLConnectionExtension: java.io.InputStream getInputStream()>
 [main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r4 = virtualinvoke $r3.<javax.net.ssl.HttpsURLConnection: java.io.InputStream getInputStream()>() in method <com.newrelic.agent.android.instrumentation.HttpsURLConnectionExtension: java.io.InputStream getInputStream()>
@@ -650,19 +644,16 @@
 [main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - The sink staticinvoke <android.util.Log: int w(java.lang.String,java.lang.String)>("AccountActivity", $r4) in method <com.yopeso.lieferando.activity.AccountActivity: void onResume()> was called with values from the following sources:
 [main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r3 = virtualinvoke $r3.<android.view.View: android.view.View findViewById(int)>($i0) in method <com.yopeso.lieferando.fragments.account.MainAccountFragment: void onActivityCreated(android.os.Bundle)>
 [main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r3 = virtualinvoke $r3.<android.view.View: android.view.View findViewById(int)>($i0) in method <com.yopeso.lieferando.fragments.account.MainAccountFragment: void onActivityCreated(android.os.Bundle)>
-[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - The sink virtualinvoke $r10.<android.os.Bundle: void putInt(java.lang.String,int)>("title", $i0) in method <com.yopeso.lieferando.activity.AccountActivity: void onClick(android.view.View)> was called with values from the following sources:
-[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r3 = virtualinvoke $r3.<android.view.View: android.view.View findViewById(int)>($i0) in method <com.yopeso.lieferando.fragments.account.MainAccountFragment: void onActivityCreated(android.os.Bundle)>
-[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r3 = virtualinvoke $r3.<android.view.View: android.view.View findViewById(int)>($i0) in method <com.yopeso.lieferando.fragments.account.MainAccountFragment: void onActivityCreated(android.os.Bundle)>
 [main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - The sink staticinvoke <android.util.Log: int d(java.lang.String,java.lang.String)>($r5, $r1) in method <com.yopeso.lieferando.net.requests.RestaurantRequest: void <init>(java.lang.String,com.yopeso.lieferando.net.requests.base.VolleyListener)> was called with values from the following sources:
 [main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r4 = virtualinvoke $r4.<android.view.View: android.view.View findViewById(int)>($i0) in method <com.yopeso.lieferando.fragments.search.RegistrationFragment: void onActivityCreated(android.os.Bundle)>
 [main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r4 = virtualinvoke $r4.<android.view.View: android.view.View findViewById(int)>($i0) in method <com.yopeso.lieferando.fragments.search.RegistrationFragment: void onActivityCreated(android.os.Bundle)>
 [main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r3 = virtualinvoke $r3.<android.view.View: android.view.View findViewById(int)>($i0) in method <com.yopeso.lieferando.fragments.account.MainAccountFragment: void onActivityCreated(android.os.Bundle)>
 [main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r3 = virtualinvoke $r3.<android.view.View: android.view.View findViewById(int)>($i0) in method <com.yopeso.lieferando.fragments.account.MainAccountFragment: void onActivityCreated(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - The sink virtualinvoke $r10.<android.os.Bundle: void putInt(java.lang.String,int)>("title", $i0) in method <com.yopeso.lieferando.activity.AccountActivity: void onClick(android.view.View)> was called with values from the following sources:
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r3 = virtualinvoke $r3.<android.view.View: android.view.View findViewById(int)>($i0) in method <com.yopeso.lieferando.fragments.account.MainAccountFragment: void onActivityCreated(android.os.Bundle)>
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r3 = virtualinvoke $r3.<android.view.View: android.view.View findViewById(int)>($i0) in method <com.yopeso.lieferando.fragments.account.MainAccountFragment: void onActivityCreated(android.os.Bundle)>
 [main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - The sink virtualinvoke $r5.<android.os.Bundle: void putString(java.lang.String,java.lang.String)>("5_error_message", $r7) in method <com.facebook.Session: void logAuthorizationComplete(com.facebook.AuthorizationClient$Result$Code,java.util.Map,java.lang.Exception)> was called with values from the following sources:
 [main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r4 = virtualinvoke $r4.<android.view.View: android.view.View findViewById(int)>($i0) in method <com.yopeso.lieferando.fragments.search.RegistrationFragment: void onActivityCreated(android.os.Bundle)>
 [main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r4 = virtualinvoke $r4.<android.view.View: android.view.View findViewById(int)>($i0) in method <com.yopeso.lieferando.fragments.search.RegistrationFragment: void onActivityCreated(android.os.Bundle)>
-[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r3 = virtualinvoke $r3.<android.view.View: android.view.View findViewById(int)>($i0) in method <com.yopeso.lieferando.fragments.account.MainAccountFragment: void onActivityCreated(android.os.Bundle)>
-[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - - $r3 = virtualinvoke $r3.<android.view.View: android.view.View findViewById(int)>($i0) in method <com.yopeso.lieferando.fragments.account.MainAccountFragment: void onActivityCreated(android.os.Bundle)>
-[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - Data flow solver took 49 seconds. Maximum memory consumption: 3284 MB
-[main] INFO soot.jimple.infoflow.android.SetupApplication - Found 41 leaks
-[FlowDroid Timeout Watcher] INFO soot.jimple.infoflow.memory.FlowDroidTimeoutWatcher - FlowDroid timeout watcher terminated
+[main] INFO soot.jimple.infoflow.android.SetupApplication$InPlaceInfoflow - Data flow solver took 35 seconds. Maximum memory consumption: 1979 MB
+[main] INFO soot.jimple.infoflow.android.SetupApplication - Found 39 leaks
