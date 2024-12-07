@@ -13,7 +13,7 @@ App: mynt.app
 Evidence of account deletion functionality:
 - Found 9 relevant code patterns
 
-Likelihood of account deletion feature: High
+Likelihood of account deletion feature: Low
 
 --------------------------------------------------
 
@@ -23,7 +23,7 @@ Evidence of account deletion functionality:
 - Found 3 relevant string resources
 - Found 2 relevant code patterns
 
-Likelihood of account deletion feature: High
+Likelihood of account deletion feature: Low
 
 --------------------------------------------------
 
@@ -48,7 +48,7 @@ App: nz.co.stuff.android.news
 Evidence of account deletion functionality:
 - Found 2 relevant code patterns
 
-Likelihood of account deletion feature: Medium
+Likelihood of account deletion feature: Low
 
 --------------------------------------------------
 
@@ -57,7 +57,7 @@ App: linko.home
 Evidence of account deletion functionality:
 - Found 3 relevant string resources
 
-Likelihood of account deletion feature: High
+Likelihood of account deletion feature: Low
 
 --------------------------------------------------
 
